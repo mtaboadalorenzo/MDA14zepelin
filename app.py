@@ -6,7 +6,6 @@ import tomllib
 from datetime import date, datetime
 from pathlib import Path
 
-import altair as alt
 import pandas as pd
 import streamlit as st
 
@@ -346,14 +345,20 @@ with tab_informe:
         orden = list(costes.ACCIONES.values())
         filas = [{"Versión": n, "Decisión": costes.ACCIONES[a], "Tickets": c}
                  for n, _, ind in calc for a, c in ind["mezcla"].items()]
-        graf = alt.Chart(pd.DataFrame(filas)).mark_bar().encode(
-            x=alt.X("Decisión:N", sort=orden, title=None, axis=alt.Axis(labelAngle=0)),
-            xOffset=alt.XOffset("Versión:N", sort=[n for n, _, _ in calc]),
-            y=alt.Y("Tickets:Q", title="Tickets de 60"),
-            color=alt.Color("Versión:N", sort=[n for n, _, _ in calc], legend=alt.Legend(orient="top", title=None)),
-            tooltip=["Versión", "Decisión", "Tickets"],
-        ).properties(height=320)
-        st.altair_chart(graf)
+        try:
+            import altair as alt
+            graf = alt.Chart(pd.DataFrame(filas)).mark_bar().encode(
+                x=alt.X("Decisión:N", sort=orden, title=None, axis=alt.Axis(labelAngle=0)),
+                xOffset=alt.XOffset("Versión:N", sort=[n for n, _, _ in calc]),
+                y=alt.Y("Tickets:Q", title="Tickets de 60"),
+                color=alt.Color("Versión:N", sort=[n for n, _, _ in calc], legend=alt.Legend(orient="top", title=None)),
+                tooltip=["Versión", "Decisión", "Tickets"],
+            ).properties(height=320)
+            st.altair_chart(graf)
+        except Exception:
+            # Sin gráfico (por ejemplo, si la versión de Python no es compatible con Altair): tabla equivalente
+            tabla_mezcla = pd.DataFrame(filas).pivot(index="Decisión", columns="Versión", values="Tickets")
+            st.dataframe(tabla_mezcla.reindex(orden)[[n for n, _, _ in calc]])
 
         st.markdown(f"#### Ticket a ticket: {nombre_p}")
         ver_verdad = ss.admin and ss.get("ver_verdad")
