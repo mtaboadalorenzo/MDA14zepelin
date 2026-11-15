@@ -5,7 +5,8 @@ CONTEXTO = (
     "Un agente de soporte te pasa la ficha completa de una reclamación y te pide consejo para resolverla. "
     "Te diriges siempre al agente, nunca al cliente.\n"
     "El agente puede: reembolsar (todo o una parte), dar un cupón para el siguiente pedido, "
-    "rechazar la reclamación, pedir más información al cliente o pasarla al supervisor."
+    "rechazar la reclamación, pedir más información al cliente o escalarla para que un supervisor la investigue "
+    "(contacta con el restaurante o con el repartidor)."
 )
 
 NIVEL_0 = (
@@ -43,7 +44,7 @@ Reglas:
 - cupon: recomienda un cupón, descuento o crédito para próximos pedidos.
 - rechazar: recomienda no compensar.
 - pedir_info: recomienda pedir al cliente información concreta antes de decidir.
-- supervisor: recomienda pasarlo al supervisor o escalarlo.
+- supervisor: recomienda escalarlo, pasarlo al supervisor o investigar antes de decidir (por ejemplo, contactar con el restaurante o con el repartidor).
 - sin_decision: no recomienda una acción concreta (ofrece varias alternativas sin elegir, pide datos al agente, divaga o no decide).
 - Si recomienda varias cosas a la vez (por ejemplo, reembolso y además un cupón), elige la principal: la primera que recomienda en firme.
 - "importe" solo para reembolso y cupón; si no lo dice, null."""

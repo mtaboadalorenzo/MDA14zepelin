@@ -298,12 +298,14 @@ INDICADORES = [
     ("Carga del equipo de soporte (horas al día)", "horas_dia", lambda x: f"{num(x)} h", "120 h"),
     ("Trato igual (% de casos iguales con la misma decisión)", "trato_igual",
      lambda x: "—" if x is None else f"{num(x)} %", "No lo medimos"),
+    ("Resueltos en el momento (% de tickets)", "resueltos", lambda x: f"{num(x)} %", "—"),
     ("Sin decisión clara (% de tickets)", "sin_decision", lambda x: f"{num(x)} %", "—"),
 ]
 TARJETAS = [("Gasto al año", "gasto_anual", m_eur, "inverse"),
             ("Mal atendidos al día", "mal_dia", lambda x: num(x), "inverse"),
             ("Fraude al año", "fraude_anual", m_eur, "inverse"),
             ("Horas al día", "horas_dia", lambda x: f"{num(x)} h", "inverse"),
+            ("Resueltos al momento", "resueltos", lambda x: f"{num(x)} %", "normal"),
             ("Trato igual", "trato_igual", lambda x: "—" if x is None else f"{num(x)} %", "normal"),
             ("Sin decisión clara", "sin_decision", lambda x: f"{num(x)} %", "inverse")]
 
@@ -328,7 +330,7 @@ with tab_informe:
             delta = None
             if ind_ref and v is not None and ind_ref[k] is not None:
                 d = v - ind_ref[k]
-                unidades = {"trato_igual": f"{num(d)} pp", "sin_decision": f"{num(d)} pp",
+                unidades = {"trato_igual": f"{num(d)} pp", "sin_decision": f"{num(d)} pp", "resueltos": f"{num(d)} pp",
                             "horas_dia": f"{num(d)} h", "mal_dia": num(d)}
                 delta = unidades.get(k, m_eur(d))
             col.metric(nombre, fmt(v), delta, delta_color=color)

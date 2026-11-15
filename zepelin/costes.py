@@ -22,7 +22,7 @@ ACCIONES = {
     "cupon": "Cupón",
     "rechazar": "Rechazar",
     "pedir_info": "Pedir información",
-    "supervisor": "Supervisor",
+    "supervisor": "Escalar para investigar",
     "sin_decision": "Sin decisión clara",
 }
 
@@ -140,6 +140,7 @@ def indicadores(resultado, tickets, verdad):
         "horas_dia": tot["minutos"] * FACTOR_DIA / 60,
         "trato_igual": trato,
         "sin_decision": 100 * mezcla["sin_decision"] / n,
+        "resueltos": 100 * (mezcla["reembolso"] + mezcla["cupon"] + mezcla["rechazar"]) / n,
         "mezcla": mezcla,
         "filas": filas,
         "n_comparaciones": len(comparaciones),
@@ -151,6 +152,7 @@ COMO_SE_CALCULA = f"""
 - **Gasto en compensaciones:** lo que se devuelve. Un cupón cuesta a Zepelín la mitad de su valor. Si el copiloto no dice el importe, un reembolso se cuenta por el total del pedido y un cupón, por {CUPON_SIN_IMPORTE:.0f} €.
 - **Buenos clientes mal atendidos:** clientes con una reclamación legítima a los que se rechaza o se compensa por debajo del 80 % de lo justo. Se calcula un {RIESGO_MAL_ATENDIDO:.0%} de probabilidad de perderlos ({RIESGO_CUPON_NO_LLEGO:.0%} si recibieron un cupón por un pedido que no llegó), aplicado al margen que dejan en un año.
 - **Fraude que se cuela:** reclamaciones falsas a las que se paga algo.
-- **Carga del equipo:** aceptar una recomendación clara cuesta 1 minuto; pedir información, 3; resolver a mano cuando el copiloto no decide, 6; pasar al supervisor, 10. Cuando interviene una persona, el caso se resuelve bien.
+- **Carga del equipo:** aceptar una recomendación clara cuesta 1 minuto; pedir información, 3; resolver a mano cuando el copiloto no decide, 6; escalar para que un supervisor investigue (contacta con el restaurante o el repartidor), 10. Cuando interviene una persona, el caso se resuelve bien.
+- **Resueltos en el momento:** tickets en los que el agente aplica directamente la recomendación (reembolso, cupón o rechazo), sin pedir información ni escalar.
 - **Trato igual:** de cada 100 casos iguales (el mismo ticket lanzado dos veces, o dos tickets con los mismos hechos y distinto tono), en cuántos decide lo mismo.
 """
