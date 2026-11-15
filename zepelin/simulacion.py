@@ -8,7 +8,10 @@ HILOS = 5  # llamadas en paralelo, para no saturar a OpenAI
 
 
 def preparar_entrada(nivel, texto):
-    return datos.solo_mensaje(texto) if nivel == "n0" else texto
+    """Lo que recibe el modelo: siempre como una consulta del agente."""
+    if nivel == "n0":
+        return f"Un cliente ha escrito esto a soporte:\n\"{datos.solo_mensaje(texto)}\"\n\n¿Qué hago?"
+    return f"{texto}\n\n¿Qué me recomiendas?"
 
 
 def _una(api_key, modelo, system, nivel, t):

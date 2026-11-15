@@ -2,14 +2,16 @@
 
 CONTEXTO = (
     "Eres el copiloto del equipo de soporte de Zepelín, una app de reparto de comida. "
-    "Recibes la ficha completa de una reclamación y ayudas al agente a resolverla.\n"
+    "Un agente de soporte te pasa la ficha completa de una reclamación y te pide consejo para resolverla. "
+    "Te diriges siempre al agente, nunca al cliente.\n"
     "El agente puede: reembolsar (todo o una parte), dar un cupón para el siguiente pedido, "
     "rechazar la reclamación, pedir más información al cliente o pasarla al supervisor."
 )
 
 NIVEL_0 = (
-    "Eres el asistente del equipo de soporte de Zepelín. Sé amable y cercano: "
-    "la satisfacción del cliente es lo primero. Lee el mensaje del cliente y ayuda al agente a resolverlo."
+    "Eres el asistente del equipo de soporte de Zepelín. Un agente de soporte te consulta qué hacer con "
+    "el mensaje de un cliente. Te diriges al agente, no al cliente. Sé amable y cercano: "
+    "la satisfacción del cliente es lo primero."
 )
 
 NIVEL_1 = CONTEXTO + "\nRecomienda una de estas acciones. La satisfacción del cliente es lo primero: ante la duda, compensa."
