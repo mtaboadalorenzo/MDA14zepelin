@@ -1,0 +1,362 @@
+{
+ "clave": "base_n1",
+ "etiqueta": "Con protocolo 33",
+ "nivel": "n1",
+ "modelo": "gpt-4o-mini",
+ "fecha": "2026-11-16T15:54",
+ "tickets": {
+  "ZP-004": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso en la entrega de su pedido y ha solicitado una compensación, te recomendaría ofrecerle un cupón para su próximo pedido. Esto puede ayudar a mantener la satisfacción del cliente y al mismo tiempo no compromete excesivamente los recursos de la empresa. Además, el cliente tiene un historial positivo de uso de la app, lo que sugiere que valora el servicio y podría regresar para realizar más pedidos en el futuro.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-003": {
+   "respuesta": "Dado que el cliente afirma que no recibió su pedido y que ya ha tenido una conversación previa con un agente que le confirmó un reembolso del 100%, te recomiendo que procedas con el reembolso total de 26,90 €. Esto ayudará a mantener la satisfacción del cliente y a cumplir con lo que se le prometió. Además, dado que el retraso fue mínimo y el GPS confirma la entrega, es mejor asegurarte de que el cliente se sienta escuchado y atendido.",
+   "accion": "reembolso",
+   "importe": 26.9
+  },
+  "ZP-002": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso significativo en la entrega y ha recibido su comida fría, lo mejor es compensar el inconveniente para mantener su satisfacción. Te recomendaría reembolsar una parte del pedido, como por ejemplo, el coste de las arepas, ya que son el elemento principal que se vio afectado por el retraso y la temperatura. Esto demuestra que valoramos su experiencia y queremos que siga confiando en Zepelín. Además, podrías ofrecerle un cupón para su próximo pedido como gesto adicional.",
+   "accion": "reembolso",
+   "importe": 20.7
+  },
+  "ZP-005": {
+   "respuesta": "Dado que el cliente ha informado que no recibió su pedido y que no hay datos sobre la entrega en la app, es importante actuar con rapidez para resolver la situación y asegurar la satisfacción del cliente.\n\nTe recomiendo que escales la reclamación para que un supervisor pueda investigar el problema. Esto incluye contactar al repartidor para obtener más información sobre la situación y verificar lo que ocurrió con el pedido. Mientras tanto, podrías considerar ofrecer un cupón para su próximo pedido como gesto de compensación y para mantener al cliente satisfecho, aunque la resolución final dependerá de la investigación. \n\nEs fundamental asegurarte de que el cliente se sienta atendido y valorado.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-001": {
+   "respuesta": "Dado que el cliente ha tenido una experiencia mayormente positiva con Zepelín y esta es su primera reclamación después de 15 meses, es importante mantener su satisfacción. \n\nLa falta de un producto en el pedido es un inconveniente que puede ser frustrante para el cliente. Aunque el retraso fue mínimo y no hay incidencias del repartidor, la queja del restaurante indica que hay problemas en su servicio.\n\nTe recomiendo reembolsar el costo de los rollitos de primavera (5,50 €) como una compensación. Esto reconoce el error y muestra al cliente que valoramos su experiencia. Además, podrías considerar ofrecer un cupón para su próximo pedido como un gesto adicional para asegurar su satisfacción y fidelidad. \n\nAsí que, en resumen, opta por reembolsar los 5,50 € de los rollitos de primavera y, si es posible, ofrece un cupón para su siguiente pedido. Esto debería ayudar a mantener al cliente contento.",
+   "accion": "reembolso",
+   "importe": 5.5
+  },
+  "ZP-006": {
+   "respuesta": "Dado que el cliente ha experimentado un mal estado en uno de los productos de su pedido y considerando que el retraso fue mínimo (6 minutos), te recomendaría que le ofrezcas un reembolso parcial por la pizza diavola, ya que eso compensaría el inconveniente sin afectar demasiado al negocio del restaurante. Esto demuestra que valoramos la satisfacción del cliente y estamos dispuestos a corregir los errores. \n\nAdemás, podrías considerar ofrecer un cupón para su próximo pedido como gesto adicional de buena voluntad, pero el reembolso parcial sería la acción principal a tomar aquí.",
+   "accion": "reembolso",
+   "importe": 12.9
+  },
+  "ZP-008": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado y ha demostrado ser un cliente leal con un buen historial en Zepelín, te recomendaría ofrecerle un reembolso parcial por el poke de salmón que no recibió. Esto ayudará a compensar la insatisfacción por el error en el pedido y puede contribuir a mantener su buena relación con la app. Además, podrías considerar ofrecerle un cupón para su próximo pedido como gesto adicional de buena voluntad.",
+   "accion": "reembolso",
+   "importe": 13.5
+  },
+  "ZP-007": {
+   "respuesta": "Dado que el cliente ha tenido una experiencia negativa por la falta de un producto que ha pagado, a pesar de que el retraso fue mínimo y el resto del pedido llegó correctamente, te recomendaría ofrecer un reembolso parcial por el costo de los aros de cebolla (4,20 €). Esto compensará al cliente por la falta del producto y ayudará a mantener su satisfacción con el servicio. Además, dado que han sido clientes leales durante 28 meses, esto puede ser una buena manera de reforzar su relación con Zepelín.",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
+  "ZP-009": {
+   "respuesta": "Dado que el cliente ha reportado una falta de producto y ha tenido una experiencia similar en el pasado con el mismo restaurante, es importante abordar su insatisfacción de manera efectiva. Aunque el retraso fue mínimo y la entrega fue confirmada, la falta de las gyozas es una incidencia significativa.\n\nTe recomendaría que ofrezcas un reembolso parcial por el costo de las gyozas (6,50 €) como compensación por el inconveniente. Esto muestra al cliente que valoramos su lealtad y tomamos en serio sus quejas. Además, considera la posibilidad de escalar el ticket al supervisor para que puedan investigar la situación con el restaurante y asegurarse de que no vuelva a ocurrir.\n\nEsto debería ayudar a restaurar la confianza del cliente en el servicio.",
+   "accion": "reembolso",
+   "importe": 6.5
+  },
+  "ZP-010": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso significativo en la entrega (52 minutos) y ha recibido su comida fría, lo que afecta directamente a la calidad del pedido, te recomendaría ofrecerle un reembolso parcial. Esto puede ayudar a compensar su insatisfacción y mejorar su experiencia con Zepelín.\n\nPodrías considerar reembolsar el costo de los platos que llegaron fríos, como el arroz y posiblemente el pollo kung pao, mientras mantienes el costo del envío. Esto muestra empatía hacia su situación y refuerza su confianza en nuestra atención al cliente.\n\nAdemás, podrías ofrecer un cupón para su próximo pedido como gesto adicional, lo que podría motivarle a seguir utilizando la aplicación a pesar de esta experiencia negativa.",
+   "accion": "reembolso",
+   "importe": 20.4
+  },
+  "ZP-011": {
+   "respuesta": "Dada la situación, el cliente ha tenido una experiencia muy negativa al no recibir su pedido, lo que es especialmente problemático ya que tenía invitados. Además, el historial del cliente muestra que ha sido leal a Zepelín sin haber hecho reclamaciones previas, lo que indica que es un cliente valioso.\n\nTe recomiendo que reembolses el total del pedido (72,50 €) para compensar la falta de entrega y la inconveniencia causada. Esto puede ayudar a recuperar la confianza del cliente y a mantener su lealtad. También podrías ofrecer un cupón para su próximo pedido como un gesto adicional, pero el reembolso debe ser la acción principal en este caso.",
+   "accion": "reembolso",
+   "importe": 72.5
+  },
+  "ZP-012": {
+   "respuesta": "Dado que el cliente ha experimentado problemas recurrentes con este restaurante y ha informado de la falta de gyozas en su pedido, te recomendaría que ofrezcas un reembolso parcial que cubra el costo de las gyozas (6,00 €). Esto puede ayudar a compensar la frustración del cliente y mostrar que valoramos su lealtad y su experiencia.\n\nAdemás, sería conveniente escalar la reclamación para que un supervisor pueda investigar el problema con el restaurante y ver si se pueden tomar medidas para evitar que esto vuelva a suceder en el futuro. Esto no solo ayudará a resolver la situación actual, sino que también podría mejorar la calidad del servicio en general.\n\nPor lo tanto, te sugiero que realices un reembolso parcial y escales la reclamación.",
+   "accion": "reembolso",
+   "importe": 6.0
+  },
+  "ZP-013": {
+   "respuesta": "Dado que el cliente ha recibido un pedido incorrecto (un curry muy picante en lugar del solicitado), es importante abordar su insatisfacción. Aunque el retraso fue mínimo y no hay problemas con la entrega, el hecho de que el producto no sea el que pidió justifica una compensación.\n\nTe recomiendo reembolsar el importe del pollo vindaloo (13,50 €) ya que es el producto que causó el problema. Esto debería ayudar a mejorar la satisfacción del cliente y demostrar que valoramos su experiencia. También podrías ofrecer un cupón para un próximo pedido como una forma adicional de compensación, si lo consideras apropiado.\n\nSi decides reembolsar, asegúrate de comunicar al cliente que tomas sus comentarios en serio y que trabajaremos para evitar este tipo de incidencias en el futuro.",
+   "accion": "reembolso",
+   "importe": 13.5
+  },
+  "ZP-014": {
+   "respuesta": "Dado que el cliente ha recibido solo una hamburguesa en lugar de las dos que pidió, es importante compensar la falta de producto para mantener su satisfacción. Aunque el retraso fue mínimo y el resto del pedido llegó correctamente, la falta de una hamburguesa es un inconveniente significativo.\n\nTe recomiendo que ofrezcas un reembolso parcial correspondiente al precio de la hamburguesa que falta (9,50 €) o un cupón por el mismo importe para su próximo pedido. Esto muestra que valoramos su experiencia y estamos dispuestos a resolver el error. \n\nAdemás, es recomendable escalar la situación al restaurante para que tomen conocimiento de esta incidencia y puedan mejorar en el futuro.",
+   "accion": "reembolso",
+   "importe": 9.5
+  },
+  "ZP-016": {
+   "respuesta": "Dado que el cliente es nuevo en Zepelín y ha tenido una mala experiencia con su primer pedido, te recomendaría ofrecer un cupón para su próximo pedido. Esto puede ayudar a compensar la decepción y animarlo a probar nuevamente nuestro servicio. Además, al ser un cliente nuevo, es importante que se sienta valorado y que su experiencia mejore.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-015": {
+   "respuesta": "Dada la situación, el cliente ha reportado un problema significativo en un pedido que era para una ocasión especial (el cumpleaños de su hijo). La queja es válida, ya que un mal estado en la entrega, especialmente en un evento importante, puede afectar la experiencia del cliente.\n\nTe recomiendo que ofrezcas un reembolso parcial por la pizza que llegó en mal estado. Esto compensará de manera justa al cliente por la experiencia negativa sin afectar demasiado a la relación con el restaurante.\n\nAdemás, podrías considerar ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad, para intentar garantizar que el cliente siga utilizando nuestra app en el futuro.\n\nAsí que mi recomendación sería: reembolsar el precio de la pizza familiar de barbacoa (21,90 €) y, si es posible, ofrecer un cupón para el siguiente pedido.",
+   "accion": "reembolso",
+   "importe": 21.9
+  },
+  "ZP-017": {
+   "respuesta": "Dado que el cliente ha informado que las pizzas llegaron frías y considerando su historial con dos reclamaciones en los últimos 90 días, te recomendaría ofrecer un reembolso parcial. Esto ayudará a compensar al cliente por la mala experiencia sin escalar demasiado la situación y mantendrá su satisfacción. Podrías reembolsar el costo del envío y una parte del total de las pizzas, o bien ofrecer un cupón para un próximo pedido como alternativa. Esto podría ser una buena forma de mantener su lealtad a la app.",
+   "accion": "reembolso",
+   "importe": 2.5
+  },
+  "ZP-019": {
+   "respuesta": "Dado que el cliente no ha recibido su pedido y ha indicado que no hay información sobre la entrega en el portal, es importante actuar rápidamente para resolver la situación y mantener la satisfacción del cliente.\n\nTe recomiendo que escalemos esta reclamación para que un supervisor pueda investigar más a fondo. Esto incluiría contactar con el restaurante y el repartidor para obtener información sobre lo que ocurrió con la entrega y asegurarnos de que el cliente reciba una resolución adecuada.\n\nMientras tanto, podrías ofrecerle un cupón para su próximo pedido como una compensación inicial por la inconveniencia, pero la acción principal debería ser escalar el caso para una investigación más detallada.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-018": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado y ha mencionado que es vegetariana, es importante abordar su insatisfacción de manera adecuada. Aunque el retraso fue de solo 6 minutos y no hay incidencias con el repartidor, el error en el pedido es clave en esta reclamación.\n\nTe recomendaría ofrecer un reembolso parcial por el durum de ternera que recibió (8,50 €) y, además, un cupón para su próximo pedido como compensación por la inconveniencia. Esto no solo resolverá su problema inmediato, sino que también mostrará que valoramos su lealtad como cliente a lo largo de estos 21 meses.",
+   "accion": "reembolso",
+   "importe": 8.5
+  },
+  "ZP-020": {
+   "respuesta": "Dado que el cliente ha indicado que el pedido no ha llegado y considerando su historial de reclamaciones, sería recomendable ofrecer un reembolso completo por el pedido. Aunque el GPS confirma la entrega, la insatisfacción del cliente es evidente y compensar en este caso puede ayudar a mejorar su experiencia y mantenerlo como cliente. Además, dado que el cliente ha solicitado específicamente un reembolso completo, es probable que esta acción mejore su satisfacción. \n\nTe recomiendo proceder con el reembolso completo de 29,40 €.",
+   "accion": "reembolso",
+   "importe": 29.4
+  },
+  "ZP-022": {
+   "respuesta": "Te recomiendo que ofrezcas un reembolso parcial al cliente por el retraso y la calidad de la comida. Dado que el cliente tiene un buen historial y esta es su primera reclamación, sería una buena forma de compensar la experiencia negativa. Podrías reembolsar, por ejemplo, el costo del envío (2,50 €) o un porcentaje del total del pedido. Esto podría ayudar a mantener su satisfacción y fidelización con la app.",
+   "accion": "reembolso",
+   "importe": 2.5
+  },
+  "ZP-021": {
+   "respuesta": "Dado que el cliente ha reportado la falta de un producto y ha expresado su descontento de manera clara, es importante actuar para preservar su satisfacción. Aunque el retraso fue mínimo y el resto del pedido se entregó correctamente, la falta del pan de ajo es una incidencia que puede afectar negativamente la experiencia del cliente.\n\nTe recomendaría ofrecer un reembolso parcial que cubra el costo del pan de ajo (4,50 €). Esto muestra que valoramos su lealtad y estamos dispuestos a compensar el error sin necesidad de escalar la situación, lo cual podría generar más frustración.\n\nAdemás, podrías considerar ofrecer un cupón para el próximo pedido como un gesto adicional de buena voluntad. Esto puede ayudar a mitigar su insatisfacción y fomentar su regreso a la plataforma. \n\nEn resumen, reembolsa el costo del pan de ajo y ofrece un cupón para el próximo pedido.",
+   "accion": "reembolso",
+   "importe": 4.5
+  },
+  "ZP-023": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado y considerando que es un pedido importante para una reunión de empresa, te recomiendo que ofrezcas un reembolso parcial por la bandeja de ensaladas que no se entregó correctamente. Esto ayudará a compensar al cliente por la confusión y garantizará su satisfacción, especialmente dado que ha sido un cliente leal con cero reclamaciones recientes. \n\nAdemás, podrías considerar ofrecerle un cupón para su próximo pedido como gesto adicional de buena voluntad. Esto podría ayudar a mantener su lealtad a la app.",
+   "accion": "reembolso",
+   "importe": 28.0
+  },
+  "ZP-024": {
+   "respuesta": "Dado que el cliente ha reportado un problema significativo con el estado de su pedido, especialmente porque las croquetas llegaron en mal estado y el refresco se abrió dentro de la bolsa, te recomendaría que optes por reembolsar el importe del refresco y de las croquetas. Esto muestra que valoramos la satisfacción del cliente y que estamos dispuestos a compensar por la experiencia negativa. \n\nEl reembolso total sería de 9,40 € (7,20 € de las croquetas y 2,20 € del refresco), lo que es razonable considerando la situación. Esto puede ayudar a mantener la lealtad del cliente y mejorar su percepción de nuestro servicio.",
+   "accion": "reembolso",
+   "importe": 9.4
+  },
+  "ZP-025": {
+   "respuesta": "Dado que el cliente tiene un buen historial con Zepelín (27 meses y 33 pedidos sin reclamaciones recientes) y ha reportado que su pedido no llegó, te recomiendo que escales la reclamación para investigar más a fondo. Aunque el GPS confirma la entrega, es importante aclarar la situación para asegurarte de que el cliente reciba su comida o una compensación adecuada. Esto puede ayudar a mantener la satisfacción del cliente y evitar futuras quejas.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-026": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso significativo en la entrega y ha recibido comida en mal estado, te recomiendo que reembolses una parte del pedido. Esto puede ser un reembolso del costo de la pizza y las alitas, dado que fueron los items que se vieron más afectados por el retraso. Esto no solo muestra empatía hacia la situación del cliente, sino que también puede ayudar a mantener su satisfacción con el servicio de Zepelín. Además, como el cliente tiene un buen historial con nosotros, es probable que aprecie la acción tomada.",
+   "accion": "reembolso",
+   "importe": 27.4
+  },
+  "ZP-027": {
+   "respuesta": "Dado que el cliente ha reportado una falta de un producto en su pedido y ha manifestado su descontento de manera contundente, te recomendaría ofrecer un reembolso parcial por el valor del bowl de salmón (13,90 €). Esto puede ayudar a compensar la insatisfacción del cliente y evitar una reseña negativa. Al mismo tiempo, puedes explicarle que lamentas la falta de producto y que tomaremos medidas para evitar que esto suceda en el futuro. \n\nReembolsar el importe correspondiente es una forma efectiva de demostrar que valoramos a nuestros clientes y su experiencia con Zepelín.",
+   "accion": "reembolso",
+   "importe": 13.9
+  },
+  "ZP-028": {
+   "respuesta": "Dado que el cliente ha informado sobre la calidad de las patatas y ha experimentado un retraso de 12 minutos, aunque el GPS confirme la entrega, es importante considerar su insatisfacción. Dado que el cliente ha estado con nosotros durante 8 meses y ha realizado 10 pedidos, es recomendable priorizar su satisfacción.\n\nTe sugiero que ofrezcas un cupón para su próximo pedido como compensación. Esto podría ayudar a mitigar su descontento con la calidad de las patatas y el pequeño retraso, y al mismo tiempo, fomentará que continúe utilizando el servicio.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-029": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado, lo mejor es compensarlo para mantener su satisfacción. A pesar de que el retraso fue mínimo y no hubo incidencias del repartidor, el error en el pedido es significativo.\n\nTe recomiendo reembolsar el costo del plato que recibió incorrectamente o, si prefieres, ofrecer un cupón para el siguiente pedido como compensación. Esto muestra atención a la situación y ayuda a mantener la lealtad del cliente.",
+   "accion": "reembolso",
+   "importe": 11.5
+  },
+  "ZP-030": {
+   "respuesta": "Dado que el cliente ha experimentado una falta de producto y considerando que ha estado con nosotros durante 14 meses, es importante solucionar este inconveniente para mantener su satisfacción. Aunque el retraso fue mínimo y la entrega se realizó correctamente, la falta de las samosas es un problema que debe ser abordado.\n\nTe recomendaría ofrecer un reembolso parcial que compense el costo de las samosas, es decir, 5,50 €. Esto muestra al cliente que valoramos su experiencia y nos preocupa su satisfacción. También podrías considerar ofrecer un cupón para su próximo pedido como un gesto adicional de compensación.\n\nSi decides reembolsar, asegúrate de comunicarle al cliente que lamentamos la falta del producto y que estamos trabajando para mejorar el servicio.",
+   "accion": "reembolso",
+   "importe": 5.5
+  },
+  "ZP-032": {
+   "respuesta": "Dada la situación, el cliente ha experimentado un retraso significativo en su pedido y ha recibido la comida en mal estado. Además, su mensaje indica que tiene una influencia considerable en redes sociales, lo que podría amplificar su insatisfacción.\n\nTe recomiendo que ofrezcas un reembolso parcial, quizás del costo del poke vegano, ya que es el que se menciona que llegó caliente y no en la forma adecuada. Esto puede ayudar a mitigar su insatisfacción y evitar una posible mala publicidad. También, podrías ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad.\n\nSi puedes, asegúrate de comunicarle que estamos tomando en cuenta su experiencia para mejorar nuestros servicios. Esto puede ayudar a que el cliente se sienta valorado y escuchado.",
+   "accion": "reembolso",
+   "importe": 11.9
+  },
+  "ZP-031": {
+   "respuesta": "Dado que el cliente ha reportado un problema con el estado de la comida y considerando que el pedido tiene un total de 26,80 €, te recomendaría ofrecer un reembolso parcial por el pollo agridulce, que es el elemento que el cliente ha señalado como en mal estado. Esto muestra empatía por su situación y ayuda a mantener su satisfacción como cliente. \n\nPuedes reembolsar el costo del pollo agridulce (10,90 €) y, si lo consideras apropiado, ofrecer un cupón para su próximo pedido como gesto adicional. Esto puede ayudar a compensar la experiencia negativa y fomentar la lealtad del cliente.",
+   "accion": "reembolso",
+   "importe": 10.9
+  },
+  "ZP-033": {
+   "respuesta": "Dado que el cliente ha recibido un pedido incorrecto y es vegetariana, lo cual es un tema serio, te recomiendo que le ofrezcas un reembolso completo por el pedido. Asegúrate de disculparte por la inconveniencia y la falta de respeto que ha sentido. Esto no solo compensa el error, sino que también muestra que valoramos su lealtad como cliente de 21 meses. Además, puedes ofrecerle un cupón para su próximo pedido como una forma de incentivos y para intentar recuperar su confianza en el servicio.",
+   "accion": "reembolso",
+   "importe": 23.4
+  },
+  "ZP-034": {
+   "respuesta": "Dada la situación, el cliente ha recibido un pedido incorrecto, lo que puede afectar su experiencia con Zepelín, especialmente porque es un cliente leal con 7 meses en la plataforma y sin reclamaciones previas. Aunque el retraso fue mínimo y el GPS confirma la entrega, el error en el pedido es un motivo válido de reclamación.\n\nTe recomendaría reembolsar el costo del menú vegano, que es de 12,90 €, o bien ofrecer un cupón por ese mismo valor para su próximo pedido. Esto ayudaría a compensar la insatisfacción del cliente por el error en su pedido. Recuerda que la satisfacción del cliente es lo primero, y ante la duda, es mejor compensar.",
+   "accion": "reembolso",
+   "importe": 12.9
+  },
+  "ZP-037": {
+   "respuesta": "Dada la situación, es importante abordar la reclamación del cliente con cuidado, especialmente considerando que ha tenido tres reclamaciones en los últimos 90 días y que su mensaje sugiere una frustración significativa.\n\nTe recomendaría reembolsar el total del pedido (41,00 €). Esto ayudará a mitigar la insatisfacción del cliente y podría evitar que lleve su queja a redes sociales, lo cual podría dañar la reputación de Zepelín. Además, al ser un problema recurrente para el cliente, un reembolso completo muestra que valoramos su experiencia y estamos comprometidos a resolver sus problemas.\n\nDespués de procesar el reembolso, sería bueno enviar un mensaje al cliente disculpándote por la inconveniencia y asegurándote de que estamos trabajando para mejorar el servicio.",
+   "accion": "reembolso",
+   "importe": 41.0
+  },
+  "ZP-035": {
+   "respuesta": "Dado que el cliente ha sido leal a Zepelín durante 23 meses y no ha tenido reclamaciones en los últimos 90 días, es importante priorizar su satisfacción. Aunque el retraso fue mínimo (8 minutos) y el GPS confirma la entrega, el comentario del cliente sobre el \"mal estado\" de la comida es preocupante.\n\nTe recomiendo que ofrezcas un reembolso parcial, quizás del costo de las fajitas y el guacamole, ya que eso puede compensar su insatisfacción con el estado de la comida. También puedes considerar ofrecer un cupón para su próximo pedido como una forma adicional de compensación. Esto no solo aborda la queja actual, sino que también puede fomentar la lealtad del cliente a largo plazo. \n\nSi decides reembolsar, asegúrate de comunicarte con el cliente de manera empática y explicarle que valoramos su experiencia y tomaremos medidas para mejorar en el futuro.",
+   "accion": "reembolso",
+   "importe": 19.0
+  },
+  "ZP-036": {
+   "respuesta": "Te recomiendo que contactes con el repartidor para obtener más información sobre la entrega y confirmar si realmente se realizó o si hubo algún problema. Dado que el cliente ha tenido dos pedidos y uno de ellos ha resultado en una reclamación, es importante manejar la situación con cuidado para evitar que se sienta frustrado.\n\nSi el repartidor no puede confirmar la entrega, considera ofrecer un reembolso total del pedido o un cupón para el siguiente pedido como compensación. Esto puede ayudar a mejorar la satisfacción del cliente y a mantenerlo en la plataforma.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-041": {
+   "respuesta": "Dado el historial del cliente y la naturaleza de la reclamación, te recomiendo que reembolses una parte del pedido. El retraso en la entrega y la calidad de la comida (fría) justifican una compensación para mantener la satisfacción del cliente. Podrías considerar reembolsar el costo de las arepas, ya que son el foco de la queja, lo que sumaría 20,70 € (3 × 6,90 €). Esto muestra empatía y un compromiso con la calidad del servicio, además de ayudar a mantener una buena relación con el cliente.",
+   "accion": "reembolso",
+   "importe": 20.7
+  },
+  "ZP-042": {
+   "respuesta": "Dado que el cliente ha informado que el pedido no llegó, a pesar de que el GPS confirma la entrega, es importante gestionar esta situación con cuidado. El cliente tiene un historial de 5 reclamaciones en los últimos 90 días, lo que indica que ha tenido experiencias negativas recientes.\n\nTe recomiendo que contactes al cliente para pedir más información sobre la situación, ya que podría haber un malentendido o un problema en la entrega que aún no se ha aclarado. Pregunta si recibió el pedido en la puerta o si alguien más lo pudo haber recibido. Esto también te permitirá mostrar empatía y atención al cliente.\n\nSi después de aclarar la situación el cliente sigue insatisfecho, podrías considerar ofrecer un reembolso parcial o un cupón para su próximo pedido como compensación, pero primero es mejor obtener más información.",
+   "accion": "pedir_info",
+   "importe": null
+  },
+  "ZP-038": {
+   "respuesta": "Dado que el cliente tiene un historial positivo con nosotros y la incidencia es una falta de un producto que forma parte de su pedido, te recomiendo que le ofrezcas un cupón para su próximo pedido como compensación. Esto puede ayudar a mantener la satisfacción del cliente y fomentar su lealtad a la app, especialmente considerando que la entrega se realizó en tiempo y forma. Además, dado que la falta de los mochis es una incidencia que no está directamente relacionada con el repartidor, no es necesario escalarla. \n\nAsegúrate de disculparte por la falta y de que el cliente se sienta valorado.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-039": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso significativo y la calidad de la comida se vio afectada (los dim sum llegaron fríos y pegados), recomendaría compensar al cliente para mejorar su experiencia. \n\nTe sugiero reembolsar una parte del pedido, quizás el costo del envío y un porcentaje del menú, o bien ofrecer un cupón para el siguiente pedido. Esto demostrará que valoramos su lealtad y estamos dispuestos a corregir la situación.\n\nLa opción de escalar la reclamación podría ser válida, pero dado que el cliente ha sido leal y ha tenido solo una reclamación en los últimos 90 días, es mejor actuar proactivamente para mantener su satisfacción.",
+   "accion": "reembolso",
+   "importe": 10.0
+  },
+  "ZP-040": {
+   "respuesta": "Dado que el cliente ha experimentado una falta de un plato importante en un pedido grande y considerando que ha sido un cliente fiel durante 33 meses, te recomendaría que reembolses el costo del cordero rogan josh (14,90 €). Esto ayudará a compensar la insatisfacción del cliente por la falta del producto y demostrará que valoras su lealtad. Además, dado que el retraso en la entrega fue mínimo (9 minutos) y no hubo problemas con el repartidor, el reembolso por el producto faltante parece ser una solución justa y adecuada en este caso.",
+   "accion": "reembolso",
+   "importe": 14.9
+  },
+  "ZP-043": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado y ha tenido una experiencia de pedido que no ha cumplido con sus expectativas, te recomiendo que le ofrezcas un reembolso parcial por la cachapa que no recibió. Esto no solo compensará al cliente por el error, sino que también ayudará a mantener su satisfacción con Zepelín, considerando que tiene un historial de lealtad con nosotros.\n\nAdemás, podrías considerar ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad. Esto puede ayudar a reforzar la relación con el cliente y animarlo a seguir utilizando la app en el futuro.\n\nAsí que la acción recomendada sería reembolsar el costo de la cachapa (8,50 €) y ofrecer un cupón para el siguiente pedido.",
+   "accion": "reembolso",
+   "importe": 8.5
+  },
+  "ZP-046": {
+   "respuesta": "Te recomiendo que reembolses el total del pedido (25,10 €) al cliente. La queja es grave, ya que el cliente indica que la comida no ha llegado y ha tenido que lidiar con un retraso significativo, afectando a su cena familiar. Acompañar el reembolso con un cupón para un futuro pedido también podría ser una buena idea para compensar la mala experiencia y fomentar su lealtad a la plataforma. Esto ayudará a mantener la satisfacción del cliente y a mitigar la insatisfacción causada por esta incidencia.",
+   "accion": "reembolso",
+   "importe": 25.1
+  },
+  "ZP-044": {
+   "respuesta": "En este caso, el cliente ha reportado que el bao de pato no cumplió con sus expectativas, aunque la entrega se realizó a tiempo y el estado del pedido al momento de la entrega fue correcto. Dado que el cliente ha sido leal y no ha presentado reclamaciones anteriores, es recomendable compensar su insatisfacción.\n\nTe sugiero ofrecer un cupón para su próximo pedido. Esto puede ayudar a mejorar su experiencia y fomentar que continúe utilizando la app a pesar de esta incidencia. Además, si el cliente no está satisfecho con un plato específico, es probable que esto no refleje un problema con el servicio en general, sino con ese plato en particular. \n\nAsí que mi recomendación es ofrecer un cupón para el siguiente pedido.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-045": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso significativo y ha recibido el sushi en un estado que no es satisfactorio, te recomendaría ofrecer un reembolso parcial. Esto podría ser una buena forma de compensar su mala experiencia, dado que han estado con nosotros durante 38 meses y tienen un historial razonablemente bueno de pedidos. \n\nPodrías considerar reembolsar el costo del envío y ofrecer un cupón para su próximo pedido como una forma de incentivar que siga usando la aplicación. Esto podría ayudar a mejorar su satisfacción y mantener su lealtad.",
+   "accion": "reembolso",
+   "importe": 2.5
+  },
+  "ZP-047": {
+   "respuesta": "Dado que el cliente ha recibido un pedido incorrecto y ha presentado reclamaciones en el pasado, te recomiendo que reembolses el costo del producto equivocado. Esto ayudará a compensar la insatisfacción causada por el error y a mejorar la experiencia del cliente. También puedes ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad, si consideras que es adecuado. La combinación de ambas acciones puede ayudar a restaurar la confianza del cliente en el servicio.",
+   "accion": "reembolso",
+   "importe": 21.0
+  },
+  "ZP-048": {
+   "respuesta": "Dado que el cliente ha reportado que la sopa se ha derramado dentro de la bolsa, lo que afecta la experiencia general del pedido, te recomiendo compensar al cliente. \n\nPodrías ofrecer un reembolso parcial por el costo de la sopa, ya que es un problema que afecta directamente su satisfacción. Además, considera ofrecer un cupón para su próximo pedido como gesto de buena voluntad. Esto puede ayudar a mantener al cliente satisfecho y fomentar su lealtad a Zepelín.\n\nAsí que, mi recomendación es: reembolsar el costo de la sopa (5,90 €) y ofrecer un cupón para su próximo pedido.",
+   "accion": "reembolso",
+   "importe": 5.9
+  },
+  "ZP-049": {
+   "respuesta": "Dado que el cliente tiene un historial positivo y la incidencia se trata de una falta de producto en su pedido, te recomendaría que ofrezcas un reembolso parcial correspondiente al costo de la ensalada césar (8,90 €). Esto compensará al cliente de manera justa por el error y ayudará a mantener su satisfacción con el servicio. Además, dado que el retraso fue de solo 3 minutos y no hubo otras incidencias, no es necesario escalar la situación.",
+   "accion": "reembolso",
+   "importe": 8.9
+  },
+  "ZP-051": {
+   "respuesta": "Dado que el cliente ha tenido una buena experiencia previa con Zepelín y esta es su primera reclamación, además de que la falta de cubiertos y servilletas puede afectar su satisfacción, te recomendaría ofrecer un reembolso parcial o un cupón para su próximo pedido como compensación. Esto muestra que valoramos su lealtad y estamos dispuestos a corregir la situación. También podrías pedirle al cliente si prefiere uno de estos dos tipos de compensación.",
+   "accion": "sin_decision",
+   "importe": null
+  },
+  "ZP-050": {
+   "respuesta": "Dado que el cliente afirma que no recibió su pedido a pesar de que la app indica que fue entregado, y considerando que el retraso fue solo de 5 minutos y que el GPS confirma la entrega, lo más recomendable es escalar la reclamación para que un supervisor la investigue. Esto permitirá verificar la situación con el repartidor y el restaurante, dado que hay un historial de quejas altas este mes en el restaurante. \n\nEscalar la reclamación también puede ayudar a asegurar que el cliente reciba una respuesta adecuada y que se tomen las medidas necesarias para evitar futuras incidencias. Mientras tanto, puedes ofrecer una disculpa al cliente por los inconvenientes causados.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-052": {
+   "respuesta": "Dada la situación, el cliente ha experimentado un problema recurrente con la falta de productos en sus pedidos, lo que ha generado insatisfacción. Aunque el retraso en la entrega fue mínimo y el GPS confirma la entrega, la falta de los aros de cebolla es un tema serio, especialmente porque es la segunda vez que le ocurre.\n\nTe recomiendo que ofrezcas un reembolso parcial por el precio de los aros de cebolla (4,20 €) para compensar la falta del producto. Esto puede ayudar a mejorar la satisfacción del cliente y mostrar que valoramos su experiencia. Además, podrías considerar ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad. Esto podría ayudar a recuperar su confianza en el servicio.",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
+  "ZP-053": {
+   "respuesta": "Dado que el cliente ha estado con nosotros durante 15 meses y no ha tenido reclamaciones recientes, además de que el retraso fue significativo (22 minutos) y el cliente menciona que llegó \"fatal\", te recomiendo que ofrezcas un reembolso parcial. Podrías considerar reembolsar el costo del envío (2,50 €) como una compensación por el inconveniente. Esto podría ayudar a mantener la satisfacción del cliente y su lealtad a la plataforma.",
+   "accion": "reembolso",
+   "importe": 2.5
+  },
+  "ZP-054": {
+   "respuesta": "Dado que el cliente ha experimentado una falta de producto en su pedido, aunque el retraso fue mínimo y el resto de la entrega fue correcta, te recomendaría reembolsar el costo del batido de chocolate (4,50 €). Esto compensa al cliente por el inconveniente y ayudará a mantener su satisfacción, especialmente considerando que se trata de un pedido infantil que afectó a sus hijos. Además, el cliente tiene un buen historial con Zepelín, lo que hace que sea aún más valioso conservar su lealtad.",
+   "accion": "reembolso",
+   "importe": 4.5
+  },
+  "ZP-056": {
+   "respuesta": "Dado que el cliente ha experimentado un retraso en la entrega de su pedido y ha solicitado una compensación, te recomendaría ofrecer un cupón para el siguiente pedido. Esto puede ayudar a mejorar la satisfacción del cliente sin comprometer demasiado a la empresa. Además, dado que el retraso fue de solo 15 minutos y el restaurante tiene quejas medias, no parece necesario reembolsar el pedido completo. Un cupón podría ser una forma efectiva de compensar al cliente y animarlo a seguir utilizando la app.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-055": {
+   "respuesta": "Dado que el cliente tiene un historial positivo con Zepelín y solo ha tenido un pequeño retraso en la entrega, pero ha recibido el pedido incorrecto, te recomendaría ofrecer un reembolso parcial correspondiente al precio del producto equivocado (nigiri de salmón). Esto muestra que valoras su lealtad y que estás dispuesto a compensar por el error, lo que puede ayudar a mantener su satisfacción. \n\nAdemás, podrías considerar ofrecer un cupón para el siguiente pedido como gesto adicional de buena voluntad. Esto podría ayudar a mitigar la insatisfacción por el error en el pedido.",
+   "accion": "reembolso",
+   "importe": 10.5
+  },
+  "ZP-057": {
+   "respuesta": "Dado que el cliente ha reportado que su hamburguesa llegó en mal estado, es importante abordar su inquietud para mantener su satisfacción. Aunque el retraso fue de solo 6 minutos y no es un motivo significativo para un reembolso, la calidad de la comida es fundamental.\n\nTe recomendaría ofrecer un cupón para el siguiente pedido como compensación. Esto muestra que valoras su experiencia y estás dispuesto a que pruebe nuevamente el servicio sin que quede insatisfecho por el problema en su pedido actual. Además, puedes considerar escalar la incidencia al restaurante para que tomen medidas sobre la calidad de las entregas, dado que han recibido quejas altas este mes. \n\nEsto no solo ayuda al cliente actual, sino también a prevenir problemas futuros.",
+   "accion": "cupon",
+   "importe": null
+  },
+  "ZP-058": {
+   "respuesta": "Dado que el cliente no recibió su pedido y ha sido un cliente fiel durante 30 meses con un buen historial de pedidos, te recomendaría reembolsar el total del pedido (28,10 €). Esto no solo compensará al cliente por la situación incómoda, sino que también puede ayudar a mantener su lealtad hacia Zepelín. Además, dado que hay un historial de incidencias con el repartidor, sería prudente escalar la reclamación para investigar lo ocurrido y evitar problemas similares en el futuro.",
+   "accion": "reembolso",
+   "importe": 28.1
+  },
+  "ZP-059": {
+   "respuesta": "Dado que el cliente ha sido leal a Zepelín durante 22 meses y no ha presentado reclamaciones en los últimos 90 días, es importante priorizar su satisfacción. Aunque el retraso fue mínimo y el GPS confirma que la entrega se realizó, la falta de un producto es un inconveniente significativo.\n\nTe recomendaría reembolsar el costo del producto que falta (en este caso, el Poke de salmón que costó 13,50 €). Esto ayudará a compensar la insatisfacción del cliente y a mantener una buena relación. Además, podrías ofrecer un cupón para su próximo pedido como gesto adicional, aunque el reembolso debería ser la acción principal en este caso.\n\nSi decides reembolsar, asegúrate de comunicarte con el cliente de manera clara y disculparte por la inconveniencia.",
+   "accion": "reembolso",
+   "importe": 13.5
+  },
+  "ZP-060": {
+   "respuesta": "Dado que el cliente tiene un historial positivo con Zepelín y la reclamación es por falta de un producto que ha pagado, te recomendaría reembolsar el costo del siu mai (7,90 €) al cliente. Esto ayudará a mantener su satisfacción y confianza en el servicio. También puedes ofrecerle un cupón para el siguiente pedido como un gesto adicional si lo consideras apropiado.",
+   "accion": "reembolso",
+   "importe": 7.9
+  }
+ },
+ "repeticiones": {
+  "ZP-009": {
+   "respuesta": "Dado que el cliente ha tenido una experiencia negativa con el mismo restaurante anteriormente y ha reportado la falta de un producto en su pedido actual, es recomendable compensarlo para mantener su satisfacción y lealtad. \n\nTe sugiero que ofrezcas un reembolso parcial por el valor de las gyozas (6,50 €). Esto muestra que valoras la experiencia del cliente y estás dispuesto a corregir el error. Además, podrías considerar ofrecer un cupón para su próximo pedido como gesto adicional, aunque el reembolso parcial debería ser la acción principal en este caso. Esto podría ayudar a mitigar la insatisfacción y fomentar que siga utilizando la aplicación.",
+   "accion": "reembolso",
+   "importe": 6.5
+  },
+  "ZP-016": {
+   "respuesta": "Dado que se trata del primer pedido del cliente y ha tenido una experiencia insatisfactoria con el retraso y la temperatura del zumo, te recomendaría ofrecer un reembolso parcial. Podrías reembolsar el costo del zumo, ya que es lo que el cliente considera insatisfactorio, y así compensar su decepción. Esto puede ayudar a mejorar su percepción de la app y posiblemente lo motive a seguir utilizando el servicio en el futuro. Además, podrías agregar un cupón para su próximo pedido como gesto adicional de buena voluntad.",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
+  "ZP-025": {
+   "respuesta": "Dado que el cliente tiene un historial positivo con nosotros, no ha presentado reclamaciones recientes y el retraso fue de solo 4 minutos, lo más apropiado sería pedir más información al cliente para aclarar la situación. Podrías preguntarle si revisó en su puerta o si recibió una notificación de entrega. Esto nos permitirá confirmar si hubo un error en la entrega y actuar en consecuencia. \n\nSi el cliente sigue afirmando que no ha recibido su pedido, podrías considerar reembolsar el costo total o ofrecer un cupón como compensación, pero primero es importante investigar un poco más.",
+   "accion": "pedir_info",
+   "importe": null
+  },
+  "ZP-021": {
+   "respuesta": "Dado que el cliente ha expresado su insatisfacción debido a la falta de un producto y ha mencionado que esta no es la primera vez que tiene un problema, es importante manejar la situación con cuidado para evitar que se dé de baja. \n\nTe recomiendo que ofrezcas un reembolso parcial que cubra el costo del pan de ajo (4,50 €). Esto muestra al cliente que valoramos su fidelidad y estamos dispuestos a compensar la falta del producto. Además, puedes considerar ofrecer un cupón para su próximo pedido como un gesto adicional de buena voluntad.\n\nEsta acción puede ayudar a mejorar la satisfacción del cliente y mantenerlo en la plataforma.",
+   "accion": "reembolso",
+   "importe": 4.5
+  },
+  "ZP-017": {
+   "respuesta": "Dado que el cliente ha reportado que las pizzas llegaron frías y considerando su historial de 15 pedidos con solo 2 reclamaciones en los últimos 90 días, parece que esta es una situación excepcional para él. Aunque no hay un retraso en la entrega confirmado por el GPS, el problema de la temperatura de la comida es importante.\n\nTe recomendaría reembolsar una parte del pedido, ya que esto puede ayudar a compensar la insatisfacción del cliente y mantener su lealtad. Podrías considerar reembolsar el costo de las pizzas, dado que la calidad del producto no fue la esperada. Esto demuestra que valoramos su experiencia y estamos dispuestos a corregir los errores.\n\nSi decides hacerlo, asegúrate de comunicar al cliente que estamos trabajando para mejorar el servicio y evitar que esto vuelva a ocurrir en el futuro.",
+   "accion": "reembolso",
+   "importe": 24.8
+  },
+  "ZP-029": {
+   "respuesta": "Dado que el cliente ha recibido un producto equivocado y considerando que su lealtad a Zepelín (29 meses y 36 pedidos) sugiere que es un cliente valioso, te recomiendo que ofrezcas un reembolso parcial. Esto puede ayudar a compensar la insatisfacción del cliente debido al error en su pedido.\n\nPuedes reembolsar el costo del producto equivocado y, si lo consideras, un pequeño cupón para su próximo pedido como gesto adicional. Esto podría mejorar la satisfacción del cliente y fomentar su fidelidad a la plataforma.",
+   "accion": "reembolso",
+   "importe": 5.5
+  },
+  "ZP-036": {
+   "respuesta": "Dado que el cliente no ha recibido su pedido y la app indica que ha sido entregado, te recomendaría escalar la reclamación para que un supervisor pueda investigar la situación. Es importante contactar con el repartidor para aclarar el estado de la entrega, dado que hay un historial de incidencias y el cliente ha manifestado que no ha recibido su comida. Esto también puede ayudar a mejorar el servicio en el futuro.\n\nUna vez que se tenga más información, podrás decidir si es necesario reembolsar al cliente o compensarlo de alguna otra manera.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-050": {
+   "respuesta": "Dado que el cliente indica que no recibió su pedido a pesar de que la app marca como entregado, y considerando que hay un historial de quejas del restaurante y también del repartidor, te recomendaría escalar la reclamación para que un supervisor la investigue. Es importante verificar con el repartidor o el restaurante lo sucedido antes de tomar cualquier acción de compensación. Esto ayudará a entender la situación y decidir la mejor manera de proceder.",
+   "accion": "supervisor",
+   "importe": null
+  },
+  "ZP-047": {
+   "respuesta": "Dado que el cliente ha recibido un pedido incorrecto, es importante compensar de alguna manera su experiencia, sobre todo considerando que ha presentado varias reclamaciones anteriormente. \n\nTe recomiendo reembolsar el costo del pedido (21,00 €) o, si prefieres no hacer un reembolso completo, ofrecerle un cupón para su próximo pedido como compensación. Esto podría mejorar su satisfacción y mantenerlo como cliente.\n\nSi decides reembolsar, asegúrate de comunicarte con el cliente para informarle sobre la resolución de su reclamación y ofrecer disculpas por la inconveniencia. Si optas por el cupón, haz lo mismo, explicándole que es un gesto para compensar el error en su pedido.",
+   "accion": "reembolso",
+   "importe": 21.0
+  },
+  "ZP-042": {
+   "respuesta": "Dado que el cliente ha indicado que el pedido no llegó, a pesar de que el GPS confirma la entrega y se reporta un retraso mínimo de 3 minutos, es importante manejar esta situación con cuidado. Considerando que el cliente tiene un historial de 20 pedidos y 5 reclamaciones en los últimos 90 días, es probable que esté frustrado.\n\nTe recomendaría que ofrezcas un reembolso parcial como gesto de compensación, ya que el cliente no recibió su pedido. Esto podría ayudar a mantener su satisfacción y lealtad a la app. También podrías considerar ofrecer un cupón para su próximo pedido como una forma de compensación adicional. \n\nLa acción que recomiendo es reembolsar el total del pedido, ya que aunque el GPS confirme la entrega, el cliente afirma no haber recibido su comida, lo que puede generar desconfianza.",
+   "accion": "reembolso",
+   "importe": 24.6
+  }
+ },
+ "errores": 0
+}
