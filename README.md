@@ -19,7 +19,7 @@ Una sola app de Streamlit que sirve para las 6 versiones del copiloto: cada desp
 
 Para cada versión (`base`, `equipo1`, `equipo2`, `equipo3`, `equipo4`, `referencia`):
 
-1. En [share.streamlit.io](https://share.streamlit.io), **Create app** → desde este repositorio, rama `main`, archivo `app.py`.
+1. En [share.streamlit.io](https://share.streamlit.io), **Create app** → desde este repositorio, rama `main`. Archivo: `app.py` para la base y `app_equipo1.py` … `app_equipo4.py` o `app_referencia.py` para las demás (Streamlit Cloud no deja desplegar dos apps con el mismo archivo).
 2. Elige una URL fácil, por ejemplo `zepelin-base`, `zepelin-equipo1`…
 3. En **Advanced settings → Secrets**, pega el contenido de `.streamlit/secrets.toml.example` con los valores reales y la `VERSION` que toque.
 4. Deploy.
