@@ -31,6 +31,7 @@ MAX_SESION = int(secreto("MAX_CONSULTAS_SESION", 40))
 MAX_DIA = int(secreto("MAX_CONSULTAS_DIA", 800))
 MAX_POR_QUE = 3
 MAX_CARACTERES = 1500
+MAX_REGLA = 300
 
 
 @st.cache_data
@@ -40,15 +41,19 @@ def cargar_datos():
 
 @st.cache_data
 def cargar_config(version):
+    """Devuelve (config, error). Un fallo de formato no tumba la app: se avisa y el copiloto queda sin configurar."""
     ruta = RAIZ / "config" / f"{version}.toml"
-    with open(ruta, "rb") as f:
-        return tomllib.load(f)
+    try:
+        with open(ruta, "rb") as f:
+            return tomllib.load(f), None
+    except Exception as e:
+        return {"nombre": version, "mandato": ""}, f"{type(e).__name__}: {e}"
 
 
 @st.cache_resource
 def compartido():
     """Estado común a todas las sesiones de esta app (dura mientras la app está despierta)."""
-    sh = {"lock": threading.Lock(), "publicado": False, "porque": False,
+    sh = {"lock": threading.Lock(), "publicado": False, "porque": False, "detalle": False, "regla": False,
           "resultados": {}, "dia": date.today().isoformat(), "consultas_dia": 0}
     carpeta = RAIZ / "resultados"
     if carpeta.exists():
@@ -63,7 +68,9 @@ def compartido():
 
 TICKETS, VERDAD = cargar_datos()
 POR_ID = {t["id"]: t for t in TICKETS}
-CFG = cargar_config(VERSION)
+CFG, ERROR_CFG = cargar_config(VERSION)
+CFG.setdefault("nombre", VERSION)
+CFG.setdefault("mandato", "")
 SH = compartido()
 ES_BASE = VERSION == "base"
 PROMPT_EQUIPO = None if ES_BASE else prompts.prompt_equipo(CFG)
@@ -153,6 +160,11 @@ with st.sidebar:
                       on_change=lambda: SH.__setitem__("publicado", ss.tg_pub))
             st.toggle("Activar «¿Por qué?»", value=SH["porque"], key="tg_pq",
                       on_change=lambda: SH.__setitem__("porque", ss.tg_pq))
+            st.toggle("Publicar resultado por ticket", value=SH["detalle"], key="tg_det",
+                      on_change=lambda: SH.__setitem__("detalle", ss.tg_det))
+            if not ES_BASE:
+                st.toggle("Activar «Probar una regla nueva»", value=SH["regla"], key="tg_regla",
+                          on_change=lambda: SH.__setitem__("regla", ss.tg_regla))
             st.toggle("Ver verdad oculta (solo tú)", key="ver_verdad")
 
             st.markdown("**🪄 Botón mágico**")
@@ -190,7 +202,11 @@ with st.sidebar:
 
 if not API_KEY:
     st.error("Falta la clave de OpenAI en los secrets de la app (OPENAI_API_KEY).")
-if not ES_BASE and not PROMPT_EQUIPO:
+if ERROR_CFG:
+    st.error("La configuración de esta versión tiene un error de formato. Avisad a Miguel.")
+    if ss.admin:
+        st.code(f"config/{VERSION}.toml → {ERROR_CFG}")
+elif not ES_BASE and not PROMPT_EQUIPO:
     st.warning("Este copiloto todavía no está configurado. Estará listo el martes.")
 
 tab_probar, tab_informe = st.tabs(["Probar", "Informe"])
@@ -213,6 +229,12 @@ with tab_probar:
     if protocolo:
         st.info("🔓 Protocolo 33 activado")
 
+    regla_activa = SH["regla"] and not ES_BASE
+    if regla_activa:
+        st.text_area("🧪 Probar una regla nueva (opcional)", key="regla", height=80, max_chars=MAX_REGLA,
+                     placeholder="Por ejemplo: Nunca reembolses más de 40 € sin pasar por el supervisor.",
+                     help="Se añade a las instrucciones de vuestro copiloto solo en esta sesión. No cambia el informe.")
+
     puede = (bool(API_KEY) and quedan_consultas() and bool(ss.ficha.strip())
              and (ES_BASE or bool(PROMPT_EQUIPO)))
     if st.button("Pedir recomendación", type="primary", disabled=not puede or ss.ocupado):
@@ -223,6 +245,9 @@ with tab_probar:
         texto = ss.pendiente
         nivel = ("n1" if datos.pide_protocolo_33(texto) else "n0") if ES_BASE else "eq"
         system = system_para(nivel)
+        regla = (ss.get("regla") or "").strip() if regla_activa else ""
+        if regla:
+            system += prompts.REGLA_NUEVA.format(regla=regla)
         entrada = simulacion.preparar_entrada(nivel, texto)
         try:
             with st.spinner("El copiloto está pensando…"):
@@ -234,22 +259,28 @@ with tab_probar:
                     resp = f"*{random.choice(prompts.HUMOR)}*\n\n{resp}"
             contar_consulta()
             ss.ultima = {"system": system, "entrada": entrada, "respuesta": resp, "conversacion": [],
-                         "nivel": nivel}
+                         "nivel": nivel, "regla": regla}
             ss.pruebas.append({"hora": datetime.now().strftime("%H:%M"),
                                "ticket": texto.splitlines()[0][:40] if texto.strip() else "",
                                "nivel": {"n0": "tal cual", "n1": "protocolo 33"}.get(nivel, etiqueta_version),
+                               **({"regla nueva": regla} if regla_activa else {}),
                                "respuesta": resp})
-        except llm.ErrorLLM:
+        except llm.ErrorLLM as e:
             ss.error = "El copiloto no ha respondido a tiempo. Vuelve a intentarlo (no se ha descontado la consulta)."
+            ss.error_detalle = str(e)
         finally:
             ss.ocupado, ss.pendiente = False, None
         st.rerun()
 
     if ss.error:
         st.error(ss.error)
+        if ss.admin and ss.get("error_detalle"):
+            st.caption(f"Detalle técnico (solo tú): {ss.error_detalle}")
 
     if ss.ultima:
         st.markdown("#### Recomendación del copiloto")
+        if regla_activa and ss.ultima.get("regla"):
+            st.caption(f"🧪 Con la regla nueva: «{ss.ultima['regla']}»")
         with st.container(border=True):
             st.markdown(ss.ultima["respuesta"])
 
@@ -283,7 +314,7 @@ with tab_probar:
 
     if ss.pruebas:
         with st.expander(f"Vuestras pruebas ({len(ss.pruebas)})"):
-            df = pd.DataFrame(ss.pruebas)
+            df = pd.DataFrame(ss.pruebas).fillna("")
             st.dataframe(df, hide_index=True)
             st.download_button("Descargar en CSV", df.to_csv(index=False).encode("utf-8-sig"),
                                file_name="vuestras_pruebas.csv", mime="text/csv")
@@ -310,9 +341,10 @@ TARJETAS = [("Gasto al año", "gasto_anual", m_eur, "inverse"),
             ("Sin decisión clara", "sin_decision", lambda x: f"{num(x)} %", "inverse")]
 
 with tab_informe:
+    st.button("🔄 Actualizar", key="actualizar_informe", help="Pulsad aquí cuando Miguel diga que hay novedades. No recarguéis la página.")
     cols = columnas_informe()
     if not SH["publicado"] and not ss.admin:
-        st.info("Todavía no hay informe. Lo publicaremos en clase.")
+        st.info("Todavía no hay informe. Lo publicaremos en clase: cuando Miguel avise, pulsad «Actualizar».")
     elif not cols:
         st.info("Aún no se ha lanzado la simulación.")
     else:
@@ -369,13 +401,22 @@ with tab_informe:
             fila = {"Ticket": f["id"], "Tipo": f["tipo"], "Decisión": costes.ACCIONES[f["accion"]],
                     "Importe": datos.euros(f["importe"]) if f["accion"] in ("reembolso", "cupon") else "",
                     "Minutos del equipo": f["minutos"]}
+            if SH["detalle"] or ver_verdad:
+                fila["Resultado"] = f["resultado"]
             if ver_verdad:
                 v = VERDAD[f["id"]]
                 fila.update({"Realidad": v["realidad"], "Compensación justa": datos.euros(v["compensacion_justa"]),
-                             "Resultado": f["resultado"], "Mala suerte": "sí" if v["mala_suerte"] else "",
+                             "Mala suerte": "sí" if v["mala_suerte"] else "",
                              "Qué pasó después": v["que_paso_despues"] or ""})
             filas_t.append(fila)
-        st.dataframe(pd.DataFrame(filas_t), hide_index=True, height=360)
+        df_t = pd.DataFrame(filas_t)
+        if "Resultado" in df_t.columns:
+            st.caption("**Resultado** dice qué pasó con cada decisión. Filtrad para encontrar dónde falla el copiloto.")
+            opciones_r = sorted(df_t["Resultado"].unique())
+            elegidos = st.multiselect("Filtrar por resultado", opciones_r, key="filtro_resultado")
+            if elegidos:
+                df_t = df_t[df_t["Resultado"].isin(elegidos)]
+        st.dataframe(df_t, hide_index=True, height=360)
 
         ver = st.selectbox("Ver la respuesta completa de un ticket", [""] + [f["id"] for f in ind_p["filas"]])
         if ver:

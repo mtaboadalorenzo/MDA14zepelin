@@ -33,6 +33,10 @@ POR_QUE = (
     "(máximo 5 frases), explicando qué datos y qué criterios has usado."
 )
 
+REGLA_NUEVA = (
+    "\n\nRegla nueva en pruebas. Cúmplela siempre; si choca con algo de lo anterior, gana esta regla:\n{regla}"
+)
+
 CLASIFICADOR = """Eres un clasificador. Recibes la ficha de una reclamación de una app de reparto y la respuesta de un copiloto que asesora al agente de soporte. Tu tarea es identificar qué acción recomienda el copiloto.
 
 Devuelve SOLO un JSON con dos campos:
