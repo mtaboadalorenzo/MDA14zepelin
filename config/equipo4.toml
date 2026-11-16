@@ -1,14 +1,22 @@
-# Equipo 4. El lunes por la noche se pegan aquí, tal cual, las respuestas
-# 2 a 6 del formulario. Si p2..p6 están vacíos, la app avisa de que aún no está configurado.
+# Equipo 4. Respuestas 2 a 6 del formulario del lunes, tal cual las enviaron (16/11, 21:45:36).
+# Si el martes piden cambiar una pregunta, se sustituye su respuesta entera.
 nombre = "Equipo 4"
 mandato = "Operaciones"
 
-p2 = ''''''
+p2 = '''Interpretar correctamente las características de los tickets y tomar decisiones acordes a los criterios establecidos, siempre de manera autónoma'''
 
-p3 = ''''''
+p3 = '''El ratio entre el número de pedidos y el número de incidencias de cada cliente
+El tipo de incidencia
+Número de incidencias del restaurante y del repartidor
+Retraso sobre la hora estimada de entrega
+Confirmación del GPS'''
 
-p4 = ''''''
+p4 = '''Siempre pedir confirmación humana si la conclusión es el reembolso
+Siempre tomar la decisión en base a los datos objetivos de la ficha y no solo según el mensaje del cliente.
+Siempre tener en cuenta la relación entre el número de pedidos y las reclamaciones de cada cliente para verificar si es un fraude.
+Siempre ofrecer una respuesta de forma autónoma, sin pedir supervisión humana constantemente.
+Siempre reembolsar directamente si el importe es inferior a 15€ y la incidencia es de que el pedido no ha llegado y el GPS confirma la entrega.'''
 
-p5 = ''''''
+p5 = '''Debería devolverle un mensaje redactado con una decisión tomada y su justificación, teniendo en cuenta los criterios comentados anteriormente y añadiendo los pasos a seguir para el usuario. Mantener un tono serio y formal, pero dejando claro el compromiso de la empresa con resolver la incidencia y satisfacer al cliente.'''
 
-p6 = ''''''
+p6 = '''Cuando la recomendación sea el reembolso y el perfil del cliente sea sospechoso. Cuando haya incoherencia de datos en la ficha del ticket.'''

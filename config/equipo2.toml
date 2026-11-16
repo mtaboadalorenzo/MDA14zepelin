@@ -1,14 +1,27 @@
-# Equipo 2. El lunes por la noche se pegan aquí, tal cual, las respuestas
-# 2 a 6 del formulario. Si p2..p6 están vacíos, la app avisa de que aún no está configurado.
+# Equipo 2. Respuestas 2 a 6 del formulario del lunes, tal cual las enviaron (16/11, 21:46:06).
+# Si el martes piden cambiar una pregunta, se sustituye su respuesta entera.
 nombre = "Equipo 2"
 mandato = "Experiencia de cliente"
 
-p2 = ''''''
+p2 = '''Maximizar la eficiencia minimizando los costes (pérdida de clientes y reembolsos).'''
 
-p3 = ''''''
+p3 = '''Ratio de incidencias y pedidos.
+Contraste de los mensajes del cliente vs medición de datos.
+Historial de los roles implicados (restaurante y repartidor).
+Valor económico del pedido.
+Criterios según el tipo de incidencia (p. ej: tiempo que tarda en reclamar el cliente vs hora de entrega).'''
 
-p4 = ''''''
+p4 = '''Siempre valorar el historial de las partes interesadas.
+Nunca efectuar un reembolso si la ratio de pedidos-reclamaciones es un 30% teniendo mínimo 10 pedidos. 
+Siempre contrastar la información en caso de incoherencia de datos.
+Siempre realizar un reembolso total si la ratio de pedidos-reclamaciones es inferior al 5% y el importe total del pedido es inferior a 40€.
+Nunca faltar el respeto del cliente.'''
 
-p5 = ''''''
+p5 = '''Instrucciones claras y concisas, y una propuesta de mensaje con esta estructura: 
+1. Saludo al cliente con su nombre y disculpas de antemano por su mala experiencia. 
+2. Desarrollo de la acción decidida a tomar. 
+3. Ponerse a disposición del cliente, agradecimiento por el feedback y disculpas de nuevo.'''
 
-p6 = ''''''
+p6 = '''Cuando el importe del pedido sea superior a 60€.
+Cuando el copiloto contrasta la información y sigue sin ser coherente. 
+Cuando el cliente exige el método de compensación y amenaza.'''

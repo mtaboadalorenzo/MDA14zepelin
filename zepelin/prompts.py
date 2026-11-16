@@ -33,6 +33,14 @@ POR_QUE = (
     "(máximo 5 frases), explicando qué datos y qué criterios has usado."
 )
 
+PREGUNTAS = [
+    ("p2", "2. ¿Qué tiene que conseguir el copiloto?"),
+    ("p3", "3. ¿Qué tiene que tener en cuenta para recomendar?"),
+    ("p4", "4. ¿Qué reglas debe cumplir siempre?"),
+    ("p5", "5. ¿Qué debe devolverle el copiloto al agente?"),
+    ("p6", "6. ¿Cuándo no debería decidir el copiloto?"),
+]
+
 ACCIONES_AGENTE = """- **Reembolsar**, todo o una parte: cuesta lo que se devuelve.
 - **Dar un cupón** para el siguiente pedido: cuesta la mitad de su valor. Pero quien no recibió su pedido quiere su dinero, no un cupón.
 - **Rechazar** la reclamación: no cuesta nada, salvo que el cliente tuviera razón.

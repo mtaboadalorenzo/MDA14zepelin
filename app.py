@@ -39,9 +39,9 @@ def cargar_datos():
     return datos.cargar_tickets(), datos.cargar_verdad()
 
 
-@st.cache_data
 def cargar_config(version):
-    """Devuelve (config, error). Un fallo de formato no tumba la app: se avisa y el copiloto queda sin configurar."""
+    """Devuelve (config, error). Se lee en cada ejecución (sin caché) para que un cambio subido al repositorio
+    se aplique sin reiniciar la app. Un fallo de formato no tumba la app: se avisa y el copiloto queda sin configurar."""
     ruta = RAIZ / "config" / f"{version}.toml"
     try:
         with open(ruta, "rb") as f:
@@ -54,16 +54,27 @@ def cargar_config(version):
 def compartido():
     """Estado común a todas las sesiones de esta app (dura mientras la app está despierta)."""
     sh = {"lock": threading.Lock(), "publicado": False, "porque": False, "detalle": False, "regla": False, "p33": False,
-          "resultados": {}, "dia": date.today().isoformat(), "consultas_dia": 0}
-    carpeta = RAIZ / "resultados"
-    if carpeta.exists():
-        for f in carpeta.glob("*.json"):
-            try:
-                r = json.loads(f.read_text(encoding="utf-8"))
-                sh["resultados"][r.get("clave", f.stem)] = r
-            except Exception:
-                pass
+          "resultados": {}, "archivos": {}, "dia": date.today().isoformat(), "consultas_dia": 0}
     return sh
+
+
+def sincronizar_resultados():
+    """Carga los .json de resultados/ que sean nuevos o hayan cambiado desde la última vez.
+    Así un resultado subido al repositorio aparece sin reiniciar la app (y sin apagar los interruptores)."""
+    carpeta = RAIZ / "resultados"
+    if not carpeta.exists():
+        return
+    for f in carpeta.glob("*.json"):
+        try:
+            m = f.stat().st_mtime
+            if SH["archivos"].get(f.name) == m:
+                continue
+            r = json.loads(f.read_text(encoding="utf-8"))
+            with SH["lock"]:
+                SH["resultados"][r.get("clave", f.stem)] = r
+                SH["archivos"][f.name] = m
+        except Exception:
+            pass
 
 
 TICKETS, VERDAD = cargar_datos()
@@ -72,6 +83,7 @@ CFG, ERROR_CFG = cargar_config(VERSION)
 CFG.setdefault("nombre", VERSION)
 CFG.setdefault("mandato", "")
 SH = compartido()
+sincronizar_resultados()
 ES_BASE = VERSION == "base"
 PROMPT_EQUIPO = None if ES_BASE else prompts.prompt_equipo(CFG)
 
@@ -230,6 +242,11 @@ with tab_probar:
                              "la recomendación. ¿Arregla el fallo? ¿Rompe otra cosa? Solo vale para probar: no cambia el informe.")
         if novedades:
             st.info("🆕 **Novedades.** Usadlas en las reclamaciones donde vuestro copiloto falla.\n\n- " + "\n- ".join(novedades))
+        if PROMPT_EQUIPO and (VERSION != "referencia" or ss.admin):
+            with st.expander("Las instrucciones de vuestro copiloto (vuestras respuestas 2 a 6 del formulario)"):
+                for k, titulo in prompts.PREGUNTAS:
+                    st.markdown(f"**{titulo}**")
+                    st.text((CFG.get(k) or "").strip() or "(sin respuesta)")
         with st.expander("Qué puede hacer el agente y cuánto cuesta"):
             st.markdown(prompts.ACCIONES_AGENTE)
     tipos = ["Todos"] + sorted({t["incidencia"]["tipo"] for t in TICKETS})
