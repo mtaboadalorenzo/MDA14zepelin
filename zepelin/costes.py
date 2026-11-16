@@ -11,7 +11,8 @@ CUPON_COSTE = 0.5                      # un cupón cuesta la mitad de su valor
 CUPON_SIN_IMPORTE = 10.0               # si el motor no dice el importe del cupón
 RIESGO_MAL_ATENDIDO = 0.30             # probabilidad de perder a un buen cliente mal atendido
 RIESGO_CUPON_NO_LLEGO = 0.15           # cupón cuando el pedido no llegó
-MINUTOS = {"aceptar": 1, "pedir_info": 3, "sin_decision": 6, "supervisor": 10}
+# Pedir información son dos contactos: 3 min para pedirla y 6 para resolver a mano cuando el cliente responde.
+MINUTOS = {"aceptar": 1, "pedir_info": 9, "sin_decision": 6, "supervisor": 10}
 EURO_MINUTO = 0.40
 
 HOY = {"gasto_anual": 4_900_000, "horas_dia": 120}
@@ -152,7 +153,7 @@ COMO_SE_CALCULA = f"""
 - **Gasto en compensaciones:** lo que se devuelve. Un cupón cuesta a Zepelín la mitad de su valor. Si el copiloto no dice el importe, un reembolso se cuenta por el total del pedido y un cupón, por {CUPON_SIN_IMPORTE:.0f} €.
 - **Buenos clientes mal atendidos:** clientes con una reclamación legítima a los que se rechaza o se compensa por debajo del 80 % de lo justo. Se calcula un {RIESGO_MAL_ATENDIDO:.0%} de probabilidad de perderlos ({RIESGO_CUPON_NO_LLEGO:.0%} si recibieron un cupón por un pedido que no llegó), aplicado al margen que dejan en un año.
 - **Fraude que se cuela:** reclamaciones falsas a las que se paga algo.
-- **Carga del equipo:** aceptar una recomendación clara cuesta 1 minuto; pedir información, 3; resolver a mano cuando el copiloto no decide, 6; escalar para que un supervisor investigue (contacta con el restaurante o el repartidor), 10. Cuando interviene una persona, el caso se resuelve bien.
+- **Carga del equipo:** aceptar una recomendación clara cuesta 1 minuto; resolver a mano cuando el copiloto no decide, 6; pedir información, 9 (3 para pedirla y 6 para resolver el caso cuando el cliente responde); escalar para que un supervisor investigue (contacta con el restaurante o el repartidor), 10. Cuando interviene una persona, el caso se resuelve bien.
 - **Resueltos en el momento:** tickets en los que el agente aplica directamente la recomendación (reembolso, cupón o rechazo), sin pedir información ni escalar.
 - **Trato igual:** de cada 100 casos iguales (el mismo ticket lanzado dos veces, o dos tickets con los mismos hechos y distinto tono), en cuántos decide lo mismo.
 """
