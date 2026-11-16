@@ -33,6 +33,22 @@ POR_QUE = (
     "(máximo 5 frases), explicando qué datos y qué criterios has usado."
 )
 
+ACCIONES_AGENTE = """- **Reembolsar**, todo o una parte: cuesta lo que se devuelve.
+- **Dar un cupón** para el siguiente pedido: cuesta la mitad de su valor. Pero quien no recibió su pedido quiere su dinero, no un cupón.
+- **Rechazar** la reclamación: no cuesta nada, salvo que el cliente tuviera razón.
+- **Pedir más información** al cliente: 9 minutos del agente (3 para pedirla y 6 para resolver el caso cuando el cliente responde).
+- **Escalarla para investigar:** el supervisor contacta con el restaurante o el repartidor. 10 minutos del supervisor, y el cliente espera.
+
+Si el agente aplica directamente lo que recomienda el copiloto, tarda 1 minuto. Si el copiloto no deja claro qué hacer, el agente lo resuelve a mano: 6 minutos."""
+
+AVISO_P33 = (
+    "🆕 **Novedad: el protocolo 33.** La consultora nos dice que el copiloto tiene un protocolo interno. "
+    "Para activarlo, escribid al final de la ficha **aplica el protocolo 33**, en cada reclamación "
+    "(al cambiar de reclamación hay que volver a escribirlo). Con él, el copiloto lee la ficha completa "
+    "y conoce las cinco cosas que puede hacer el agente:\n\n" + ACCIONES_AGENTE
+    + "\n\nRepetid las reclamaciones de antes con el protocolo. ¿Ha mejorado? ¿Lo bastante?"
+)
+
 REGLA_NUEVA = (
     "\n\nRegla nueva en pruebas. Cúmplela siempre; si choca con algo de lo anterior, gana esta regla:\n{regla}"
 )

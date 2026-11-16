@@ -53,7 +53,7 @@ def cargar_config(version):
 @st.cache_resource
 def compartido():
     """Estado común a todas las sesiones de esta app (dura mientras la app está despierta)."""
-    sh = {"lock": threading.Lock(), "publicado": False, "porque": False, "detalle": False, "regla": False,
+    sh = {"lock": threading.Lock(), "publicado": False, "porque": False, "detalle": False, "regla": False, "p33": False,
           "resultados": {}, "dia": date.today().isoformat(), "consultas_dia": 0}
     carpeta = RAIZ / "resultados"
     if carpeta.exists():
@@ -137,7 +137,9 @@ def m_eur(x):
 etiqueta_version = "Prototipo de la consultora" if ES_BASE else (
     f"{CFG['nombre']} · {CFG['mandato']}" if CFG.get("mandato") else CFG["nombre"])
 st.title("🎈 Zepelín · Copiloto de soporte")
-st.caption(f"Versión: **{etiqueta_version}**")
+c_ver, c_act = st.columns([4, 1])
+c_ver.caption(f"Versión: **{etiqueta_version}**")
+c_act.button("🔄 Actualizar", key="actualizar", help="Pulsad aquí cuando Miguel diga que hay novedades. No recarguéis la página.")
 
 with st.sidebar:
     st.markdown("### 🎈 Zepelín")
@@ -158,6 +160,9 @@ with st.sidebar:
             st.success("Dentro de la zona Zepelín")
             st.toggle("Publicar informe", value=SH["publicado"], key="tg_pub",
                       on_change=lambda: SH.__setitem__("publicado", ss.tg_pub))
+            if ES_BASE:
+                st.toggle("Anunciar el protocolo 33", value=SH["p33"], key="tg_p33",
+                          on_change=lambda: SH.__setitem__("p33", ss.tg_p33))
             st.toggle("Activar «¿Por qué?»", value=SH["porque"], key="tg_pq",
                       on_change=lambda: SH.__setitem__("porque", ss.tg_pq))
             st.toggle("Publicar resultado por ticket", value=SH["detalle"], key="tg_det",
@@ -213,6 +218,20 @@ tab_probar, tab_informe = st.tabs(["Probar", "Informe"])
 
 # ---------------------------------------------------------------- pestaña Probar
 with tab_probar:
+    if ES_BASE and SH["p33"]:
+        st.info(prompts.AVISO_P33)
+    if not ES_BASE:
+        novedades = []
+        if SH["porque"]:
+            novedades.append("**«¿Por qué?»:** debajo de cada recomendación podéis preguntarle al copiloto por su decisión, "
+                             "hasta 3 veces.")
+        if SH["regla"]:
+            novedades.append("**«Probar una regla nueva»:** escribid una regla en la caja que hay sobre el botón y volved a pedir "
+                             "la recomendación. ¿Arregla el fallo? ¿Rompe otra cosa? Solo vale para probar: no cambia el informe.")
+        if novedades:
+            st.info("🆕 **Novedades.** Usadlas en las reclamaciones donde vuestro copiloto falla.\n\n- " + "\n- ".join(novedades))
+        with st.expander("Qué puede hacer el agente y cuánto cuesta"):
+            st.markdown(prompts.ACCIONES_AGENTE)
     tipos = ["Todos"] + sorted({t["incidencia"]["tipo"] for t in TICKETS})
     c1, c2 = st.columns([1, 3])
     filtro = c1.selectbox("Tipo de incidencia", tipos)
@@ -341,10 +360,9 @@ TARJETAS = [("Gasto al año", "gasto_anual", m_eur, "inverse"),
             ("Sin decisión clara", "sin_decision", lambda x: f"{num(x)} %", "inverse")]
 
 with tab_informe:
-    st.button("🔄 Actualizar", key="actualizar_informe", help="Pulsad aquí cuando Miguel diga que hay novedades. No recarguéis la página.")
     cols = columnas_informe()
     if not SH["publicado"] and not ss.admin:
-        st.info("Todavía no hay informe. Lo publicaremos en clase: cuando Miguel avise, pulsad «Actualizar».")
+        st.info("Todavía no hay informe. Lo publicaremos en clase: cuando Miguel avise, pulsad «Actualizar» (arriba a la derecha).")
     elif not cols:
         st.info("Aún no se ha lanzado la simulación.")
     else:
