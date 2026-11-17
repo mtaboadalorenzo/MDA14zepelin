@@ -1,11 +1,16 @@
-# Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:39:29.
+# Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:39:29 (pregunta 3 sumada a la del lunes, con permiso de Miguel).
 # Si piden cambiar una pregunta, se sustituye su respuesta entera.
 nombre = "Equipo 4"
 mandato = "Operaciones"
 
 p2 = '''Interpretar correctamente las características de los tickets y tomar decisiones acordes a los criterios establecidos, siempre de manera autónoma'''
 
-p3 = '''Si el tipo de incidencia es por "producto equivocado", debo proponer dos opciones: 1 reembolso del producto equivocado o 2 envío de nuevo del producto equivocado.'''
+p3 = '''El ratio entre el número de pedidos y el número de incidencias de cada cliente
+El tipo de incidencia
+Número de incidencias del restaurante y del repartidor
+Retraso sobre la hora estimada de entrega
+Confirmación del GPS
+Si el tipo de incidencia es por "producto equivocado", debo proponer dos opciones: 1 reembolso del producto equivocado o 2 envío de nuevo del producto equivocado.'''
 
 p4 = '''Siempre pedir confirmación humana si la conclusión es el reembolso
 Siempre tomar la decisión en base a los datos objetivos de la ficha y no solo según el mensaje del cliente.
