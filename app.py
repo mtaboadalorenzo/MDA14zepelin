@@ -247,6 +247,8 @@ with tab_probar:
             st.info("🆕 **Novedades.** Usadlas en las reclamaciones donde vuestro copiloto falla.\n\n- " + "\n- ".join(novedades))
         if PROMPT_EQUIPO and VERSION != "referencia":
             with st.expander("Las instrucciones de vuestro copiloto (vuestras respuestas 2 a 6 del formulario)"):
+                if (CFG.get("nota") or "").strip():
+                    st.warning(CFG["nota"].strip())
                 for k, titulo in prompts.PREGUNTAS:
                     st.markdown(f"**{titulo}**")
                     st.text((CFG.get(k) or "").strip() or "(sin respuesta)")

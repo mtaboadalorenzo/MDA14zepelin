@@ -1,7 +1,8 @@
 # Equipo 2. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:41:07 (preguntas 3 y 4 sumadas a las del lunes).
-# Si piden cambiar una pregunta, se sustituye su respuesta entera.
+# Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 2"
 mandato = "Experiencia de cliente"
+nota = "Miguel ha sumado vuestras nuevas respuestas 3 y 4 a las del lunes, porque se referían a «lo definido anteriormente». Lo nuevo va al final de cada una."
 
 p2 = '''Maximizar la eficiencia minimizando los costes (pérdida de clientes y reembolsos).'''
 

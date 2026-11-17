@@ -1,7 +1,8 @@
 # Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:39:29 (pregunta 3 sumada a la del lunes, con permiso de Miguel).
-# Si piden cambiar una pregunta, se sustituye su respuesta entera.
+# Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 4"
 mandato = "Operaciones"
+nota = "Miguel ha sumado vuestra nueva respuesta 3 a la del lunes (lo nuevo va al final). La respuesta 5 es la nueva."
 
 p2 = '''Interpretar correctamente las características de los tickets y tomar decisiones acordes a los criterios establecidos, siempre de manera autónoma'''
 

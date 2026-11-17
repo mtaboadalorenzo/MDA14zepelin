@@ -1,7 +1,8 @@
 # Equipo 1. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:38:05.
-# Si piden cambiar una pregunta, se sustituye su respuesta entera.
+# Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 1"
 mandato = "Dirección financiera"
+nota = ""
 
 p2 = '''Minimizar el coste total anual compensando correctamente los daños legítimos, evitando pagos fraudulentos y resolviendo automáticamente los casos claros con criterios consistentes.'''
 
