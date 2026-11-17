@@ -132,10 +132,15 @@ def indicadores(resultado, tickets, verdad):
     trato = 100 * sum(comparaciones) / len(comparaciones) if comparaciones else None
 
     n = len(tickets)
+    gasto_anual = tot["gasto"] * FACTOR_ANO
+    riesgo_anual = tot["riesgo"] * FACTOR_ANO
+    tiempo_anual = tot["minutos"] * EURO_MINUTO * FACTOR_ANO
     return {
-        "gasto_anual": tot["gasto"] * FACTOR_ANO,
+        "coste_total": gasto_anual + riesgo_anual + tiempo_anual,
+        "tiempo_anual": tiempo_anual,
+        "gasto_anual": gasto_anual,
         "mal_dia": tot["mal"] * FACTOR_DIA,
-        "riesgo_anual": tot["riesgo"] * FACTOR_ANO,
+        "riesgo_anual": riesgo_anual,
         "fraude_dia": tot["fraude_n"] * FACTOR_DIA,
         "fraude_anual": tot["fraude"] * FACTOR_ANO,
         "horas_dia": tot["minutos"] * FACTOR_DIA / 60,
@@ -148,7 +153,13 @@ def indicadores(resultado, tickets, verdad):
     }
 
 
+def todo_a_mano(tickets):
+    """Listón: el copiloto no decide nada y el agente lo resuelve todo a mano."""
+    return {"tickets": {t["id"]: {"accion": "sin_decision", "importe": None} for t in tickets}, "repeticiones": {}}
+
+
 COMO_SE_CALCULA = f"""
+- **Coste total para Zepelín (al año):** la cifra que resume todo. Suma el gasto en compensaciones (incluido el fraude que se cuela), el valor en riesgo por buenos clientes mal atendidos y el tiempo del equipo de soporte, a {EURO_MINUTO:.2f} € por minuto. Cuanto más bajo, mejor.
 - Los 60 tickets del lote representan un día normal. Para pasar a un día se multiplica por {FACTOR_DIA:.0f} (1.200 reclamaciones diarias) y para pasar a un año, por 365.
 - **Gasto en compensaciones:** lo que se devuelve. Un cupón cuesta a Zepelín la mitad de su valor. Si el copiloto no dice el importe, un reembolso se cuenta por el total del pedido y un cupón, por {CUPON_SIN_IMPORTE:.0f} €.
 - **Buenos clientes mal atendidos:** clientes con una reclamación legítima a los que se rechaza o se compensa por debajo del 80 % de lo justo. Se calcula un {RIESGO_MAL_ATENDIDO:.0%} de probabilidad de perderlos ({RIESGO_CUPON_NO_LLEGO:.0%} si recibieron un cupón por un pedido que no llegó), aplicado al margen que dejan en un año.

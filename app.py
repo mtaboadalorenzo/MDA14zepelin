@@ -357,6 +357,7 @@ with tab_probar:
 
 # ---------------------------------------------------------------- pestaña Informe
 INDICADORES = [
+    ("Coste total para Zepelín (al año)", "coste_total", m_eur, "No lo sabemos"),
     ("Gasto en compensaciones (al año)", "gasto_anual", m_eur, "4,9 M€"),
     ("Buenos clientes mal atendidos (al día)", "mal_dia", lambda x: num(x), "No lo sabemos"),
     ("Valor en riesgo por clientes mal atendidos (al año)", "riesgo_anual", m_eur, "No lo sabemos"),
@@ -376,7 +377,55 @@ TARJETAS = [("Gasto al año", "gasto_anual", m_eur, "inverse"),
             ("Trato igual", "trato_igual", lambda x: "—" if x is None else f"{num(x)} %", "normal"),
             ("Sin decisión clara", "sin_decision", lambda x: f"{num(x)} %", "inverse")]
 
+NOMBRES_RANKING = {"base_n0": "Piloto · Tal cual", "base_n1": "Piloto · Con protocolo 33",
+                   "referencia": "Referencia", "referencia_2": "Referencia, 2ª ejecución"}
+EMPATE = 200_000
+
+
+def nombre_resultado(clave):
+    if clave in NOMBRES_RANKING:
+        return NOMBRES_RANKING[clave]
+    if clave.startswith("equipo"):
+        cfg, _ = cargar_config(clave)
+        return f"{cfg.get('nombre', clave)} · {cfg.get('mandato', '')}".strip(" ·")
+    return clave
+
+
+def mostrar_ranking():
+    st.subheader("🏆 Ranking de todas las versiones")
+    st.caption("Ordenado por coste total para Zepelín: cuanto más bajo, mejor. Usa todos los resultados guardados en "
+               f"esta app o en la carpeta resultados/. Diferencias de menos de {m_eur(EMPATE)} se consideran empate.")
+    filas = []
+    for clave, r in sorted(SH["resultados"].items()):
+        ind = costes.indicadores(r, TICKETS, VERDAD)
+        filas.append({"Versión": nombre_resultado(clave), "_ct": ind["coste_total"],
+                      "Coste total": m_eur(ind["coste_total"]), "Gasto": m_eur(ind["gasto_anual"]),
+                      "Mal atendidos al día": num(ind["mal_dia"]), "Fraude al día": num(ind["fraude_dia"]),
+                      "Horas al día": f"{num(ind['horas_dia'])} h", "Resueltos al momento": f"{num(ind['resueltos'])} %",
+                      "Trato igual": "—" if ind["trato_igual"] is None else f"{num(ind['trato_igual'])} %",
+                      "Ejecutado": str(r.get("fecha", ""))[:16].replace("T", " ")})
+    mano = costes.indicadores(costes.todo_a_mano(TICKETS), TICKETS, VERDAD)
+    filas.append({"Versión": "Listón: todo a mano, sin copiloto", "_ct": mano["coste_total"],
+                  "Coste total": m_eur(mano["coste_total"]), "Gasto": m_eur(mano["gasto_anual"]),
+                  "Mal atendidos al día": "0", "Fraude al día": "0", "Horas al día": f"{num(mano['horas_dia'])} h",
+                  "Resueltos al momento": "0 %", "Trato igual": "—", "Ejecutado": ""})
+    filas.sort(key=lambda f: f["_ct"])
+    df = pd.DataFrame(filas)
+    df.insert(0, "Puesto", range(1, len(df) + 1))
+    st.dataframe(df.drop(columns="_ct"), hide_index=True)
+    eq = [f for f in filas if f["Versión"].startswith("Equipo")]
+    if len(eq) >= 2:
+        if eq[1]["_ct"] - eq[0]["_ct"] < EMPATE:
+            st.info(f"Entre equipos: empate entre {eq[0]['Versión']} y {eq[1]['Versión']} "
+                    f"(diferencia de {m_eur(eq[1]['_ct'] - eq[0]['_ct'])}).")
+        else:
+            st.success(f"Entre equipos gana {eq[0]['Versión']}, con {m_eur(eq[1]['_ct'] - eq[0]['_ct'])} menos que el segundo.")
+    st.divider()
+
+
 with tab_informe:
+    if VERSION == "referencia" and ss.admin:
+        mostrar_ranking()
     cols = columnas_informe()
     if not SH["publicado"] and not ss.admin:
         st.info("Todavía no hay informe. Lo publicaremos en clase: cuando Miguel avise, pulsad «Actualizar» (arriba a la derecha).")
@@ -391,6 +440,11 @@ with tab_informe:
 
         st.subheader(f"Informe: {nombre_p}")
         st.caption(f"Un día normal simulado con los 60 tickets del muestrario · {res_p.get('fecha', '')}")
+        v_ct = ind_p["coste_total"]
+        d_ct = m_eur(v_ct - ind_ref["coste_total"]) if ind_ref else None
+        st.metric("Coste total para Zepelín (al año)", m_eur(v_ct), d_ct, delta_color="inverse",
+                  help="Gasto en compensaciones + valor en riesgo por clientes mal atendidos + tiempo del equipo. "
+                       "Cuanto más bajo, mejor. Detalle en «Cómo se calcula».")
         tarjetas = st.columns(len(TARJETAS))
         for col, (nombre, k, fmt, color) in zip(tarjetas, TARJETAS):
             v = ind_p[k]
