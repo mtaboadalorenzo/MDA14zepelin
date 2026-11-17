@@ -170,19 +170,22 @@ with st.sidebar:
                     st.error("Clave incorrecta.")
         else:
             st.success("Dentro de la zona Zepelín")
-            st.toggle("Publicar informe", value=SH["publicado"], key="tg_pub",
-                      on_change=lambda: SH.__setitem__("publicado", ss.tg_pub))
+            if VERSION != "referencia":
+                st.toggle("Publicar informe", value=SH["publicado"], key="tg_pub",
+                          on_change=lambda: SH.__setitem__("publicado", ss.tg_pub))
             if ES_BASE:
                 st.toggle("Anunciar el protocolo 33", value=SH["p33"], key="tg_p33",
                           on_change=lambda: SH.__setitem__("p33", ss.tg_p33))
             st.toggle("Activar «¿Por qué?»", value=SH["porque"], key="tg_pq",
                       on_change=lambda: SH.__setitem__("porque", ss.tg_pq))
-            st.toggle("Publicar resultado por ticket", value=SH["detalle"], key="tg_det",
-                      on_change=lambda: SH.__setitem__("detalle", ss.tg_det))
-            if not ES_BASE:
+            if VERSION != "referencia":
+                st.toggle("Publicar resultado por ticket", value=SH["detalle"], key="tg_det",
+                          on_change=lambda: SH.__setitem__("detalle", ss.tg_det))
+            if not ES_BASE and VERSION != "referencia":
                 st.toggle("Activar «Probar una regla nueva»", value=SH["regla"], key="tg_regla",
                           on_change=lambda: SH.__setitem__("regla", ss.tg_regla))
-            st.toggle("Ver verdad oculta (solo tú)", key="ver_verdad")
+            st.toggle("Ver verdad oculta (solo tú)", key="ver_verdad",
+                      help="Añade la verdad de cada ticket a las tablas del informe. Solo cambia tu pantalla.")
 
             st.markdown("**🪄 Botón mágico**")
             for clave_r, nivel, nombre in claves_boton():
@@ -327,10 +330,14 @@ with tab_probar:
                     st.markdown(a)
             usadas = len(ss.ultima["conversacion"])
             if usadas < MAX_POR_QUE:
-                pregunta = st.text_input(f"Preguntadle al copiloto por su recomendación ({MAX_POR_QUE - usadas} preguntas)",
-                                         key=f"pq_{len(ss.pruebas)}_{usadas}", max_chars=300,
-                                         placeholder="¿Por qué recomiendas esto?")
-                if st.button("¿Por qué?", disabled=not quedan_consultas() or not pregunta.strip()):
+                with st.form(key=f"fpq_{len(ss.pruebas)}_{usadas}", border=False):
+                    pregunta = st.text_input(
+                        f"Preguntadle al copiloto por su recomendación (os quedan {MAX_POR_QUE - usadas})",
+                        max_chars=300, placeholder="¿Por qué recomiendas esto?",
+                        help="Si lo dejáis en blanco, se le pregunta «¿Por qué recomiendas esto?»")
+                    enviar_pq = st.form_submit_button("¿Por qué?", disabled=not quedan_consultas())
+                if enviar_pq:
+                    pregunta = pregunta.strip() or "¿Por qué recomiendas esto?"
                     mensajes = [{"role": "system", "content": ss.ultima["system"] + prompts.POR_QUE},
                                 {"role": "user", "content": ss.ultima["entrada"]},
                                 {"role": "assistant", "content": ss.ultima["respuesta"]}]
@@ -420,6 +427,32 @@ def mostrar_ranking():
                     f"(diferencia de {m_eur(eq[1]['_ct'] - eq[0]['_ct'])}).")
         else:
             st.success(f"Entre equipos gana {eq[0]['Versión']}, con {m_eur(eq[1]['_ct'] - eq[0]['_ct'])} menos que el segundo.")
+
+    st.markdown("#### Un ticket en todas las versiones")
+    malas = [tid for tid, v in VERDAD.items() if v["mala_suerte"]]
+    ids = list(POR_ID)
+    tid = st.selectbox("Ticket", ids, index=ids.index(malas[0]) if malas else 0,
+                       format_func=lambda i: datos.etiqueta(POR_ID[i]) + ("  · mala suerte" if ss.get("ver_verdad") and i in malas else ""))
+    with st.expander("Ficha del ticket"):
+        st.text(datos.ficha(POR_ID[tid]))
+    if ss.get("ver_verdad"):
+        v = VERDAD[tid]
+        st.info(f"**Verdad oculta:** {v['realidad']} · compensación justa {datos.euros(v['compensacion_justa'])}"
+                + (" · **mala suerte**" if v["mala_suerte"] else "")
+                + (f" · {v['que_paso_despues']}" if v["que_paso_despues"] else ""))
+    filas_t = []
+    for clave, r in sorted(SH["resultados"].items()):
+        d = r.get("tickets", {}).get(tid)
+        if not d:
+            continue
+        e = costes.evaluar_ticket(d, POR_ID[tid], VERDAD[tid])
+        fila = {"Versión": nombre_resultado(clave), "Decisión": costes.ACCIONES[e["accion"]],
+                "Importe": datos.euros(e["importe"]) if e["accion"] in ("reembolso", "cupon") else ""}
+        if ss.get("ver_verdad"):
+            fila["Resultado"] = e["resultado"]
+        filas_t.append(fila)
+    if filas_t:
+        st.dataframe(pd.DataFrame(filas_t), hide_index=True)
     st.divider()
 
 
@@ -437,7 +470,8 @@ with tab_informe:
         st.info("Aún no se ha lanzado la simulación.")
     else:
         if not SH["publicado"]:
-            st.warning("Informe sin publicar: solo lo ves tú.")
+            st.warning("Los alumnos todavía no ven este informe. Lo verán cuando enciendas «Publicar informe» "
+                       "en la zona Zepelín. Tú lo ves siempre porque estás dentro.")
         calc = [(n, r, costes.indicadores(r, TICKETS, VERDAD)) for n, r in cols]
         nombre_p, res_p, ind_p = calc[-1]
         ind_ref = calc[-2][2] if len(calc) > 1 else None
