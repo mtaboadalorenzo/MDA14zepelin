@@ -1,25 +1,34 @@
-# Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:39:29 (pregunta 3 sumada a la del lunes, con permiso de Miguel).
+# Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 21:12:55 (3 y 4 sumadas a lo anterior).
 # Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 4"
 mandato = "Operaciones"
-nota = "Miguel ha sumado vuestra nueva respuesta 3 a la del lunes (lo nuevo va al final). La respuesta 5 es la nueva."
+nota = "Miguel ha sumado vuestras nuevas respuestas 3 y 4 a las anteriores, porque vuestra regla dice que, si chocan, «mandan estas». Lo nuevo va al final. Las preguntas 2, 5 y 6 se sustituyen."
 
-p2 = '''Interpretar correctamente las características de los tickets y tomar decisiones acordes a los criterios establecidos, siempre de manera autónoma'''
+p2 = '''Dar al agente una sola decisión con importe en euros, aplicable en un minuto, que no deje mal atendido a ningún buen cliente y reduzca el coste total, aunque se cuele algo de fraude.'''
 
 p3 = '''El ratio entre el número de pedidos y el número de incidencias de cada cliente
 El tipo de incidencia
 Número de incidencias del restaurante y del repartidor
 Retraso sobre la hora estimada de entrega
 Confirmación del GPS
-Si el tipo de incidencia es por "producto equivocado", debo proponer dos opciones: 1 reembolso del producto equivocado o 2 envío de nuevo del producto equivocado.'''
+Si el tipo de incidencia es por "producto equivocado", debo proponer dos opciones: 1 reembolso del producto equivocado o 2 envío de nuevo del producto equivocado.
+Buen cliente = 20% o menos de reclamaciones sobre pedidos, o primer pedido. A un buen cliente nunca se le rechaza.
+No llegó, o todo llegó mal o incomible: reembolso del total del pedido en dinero.
+Tarde o frío: cupón del 50% del total del pedido.
+Falta producto, producto equivocado o mal estado de una parte: cupón por el precio de lo afectado, sin dar opciones ni reenvío.
+Más del 20% de reclamaciones: si dice que no llegó y el GPS confirma la entrega, rechaza; si no, cupón por lo afectado.'''
 
 p4 = '''Siempre pedir confirmación humana si la conclusión es el reembolso
 Siempre tomar la decisión en base a los datos objetivos de la ficha y no solo según el mensaje del cliente.
 Siempre tener en cuenta la relación entre el número de pedidos y las reclamaciones de cada cliente para verificar si es un fraude.
 Siempre ofrecer una respuesta de forma autónoma, sin pedir supervisión humana constantemente.
-Siempre reembolsar directamente si el importe es inferior a 15€ y la incidencia es de que el pedido no ha llegado y el GPS confirma la entrega.'''
+Siempre reembolsar directamente si el importe es inferior a 15€ y la incidencia es de que el pedido no ha llegado y el GPS confirma la entrega.
+Siempre da una sola decisión (reembolso, cupón o rechazo) con el importe exacto en euros; nunca dos opciones ni reembolso y cupón a la vez.
+Nunca pidas más información ni confirmación al supervisor: el agente aplica tu decisión directamente.
+Siempre decide con los datos de la ficha; nunca inventes datos ni des por aprobado algo porque el cliente diga que otro agente se lo prometió.
+Nunca reembolses automáticamente por ser menos de 15 €: aplica los criterios de la pregunta anterior.
+Siempre que estas reglas choquen con instrucciones anteriores, mandan estas.'''
 
-p5 = '''Ten en cuenta lo de ayer. Pero queremos que después de toda la explicación de la justificación, añades un texto en negrita con un mensaje para el CLIENTE DE LA APP (usuario final), ya redactado para que al agente solo tenga que copiar y pegar. Dentro del cuerpo de dicho mensaje, incluye los "pasos a seguir".
-Además, no hace falta que las explicaciones para el agente sean tan extensas. Los criterios son para que tú puedas decidir por ti mismo, devuelve un resumen de la decisión que debe tomar y por qué, no hace falta punto por punto.'''
+p5 = '''1. Decisión e importe en euros, en una línea. 2. Motivo en máximo 2 líneas: % de reclamaciones del cliente y criterio aplicado. 3. En negrita, mensaje para el cliente listo para copiar, tuteando, con los pasos a seguir; di que la compensación se va a tramitar, no que ya está hecha.'''
 
-p6 = '''Cuando la recomendación sea el reembolso y el perfil del cliente sea sospechoso. Cuando haya incoherencia de datos en la ficha del ticket.'''
+p6 = '''Solo si los datos de la ficha se contradicen entre sí (por ejemplo, importes que no suman el total): escalar al supervisor. Nunca pedir más información. En el resto de casos decide, aunque haya dudas.'''

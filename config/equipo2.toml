@@ -1,8 +1,8 @@
-# Equipo 2. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:41:07 (preguntas 3 y 4 sumadas a las del lunes).
+# Equipo 2. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 21:20:04 (2, 5 y 6 «mantener anterior»).
 # Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 2"
 mandato = "Experiencia de cliente"
-nota = "Miguel ha sumado vuestras nuevas respuestas 3 y 4 a las del lunes, porque se referían a «lo definido anteriormente». Lo nuevo va al final de cada una."
+nota = "Preguntas 3 y 4: se aplica la versión completa que enviasteis a las 21:20. Preguntas 2, 5 y 6: se mantienen, como pedisteis."
 
 p2 = '''Maximizar la eficiencia minimizando los costes (pérdida de clientes y reembolsos).'''
 
@@ -14,8 +14,7 @@ Criterios según el tipo de incidencia (p. ej: tiempo que tarda en reclamar el c
 Primero analizar lo que te está pidiendo el cliente
 Especificar cómo es el reembolso (Total/parcial)
 Especificar porcentaje del cupón
-Reembolso total: aparte de todos los parámetros definidos anteriormente.
--La cantidad reembolsada no puede ser más de 60€.'''
+Reembolso total: aparte de todos los parámetros definidos anteriormente.'''
 
 p4 = '''Siempre valorar el historial de las partes interesadas.
 Nunca efectuar un reembolso si la ratio de pedidos-reclamaciones es un 30% teniendo mínimo 10 pedidos. 
@@ -23,10 +22,12 @@ Siempre contrastar la información en caso de incoherencia de datos.
 Siempre realizar un reembolso total si la ratio de pedidos-reclamaciones es inferior al 5% y el importe total del pedido es inferior a 40€.
 Nunca faltar el respeto del cliente.
 Siempre que el pedido no haya llegado, decide entre reembolso o rechazo según los criterios de verificación definidos anteriormente.
-Siempre que falte un producto o llegue uno equivocado, ofrece un reembolso parcial por el valor de ese producto o un cupón del 200 % de su valor.
-Siempre que el pedido llegue tarde o frío, compensa según el retraso: menos de 10 min, rechaza con educación; entre 10 y 30 min, cupón del 50 % del pedido; más de 30 min, reembolso total.
-Siempre que el pedido llegue en mal estado, ofrece reembolso total si afecta a la salud y un cupón del 50 % del importe del pedido si solo afecta al producto.
-Nunca ofrezcas una compensación mayor que la que marcan estos criterios ni combines reembolso y cupón en la misma incidencia.'''
+Siempre que falte un producto o llegue uno equivocado, ofrece un reembolso parcial por el valor de ese producto o un cupón del 120% de su valor.
+Siempre que el pedido llegue tarde o frío, compensa según el retraso: menos de 10 min, rechaza con educación; entre 10 y 45 min, cupón del 50 % del pedido; más de 45 min, reembolso total.
+Siempre que el pedido llegue en mal estado, ofrece reembolso total si afecta a la salud y un cupón del 50 % del importe del producto si solo afecta al producto.
+Nunca ofrezcas una compensación mayor que la que marcan estos criterios ni combines reembolso y cupón en la misma incidencia.
+siempre ante la duda de rechazar y reembolsar, escalar
+siempre fiate de los datos de GPS y repartidor antes del cliente'''
 
 p5 = '''Instrucciones claras y concisas, y una propuesta de mensaje con esta estructura: 
 1. Saludo al cliente con su nombre y disculpas de antemano por su mala experiencia. 

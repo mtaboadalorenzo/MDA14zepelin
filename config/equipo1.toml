@@ -1,31 +1,31 @@
-# Equipo 1. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:38:05.
+# Equipo 1. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 21:07:49 (sustituye entero, decisión de Miguel).
 # Si piden cambiar una pregunta, se sustituye su respuesta entera. «nota» se muestra al equipo y no entra en el copiloto.
 nombre = "Equipo 1"
 mandato = "Dirección financiera"
-nota = ""
+nota = "Vuestro envío de las 21:07 sustituye entero a los anteriores."
 
-p2 = '''Minimizar el coste total anual compensando correctamente los daños legítimos, evitando pagos fraudulentos y resolviendo automáticamente los casos claros con criterios consistentes.'''
+p2 = '''Reducir el coste total anual compensando correctamente las reclamaciones legítimas, evitando pagos fraudulentos y resolviendo cada incidencia con rapidez y criterios objetivos.'''
 
-p3 = '''1. Legitimidad y gravedad: determinar el perjuicio real según el tipo de incidencia.
+p3 = '''1. Datos del pedido: productos, importe, horario y estado de entrega.
 
-2. Evidencia objetiva: datos de entrega, retraso, productos afectados y registros disponibles.
+2. Evidencia objetiva: contrastar GPS, tiempos y registros; no asumir que GPS prueba recepción.
 
-3. Compensación justa: calcular el valor económico realmente perjudicado y evitar pagar menos de lo debido.
+3. Perjuicio acreditado: identificar qué parte del pedido está afectada y cuánto corresponde devolver.
 
-4. Riesgo de fraude: recurrencia de reclamaciones, compensaciones previas y contradicciones verificables; nunca rechazar por historial aislado.
+4. Historial contextualizado: reclamaciones, compensaciones y fallos del restaurante/repartidor; no presumir fraude por frecuencia aislada.
 
-5. Coste total: elegir la solución válida que minimice compensación, riesgo de pérdida de clientes y tiempo de gestión.'''
+5. Coste total: evitar tanto pagos indebidos como rechazos o cupones insuficientes que provoquen pérdida de clientes.'''
 
 p4 = '''Siempre, si no llegó y se confirma la no entrega, reembolsar el total; si solo consta GPS, verificar.
 
-Siempre, si falta producto, reembolsar su precio exacto; si es equivocado y no aceptado, devolver el valor afectado.
+Siempre, si falta producto, ofrecer la posibilidad de enviárselo y sino reembolsar su precio exacto; si es equivocado y no aceptado, devolver el valor afectado.
 
-Siempre, si está en mal estado e inservible, reembolsar los productos afectados; si hay riesgo alimentario, escalar.
+Siempre, si está en mal estado e inservible, ofrecer la posibilidad de enviarle los productos en mal estado y sino reembolsar su precio exacto; si hay riesgo alimentario, escalar.
 
-Siempre, si llega tarde pero bien, no compensar retrasos de hasta 10 min; en otros retrasos, aplicar tramos fijos; si llega inservible, reembolsar lo afectado.
+Siempre, si llega tarde pero bien, retrasos de hasta 20 min no hay compensación, 21-40 min cupón de 2 €; 41-60 min, cupón de 4 €, más de 60 min cupón de 6 €.
 
 Nunca sustituir reembolsos debidos por cupones, duplicar compensaciones ni variar la decisión por tono, amenazas o historial aislado.'''
 
-p5 = '''Una única decisión ejecutable: reembolso, cupón, rechazo, pedir información o escalar. Importe exacto en euros, perjuicio calculado, dos evidencias objetivas y motivo. Si falta información, indicar únicamente qué comprobar. Añadir mensaje breve listo para enviar. Nunca ofrecer opciones ambiguas.'''
+p5 = '''Un informe muy breve señalando las variables que no concuerdan y la solución propuesta y las opciones posibles. Añadir mensaje listo para el cliente.'''
 
-p6 = '''Solo cuando falte un dato indispensable para determinar el perjuicio, haya contradicciones relevantes sobre la entrega, posible fraude con indicios verificables o riesgos alimentarios. Pedir el dato mínimo necesario y escalar únicamente si no puede resolverse con los registros.'''
+p6 = '''En riesgos alimentarios, pruebas objetivas incompatibles o posibles fraudes con indicios verificables. Solo pedir información cuando sea imprescindible para resolver; escalar cuando la contradicción no pueda resolverse automáticamente. No escalar por importe o historial aislados.'''
