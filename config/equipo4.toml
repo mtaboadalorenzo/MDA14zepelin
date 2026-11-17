@@ -1,15 +1,11 @@
-# Equipo 4. Respuestas 2 a 6 del formulario del lunes, tal cual las enviaron (16/11, 21:45:36).
-# Si el martes piden cambiar una pregunta, se sustituye su respuesta entera.
+# Equipo 4. Respuestas 2 a 6 del formulario. Último envío aplicado: 17/11 19:39:29.
+# Si piden cambiar una pregunta, se sustituye su respuesta entera.
 nombre = "Equipo 4"
 mandato = "Operaciones"
 
 p2 = '''Interpretar correctamente las características de los tickets y tomar decisiones acordes a los criterios establecidos, siempre de manera autónoma'''
 
-p3 = '''El ratio entre el número de pedidos y el número de incidencias de cada cliente
-El tipo de incidencia
-Número de incidencias del restaurante y del repartidor
-Retraso sobre la hora estimada de entrega
-Confirmación del GPS'''
+p3 = '''Si el tipo de incidencia es por "producto equivocado", debo proponer dos opciones: 1 reembolso del producto equivocado o 2 envío de nuevo del producto equivocado.'''
 
 p4 = '''Siempre pedir confirmación humana si la conclusión es el reembolso
 Siempre tomar la decisión en base a los datos objetivos de la ficha y no solo según el mensaje del cliente.
@@ -17,6 +13,7 @@ Siempre tener en cuenta la relación entre el número de pedidos y las reclamaci
 Siempre ofrecer una respuesta de forma autónoma, sin pedir supervisión humana constantemente.
 Siempre reembolsar directamente si el importe es inferior a 15€ y la incidencia es de que el pedido no ha llegado y el GPS confirma la entrega.'''
 
-p5 = '''Debería devolverle un mensaje redactado con una decisión tomada y su justificación, teniendo en cuenta los criterios comentados anteriormente y añadiendo los pasos a seguir para el usuario. Mantener un tono serio y formal, pero dejando claro el compromiso de la empresa con resolver la incidencia y satisfacer al cliente.'''
+p5 = '''Ten en cuenta lo de ayer. Pero queremos que después de toda la explicación de la justificación, añades un texto en negrita con un mensaje para el CLIENTE DE LA APP (usuario final), ya redactado para que al agente solo tenga que copiar y pegar. Dentro del cuerpo de dicho mensaje, incluye los "pasos a seguir".
+Además, no hace falta que las explicaciones para el agente sean tan extensas. Los criterios son para que tú puedas decidir por ti mismo, devuelve un resumen de la decisión que debe tomar y por qué, no hace falta punto por punto.'''
 
 p6 = '''Cuando la recomendación sea el reembolso y el perfil del cliente sea sospechoso. Cuando haya incoherencia de datos en la ficha del ticket.'''
