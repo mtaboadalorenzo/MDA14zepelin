@@ -3,359 +3,359 @@
  "etiqueta": "Equipo 4 · Operaciones",
  "nivel": "eq",
  "modelo": "gpt-4o-mini",
- "fecha": "2026-11-17T19:44",
+ "fecha": "2026-11-17T20:38",
  "tickets": {
-  "ZP-005": {
-   "respuesta": "Basado en la información proporcionada, el cliente tiene un historial aceptable con 1 reclamación en 41 pedidos, lo que indica que no es un caso sospechoso. Sin embargo, el GPS no confirma la entrega y no hay dato sobre el retraso, lo que complica la situación.\n\nDado que el pedido no ha llegado y el importe es mayor a 15€, te recomendaría escalar la reclamación para que un supervisor pueda investigar más a fondo con el restaurante o el repartidor. Esto es importante para asegurarnos de que se tomen las medidas adecuadas y se mantenga la satisfacción del cliente.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, hemos recibido tu reclamación sobre el pedido que no ha llegado. Actualmente estamos revisando la situación con nuestro equipo. Te informaremos tan pronto como tengamos más detalles. Agradecemos tu paciencia y comprensión. ¡Gracias por elegir Zepelín!\"",
-   "accion": "supervisor",
-   "importe": null
-  },
   "ZP-004": {
-   "respuesta": "En este caso, el cliente tiene un buen historial con 12 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un cliente sospechoso. La incidencia reportada es por un retraso de 8 minutos, lo cual es menor al umbral habitual de compensación, además, el GPS confirma que la entrega se realizó y no hay incidencias del repartidor ni quejas del restaurante este mes.\n\nDado que la queja es por un retraso leve y no hay un impacto significativo en la calidad del servicio, te recomiendo rechazar la reclamación y explicar al cliente que, aunque hay un retraso, fue mínimo y no se considera motivo para una compensación.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, gracias por contactarnos. Lamentamos que tu pedido haya llegado con un pequeño retraso de 8 minutos. Sin embargo, esto está dentro de lo normal y no consideramos que sea motivo para una compensación. Agradecemos tu comprensión y esperamos que disfrutes de tu comida. ¡Buen provecho!\"",
-   "accion": "rechazar",
-   "importe": null
-  },
-  "ZP-003": {
-   "respuesta": "Dado que el cliente tiene un historial de 9 pedidos con 4 reclamaciones en los últimos 90 días, su ratio de incidencias es alto, lo que sugiere que podría ser un cliente problemático. Además, aunque la incidencia reportada es que el pedido no llegó, el GPS confirma que la entrega se realizó, y el retraso fue solo de 2 minutos, lo que refuerza la validez de la entrega.\n\nDado que el importe total del pedido es de 26,90 €, no se puede reembolsar directamente sin análisis adicional debido a la naturaleza sospechosa del perfil del cliente. Por lo tanto, te recomiendo rechazar la reclamación basándote en la confirmación del GPS y el historial del cliente.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Estimado cliente, hemos revisado su reclamación y, tras verificar la entrega a través de nuestro sistema, podemos confirmar que su pedido fue entregado correctamente. Si tiene alguna otra pregunta o necesita asistencia adicional, no dude en contactarnos. ¡Gracias por su comprensión!\"",
-   "accion": "rechazar",
-   "importe": null
+   "respuesta": "Decisión: Cupón de 13,40 €.\n\nMotivo: Cliente con un 8,33% de reclamaciones, se aplica el criterio de \"tarde o frío\".\n\n**Hola, gracias por tu paciencia. Vamos a tramitar un cupón de 13,40 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 13.4
   },
   "ZP-001": {
-   "respuesta": "En base a la información proporcionada, el cliente tiene un buen historial con 18 pedidos y ninguna reclamación en los últimos 90 días, lo que indica que no es un cliente sospechoso. La incidencia es la falta de un producto, específicamente los rollitos de primavera, y el GPS confirma que la entrega se realizó correctamente.\n\nDado que el importe de los rollitos de primavera es inferior a 15€ y el pedido llegó, te recomiendo proceder con un reembolso parcial por el producto faltante.\n\nAquí tienes el mensaje para copiar y pegar al cliente:\n\n**Hola, gracias por contactarnos. Lamentamos que no hayas recibido tus rollitos de primavera en tu pedido. Procederemos a reembolsarte el importe correspondiente a dicho producto.** \n\n**Pasos a seguir:**\n1. El reembolso se procesará automáticamente y debería reflejarse en tu cuenta en los próximos días.\n2. Si tienes alguna otra duda o necesitas más ayuda, no dudes en contactarnos.\n\nRecuerda pedir confirmación del reembolso antes de proceder.",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 5,50 €.\n\nMotivo: El cliente es un buen cliente con 0 reclamaciones en 18 pedidos; se aplica el criterio por falta de producto.\n\n**Hola, gracias por tu mensaje. Vamos a tramitar un cupón de 5,50 € para tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 5.5
   },
-  "ZP-002": {
-   "respuesta": "Basado en la información del ticket, el cliente tiene un buen historial en Zepelín con solo 1 reclamación en 27 pedidos, lo que sugiere que no es un perfil sospechoso. La incidencia reportada es de \"tarde o frío\", lo que se alinea con el retraso de 35 minutos y la queja sobre la temperatura de las arepas.\n\nDado que el GPS confirma la entrega y el retraso es considerable, recomendaría ofrecer un reembolso parcial correspondiente a la cantidad de las arepas frías. Esto es justo y también ayuda a mantener la satisfacción del cliente.\n\n**Mensaje para el cliente:**\n\nHola, gracias por contactarnos. Lamentamos que tu pedido haya llegado con un retraso y que las arepas estuvieran frías. Para compensarte, hemos decidido reembolsarte el importe de las arepas. El reembolso se procesará en breve. Si tienes alguna otra pregunta o necesitas más asistencia, no dudes en decírnoslo. ¡Esperamos que tu próxima experiencia con Zepelín sea mucho mejor!\n\nPasos a seguir:\n1. El reembolso de las arepas se procesará automáticamente.\n2. Revisa tu cuenta para confirmar la recepción del reembolso en los próximos días.\n\nGracias por tu comprensión y preferencia.",
-   "accion": "reembolso",
-   "importe": 20.7
-  },
-  "ZP-007": {
-   "respuesta": "Dado que el cliente tiene un historial de 35 pedidos con solo 2 reclamaciones en los últimos 90 días, su perfil no parece sospechoso. La incidencia es por falta de producto (aros de cebolla), y el GPS confirma que el pedido fue entregado correctamente. \n\nComo el importe de los aros de cebolla es inferior a 15€, se puede proceder a reembolsar directamente este monto. \n\n**Recomendación: Reembolsar los 4,20 € por los aros de cebolla.**\n\nAquí tienes el mensaje para el cliente:\n\n**Hola, lamentamos que faltaran los aros de cebolla en tu pedido. Hemos procesado un reembolso de 4,20 € que se verá reflejado en tu cuenta en breve. Gracias por tu comprensión y por ser parte de Zepelín.**",
-   "accion": "reembolso",
-   "importe": 4.2
-  },
-  "ZP-008": {
-   "respuesta": "Dado que el cliente tiene un historial positivo con 16 pedidos y ninguna reclamación reciente, y considerando que el GPS confirma la entrega sin retrasos, podemos asumir que la incidencia es genuina. El tipo de incidencia es \"producto equivocado\", por lo que tienes dos opciones: \n\n1. Reembolso del poke de salmón (13,50 €).\n2. Envío de nuevo del poke de salmón.\n\nDado que el importe del reembolso es superior a 15 € y el perfil del cliente es confiable, te recomendaría optar por el envío de nuevo del producto equivocado. Esto es más adecuado para mantener la satisfacción del cliente.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, hemos recibido tu reclamación sobre el poke de salmón. Vamos a enviarte de nuevo el poke correcto. Por favor, asegúrate de estar disponible para la entrega. Gracias por tu comprensión.\" \n\nDe esta manera, mantienes una buena relación con el cliente y resuelves el problema de forma efectiva.",
+  "ZP-003": {
+   "respuesta": "1. Rechazo. \n2. Motivo: El cliente tiene un 44% de reclamaciones y el GPS confirma la entrega. \n3. **Hola, hemos revisado tu pedido y, dado que el GPS confirma la entrega, no podemos proceder con el reembolso. Si tienes alguna otra consulta, háznoslo saber.**",
    "accion": "rechazar",
    "importe": null
   },
-  "ZP-006": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 23 pedidos y solo 1 reclamación en los últimos 90 días, podemos descartar la posibilidad de fraude. La incidencia reportada es de \"mal estado\", y la entrega se realizó con un retraso mínimo de 6 minutos, sin embargo, el GPS confirma que la entrega fue realizada.\n\nDado que la queja se refiere a un producto específico (la pizza diavola), puedes ofrecer al cliente dos opciones: la opción de reembolso del producto equivocado (diavola) o el envío de un nuevo producto (diavola). \n\nTe recomiendo que contactes al cliente y le ofrezcas estas dos alternativas. \n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, lamentamos que la pizza diavola haya llegado en mal estado. Para resolverlo, te ofrecemos dos opciones:\n1. Reembolsarte el importe de la pizza diavola (12,90 €).\n2. Enviarte una nueva pizza diavola sin coste adicional.\n\nPor favor, indícanos cuál opción prefieres. ¡Gracias!",
+  "ZP-002": {
+   "respuesta": "Decisión: Cupón de 14,85 €.\n\nMotivo: Cliente con un 3,7% de reclamaciones (1 de 27 pedidos) y la incidencia es por tarde o frío.\n\n**Hola, lamento que tu pedido haya llegado con retraso y frío. Vamos a tramitar un cupón de 14,85 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 14.85
+  },
+  "ZP-005": {
+   "respuesta": "Decisión: Reembolso total del pedido (26,90 €).  \nMotivo: El cliente tiene un 2,4% de reclamaciones (41 pedidos y 1 reclamación) y la incidencia reportada es que no llegó, con GPS no confirmado.  \n**Hola, estamos revisando tu pedido. Te vamos a tramitar un reembolso total de 26,90 € por la incidencia.**",
    "accion": "reembolso",
+   "importe": 26.9
+  },
+  "ZP-006": {
+   "respuesta": "Decisión: Cupón de 12,90 €.\n\nMotivo: El cliente tiene un 4,35% de reclamaciones (1 de 23 pedidos), considerado buen cliente. La incidencia es por mal estado del producto afectado.\n\n**Hola, vamos a tramitar un cupón de 12,90 € para que lo uses en tu próximo pedido. Si tienes alguna otra duda, no dudes en decírmelo.**",
+   "accion": "cupon",
    "importe": 12.9
   },
   "ZP-009": {
-   "respuesta": "La incidencia reportada por el cliente es la falta de un producto (gyozas) y, considerando que el cliente tiene un buen historial en Zepelín (25 pedidos y solo 2 reclamaciones en los últimos 90 días), no parece haber indicios de fraude.\n\nSin embargo, dado que el cliente menciona que tuvo un problema similar con el mismo restaurante, es conveniente abordar esta situación con atención. \n\nEl GPS confirma la entrega y el retraso fue mínimo (3 minutos), por lo que no hay razón para un reembolso completo. La mejor opción aquí es ofrecer al cliente dos alternativas, ya que la incidencia es por un producto equivocado:\n\n1. Reembolso del coste de las gyozas (6,50 €).\n2. Envío de nuevo de las gyozas.\n\nLa decisión más segura sería el reembolso del producto equivocado, dado que el importe es inferior a 15€, pero siempre es bueno ofrecer la opción del reenvío.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, gracias por contactarnos. Lamentamos que faltaran las gyozas en tu pedido. Para resolverlo, te ofrecemos dos opciones:\n\n1. Reembolso de las gyozas (6,50 €).\n2. Envío de nuevo de las gyozas.\n\nPor favor, indícanos qué opción prefieres y procederemos a solucionarlo.",
-   "accion": "reembolso",
+   "respuesta": "1. Decisión e importe en euros: Cupón de 6,50 €.\n2. Motivo: El cliente tiene un 8% de reclamaciones, aplicando el criterio de falta de producto.\n3. **Hola, vamos a tramitar un cupón de 6,50 € para tu próximo pedido por la falta de las gyozas.**",
+   "accion": "cupon",
    "importe": 6.5
   },
-  "ZP-010": {
-   "respuesta": "En base a los datos del ticket, el cliente tiene un historial razonable con solo 2 reclamaciones en 52 pedidos, lo que indica que no es un cliente sospechoso. Sin embargo, el retraso de 52 minutos y la queja sobre la calidad de la comida (fría e incomible) son motivos válidos para considerar una compensación.\n\nDado que el GPS confirma la entrega y el importe total del pedido es de 28,40 €, no se puede reembolsar el total, pero puedes ofrecer un cupón para el siguiente pedido como compensación por el retraso y la calidad del producto.\n\n**Decisión: Ofrecer un cupón para el próximo pedido.**\n\nAquí te dejo un mensaje para que lo envíes al cliente:\n\n---\n\n**Hola! Lamentamos mucho la experiencia que has tenido con tu pedido. Hemos tomado nota de tus comentarios y, como compensación, queremos ofrecerte un cupón para tu próximo pedido.**\n\n**Pasos a seguir:**\n1. Asegúrate de estar registrado en tu cuenta de Zepelín.\n2. En tu próximo pedido, el cupón será aplicado automáticamente al finalizar la compra.\n\nGracias por tu comprensión y por seguir confiando en nosotros. ¡Esperamos que tu próxima experiencia sea mucho mejor!",
+  "ZP-007": {
+   "respuesta": "Decisión: Cupón por 4,20 €.\n\nMotivo: El cliente tiene un 5,7% de reclamaciones, se aplica el criterio de falta de producto. \n\n**Hola, sentimos que faltaran los aros de cebolla en tu pedido. Vamos a tramitar un cupón de 4,20 € para tu próxima compra. Gracias por tu comprensión.**",
    "accion": "cupon",
-   "importe": null
+   "importe": 4.2
+  },
+  "ZP-008": {
+   "respuesta": "Decisión: Cupón por 13,50 €.\n\nMotivo: El cliente es un buen cliente con 0% de reclamaciones. Se aplica el criterio de \"producto equivocado\".\n\n**Hola, vamos a tramitar un cupón de 13,50 € para que puedas usar en tu próximo pedido. ¡Gracias por tu comprensión!**",
+   "accion": "cupon",
+   "importe": 13.5
+  },
+  "ZP-010": {
+   "respuesta": "Decisión: Cupón de 14,20 €.\n\nMotivo: El cliente tiene un 3,85% de reclamaciones (2 de 52 pedidos) y la incidencia es por retraso y frío.\n\n**Hola, lamentamos que el pedido haya llegado tarde y frío. Vamos a tramitar un cupón de 14,20 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 14.2
   },
   "ZP-011": {
-   "respuesta": "Dado el perfil del cliente, que tiene 18 pedidos y ninguna reclamación en los últimos 90 días, parece ser un cliente habitual y no sospechoso. Sin embargo, el GPS confirma que la entrega no se realizó correctamente, ya que indica que fue entregado en otra calle.\n\nLa mejor opción en este caso es reembolsar el importe total del pedido, dado que el importe es superior a 15€ y el cliente no ha recibido el pedido. \n\nTe recomiendo que confirmes con el cliente el reembolso antes de proceder, ya que es una cantidad significativa.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, lamentamos mucho los inconvenientes con su pedido. Dado que el pedido no llegó como estaba previsto, procederemos a realizar un reembolso total del importe. A continuación, le indicamos los pasos a seguir:\n1. Por favor, confirme que desea el reembolso.\n2. El reembolso se procesará en un plazo de 3 a 5 días hábiles.\n3. Si tiene alguna pregunta adicional, no dude en contactarnos.\n\nGracias por su comprensión y paciencia.",
+   "respuesta": "1. Decisión: Reembolso total de 72,50 €.\n2. Motivo: El cliente tiene un 0% de reclamaciones, y la incidencia es que no llegó el pedido con GPS sin confirmación de entrega.\n3. **Hola, sentimos mucho la situación. Vamos a tramitar la compensación total de tu pedido, y te mantendremos informado.**",
    "accion": "reembolso",
    "importe": 72.5
   },
-  "ZP-012": {
-   "respuesta": "Dado que el cliente tiene un historial de 30 pedidos y solo 3 reclamaciones en los últimos 90 días, su ratio de incidencias es bajo, lo que sugiere que no es un cliente fraudulento. Sin embargo, las quejas del restaurante son altas este mes, lo cual es relevante.\n\nLa incidencia es sobre un producto faltante (gyozas), y el cliente ha mencionado que esto ha ocurrido varias veces con este restaurante. En este caso, tienes dos opciones: reembolsar el coste de las gyozas (6,00 €) o enviar de nuevo el producto equivocado.\n\nDado que el importe es superior a 15 € y el cliente ha tenido problemas recurrentes con el restaurante, te recomendaría optar por el reembolso de las gyozas. Sin embargo, como es necesario pedir confirmación humana para el reembolso, te sugiero que procedas a solicitarla.\n\n**Mensaje para el CLIENTE DE LA APP:**\nHola, lamentamos que en tu pedido faltaran las gyozas. Para solucionarlo, por favor sigue estos pasos:\n1. Confirma si prefieres que te reembolsemos el importe de las gyozas.\n2. Si prefieres, podemos intentar enviarlas de nuevo en el próximo pedido.\n\nGracias por tu comprensión y paciencia.",
-   "accion": "pedir_info",
-   "importe": null
-  },
   "ZP-013": {
-   "respuesta": "En este caso, el cliente tiene un historial positivo con 7 pedidos y 0 reclamaciones en los últimos 90 días, lo que sugiere que no es un cliente problemático. La incidencia reportada es un producto equivocado, ya que el cliente recibió un pollo vindaloo (muy picante) en lugar de un curry que esperaban.\n\nDado que el importe del producto equivocado (13,50 €) es superior a 15 €, y considerando que el GPS confirma la entrega, no es apropiado reembolsar directamente. \n\nTe recomiendo ofrecer al cliente las siguientes opciones:\n\n1. Reembolso del producto equivocado (pollo vindaloo).\n2. Envío de nuevo del producto equivocado (pollo vindaloo).\n\n**Mensaje para el cliente:**\n\nEstimado cliente, \n\nLamentamos la confusión con su pedido. Le ofrecemos dos opciones para resolver este inconveniente: \n1. Podemos reembolsar el importe del pollo vindaloo.\n2. O, si lo prefiere, podemos enviar de nuevo el producto equivocado.\n\nPor favor, indíquenos cómo le gustaría proceder.\n\nGracias por su comprensión.",
-   "accion": "reembolso",
-   "importe": 13.5
+   "respuesta": "Decisión: Cupón de 3,50 €.\n\nMotivo: 0% de reclamaciones del cliente y se aplica el criterio de \"producto equivocado\".\n\n**Hola, vamos a tramitar un cupón de 3,50 € para tu próximo pedido, que podrás usar en nuestra app. Gracias por tu comprensión y disculpa las molestias.**",
+   "accion": "cupon",
+   "importe": 3.5
   },
   "ZP-014": {
-   "respuesta": "Dado que el cliente tiene un buen historial en Zepelín con 31 pedidos y solo 1 reclamación en los últimos 90 días, no parece ser un perfil sospechoso. La incidencia que reporta es \"falta producto\" y se trata de un producto equivocado. La confirmación del GPS indica que la entrega se realizó correctamente y que el retraso fue mínimo (5 minutos).\n\nPor lo tanto, recomendaría ofrecer al cliente dos opciones: \n1. Reembolso del coste de la hamburguesa que falta (9,50 €).\n2. Envío de nuevo de la hamburguesa que falta.\n\nDado que la decisión es sobre un reembolso, asegúrate de pedir confirmación humana antes de proceder.\n\n**Mensaje para el cliente:**\n\"Hola, lamentamos que no hayas recibido tu pedido completo. Para solucionar esto, te ofrecemos las siguientes opciones: \n1. Reembolso del coste de la hamburguesa que falta (9,50 €). \n2. Envío de nuevo de la hamburguesa que falta. \nPor favor, indícanos cuál prefieres y lo gestionaremos de inmediato. ¡Gracias por tu comprensión!\"",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 9,50 €.\n\nMotivo: El cliente tiene un 3,23% de reclamaciones, es un buen cliente. Se aplica el criterio de falta de producto.\n\n**Hola, vamos a tramitar un cupón de 9,50 € para tu próximo pedido. Gracias por tu paciencia y disculpa las molestias.**",
+   "accion": "cupon",
    "importe": 9.5
   },
+  "ZP-012": {
+   "respuesta": "Decisión: Cupón de 6,00 €.\n\nMotivo: El cliente tiene un 10% de reclamaciones sobre pedidos (3 de 30), y la incidencia es por falta de producto. \n\n**Hola, estamos revisando tu reclamación y te vamos a tramitar un cupón de 6,00 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 6.0
+  },
   "ZP-015": {
-   "respuesta": "El cliente tiene un historial de 20 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un perfil sospechoso. La incidencia reportada es de \"mal estado\" debido a que una de las pizzas llegó aplastada. El retraso fue de solo 10 minutos y el GPS confirma la entrega.\n\nDado que el cliente ha reportado un problema con un producto específico y el pedido tiene un total superior a 15€, la mejor opción sería ofrecer un reembolso de la pizza dañada. Es recomendable confirmar con el cliente antes de proceder al reembolso.\n\nTe sugiero que procedas de la siguiente manera:\n\n1. Ofrecer un reembolso de la pizza familiar de barbacoa afectada.\n2. Confirmar con el cliente que está de acuerdo con esta solución.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nEstimado cliente, \n\nLamentamos que una de las pizzas familiares de barbacoa haya llegado en mal estado. Para solucionar esta situación, te ofrecemos un reembolso de la pizza afectada. Por favor, confirma si estás de acuerdo con esta solución para proceder.\n\n¡Gracias por tu comprensión y esperamos poder servirte mejor en el futuro!",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 21,90 €.\n\nMotivo: El cliente tiene un 5% de reclamaciones y la incidencia es por mal estado de un producto. \n\n**Hola, sentimos mucho que una de las pizzas llegara en mal estado. Vamos a tramitar un cupón de 21,90 € para que lo uses en tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 21.9
   },
   "ZP-016": {
-   "respuesta": "En este caso, el cliente tiene un único pedido y una reclamación, lo que no sugiere un patrón de fraude. La incidencia es de \"tarde o frío\", y aunque el zumo llegó caliente, el cliente menciona que el bowl estaba bien. Además, el retraso de 33 minutos es considerable.\n\nDado que el GPS confirma la entrega, y teniendo en cuenta que el importe total del pedido es superior a 15€, mi recomendación es ofrecer un reembolso parcial solo por el zumo, que es el producto que llegó en mal estado. Sin embargo, dado que el perfil del cliente es nuevo y ha tenido solo una queja, sería prudente confirmar la decisión de reembolso con un mensaje al cliente.\n\nAquí tienes el mensaje redactado para que lo copies y pegues:\n\n**Estimado cliente, lamentamos que su pedido no haya llegado en las condiciones esperadas. Para poder resolver esta situación, le ofrecemos un reembolso parcial por el zumo caliente. Por favor, confirme si está de acuerdo con esto para proceder.**",
-   "accion": "reembolso",
-   "importe": 4.2
+   "respuesta": "Decisión: Cupón de 9,10 €.\n\nMotivo: El cliente es nuevo y tiene un 100% de reclamaciones sobre pedidos. Se aplica el criterio de tarde o frío.\n\n**Hola, gracias por tu mensaje. Lamentamos la tardanza y el estado del zumo. Vamos a tramitar un cupón de 9,10 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 9.1
   },
   "ZP-017": {
-   "respuesta": "En este caso, el cliente tiene un historial de 15 pedidos con solo 2 reclamaciones, lo que indica un buen ratio y sugiere que no es un perfil sospechoso. Sin embargo, la incidencia reportada es de \"tarde o frío\" y el GPS confirma que la entrega se realizó correctamente.\n\nDado que no hubo retraso en la entrega y el repartidor no presenta incidencias, lo más apropiado es ofrecer un cupón para el siguiente pedido como compensación por la insatisfacción con la temperatura de las pizzas. Esto permite mantener la relación con el cliente sin caer en el reembolso, que podría ser cuestionado considerando el historial del cliente.\n\n**Mensaje para el cliente:**\n\"Hola, gracias por contactarnos. Lamentamos que tus pizzas hayan llegado frías. Para compensarte, te ofrecemos un cupón para tu próximo pedido. Por favor, sigue estos pasos para canjearlo: [instrucciones de canje del cupón]. ¡Esperamos que disfrutes de tu próxima experiencia con nosotros!\"",
+   "respuesta": "Decisión: Cupón de 13,65 €.\n\nMotivo: El cliente tiene un 13,33% de reclamaciones, lo que lo considera un buen cliente y la incidencia es \"tarde o frío\".\n\n**Hola, gracias por tu mensaje. Vamos a tramitar un cupón de 13,65 € para tu próxima compra.**",
    "accion": "cupon",
-   "importe": null
+   "importe": 13.65
   },
   "ZP-020": {
-   "respuesta": "Dado que el GPS confirma la entrega y el cliente ha hecho 3 reclamaciones en 7 pedidos, sugiero rechazar la reclamación. La relación entre el número de pedidos y reclamaciones sugiere un posible abuso del sistema. Además, no hay retraso en la entrega y ninguna incidencia del repartidor en este mes.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos cualquier inconveniente. Tras revisar tu pedido, hemos confirmado que fue entregado correctamente. Si necesitas más asistencia, no dudes en contactarnos. ¡Gracias por tu comprensión!\"",
+   "respuesta": "Decisión: Rechazar la reclamación.  \nMotivo: El cliente tiene un 42,86% de reclamaciones (3 de 7 pedidos) y el GPS confirma la entrega.  \n**Hola, hemos revisado tu caso y lamentablemente no podemos ofrecer un reembolso, ya que el GPS confirma que el pedido fue entregado. Si tienes alguna otra consulta, no dudes en contactarnos.**",
    "accion": "rechazar",
    "importe": null
   },
   "ZP-019": {
-   "respuesta": "Dado que el GPS no confirma la entrega y el pedido no ha llegado, la situación requiere atención. Aunque el cliente tiene un buen historial (21 pedidos y solo 1 reclamación en 17 meses), la falta de confirmación del GPS y las 3 incidencias del repartidor este mes son factores que debemos considerar.\n\nLa mejor opción en este caso es reembolsar el importe total del pedido, dado que el monto es inferior a 15€ y la incidencia es clara. Sin embargo, dado que el perfil del cliente es sospechoso debido a las incidencias del repartidor, es recomendable que pidas confirmación humana antes de proceder con el reembolso.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos la inconveniencia. Vamos a verificar el estado de tu pedido. Por favor, revisa tu correo en breve para más información. Gracias por tu paciencia.\"",
-   "accion": "pedir_info",
+   "respuesta": "Decisión: Rechazar la reclamación.  \nMotivo: Cliente con 4,76% de reclamaciones (1 de 21 pedidos) y GPS confirma la entrega.  \n**Hola, hemos revisado tu caso y lamentablemente no podemos reembolsar el pedido ya que el GPS confirma que fue entregado. Si necesitas ayuda adicional, no dudes en contactarnos.**",
+   "accion": "rechazar",
    "importe": null
   },
   "ZP-018": {
-   "respuesta": "La incidencia reportada es por un \"producto equivocado\", donde el cliente recibió un durum de ternera en lugar del durum de falafel que había pedido. Dado el historial del cliente (24 pedidos y solo 1 reclamación en 21 meses) y que el GPS confirma la entrega, no parece ser un caso sospechoso. Además, el retraso en la entrega fue mínimo (6 minutos), lo que no afecta negativamente a la situación.\n\nTienes dos opciones para resolver esta incidencia: \n\n1. Ofrecer un reembolso del producto equivocado (durum de ternera).\n2. Ofrecer el envío de nuevo del producto correcto (durum de falafel).\n\nDado que el importe del producto equivocado es inferior a 15€ y el cliente tiene un buen historial, la opción más adecuada sería el reembolso. Sin embargo, es importante que pidas confirmación humana para proceder con el reembolso.\n\nRecomendación: Pide confirmación para reembolsar el durum de ternera (8,50 €).\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos la confusión con tu pedido. Procederemos a reembolsar el importe del durum de ternera que recibiste por error. El reembolso se hará a tu método de pago habitual. Si tienes alguna otra consulta, no dudes en hacérnoslo saber. Gracias por tu comprensión.\"",
+   "respuesta": "Reembolso de 8,50 € por el producto equivocado. \n\nEl cliente tiene un 4,17% de reclamaciones, cumpliendo con el criterio de ser un buen cliente. Se aplica el reembolso por el producto equivocado.\n\n**Hola! Vamos a tramitar el reembolso de 8,50 € por el durum de ternera que recibiste en lugar del de falafel.**",
    "accion": "reembolso",
    "importe": 8.5
   },
   "ZP-022": {
-   "respuesta": "En este caso, el cliente tiene un historial positivo con 14 pedidos y ninguna reclamación en los últimos 90 días, lo que sugiere que no es un cliente fraudulento. Sin embargo, hay un retraso de 28 minutos y la incidencia reportada es \"tarde o frío\". El GPS confirma que la entrega se realizó correctamente.\n\nDado que el cliente está informado y no ha tenido problemas anteriores, y considerando que la queja está relacionada con la temperatura de la comida por un retraso moderado, te recomendaría ofrecer un cupón para el siguiente pedido como compensación. Esto permite al cliente sentirse valorado sin incurrir en un reembolso, ya que la incidencia no es lo suficientemente grave como para justificarlo.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, sentimos mucho que tu pedido haya llegado con un retraso y las hamburguesas no estaban a la temperatura ideal. Para compensarte, te ofrecemos un cupón para tu próximo pedido. Los pasos a seguir para utilizarlo son: 1. Inicia sesión en tu cuenta. 2. Selecciona tu próximo pedido. 3. Aplica el código del cupón en el momento del pago. ¡Gracias por tu comprensión!\"",
+   "respuesta": "Decisión: Cupón de 14,45 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es \"tarde o frío\". \n\n**Hola, vamos a tramitar un cupón de 14,45 € para tu próximo pedido como compensación por el retraso.**",
    "accion": "cupon",
-   "importe": null
-  },
-  "ZP-023": {
-   "respuesta": "Dado que el cliente tiene un buen historial de pedidos con 9 entregas y ninguna reclamación previa en los últimos 90 días, y considerando que el GPS confirma la entrega, se puede concluir que la incidencia no parece ser un fraude. La queja se refiere a un \"producto equivocado\", lo que nos brinda dos opciones: \n\n1. Reembolso de la bandeja de ensaladas equivocada (28,00 €).\n2. Envío de nuevo de la bandeja de ensaladas correcta.\n\nSin embargo, al ser el importe superior a 15€ y el perfil del cliente no sospechoso, es recomendable optar por el envío de la bandeja correcta. Esto no solo soluciona la insatisfacción del cliente, sino que también mejora su experiencia con Zepelín.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, lamentamos la confusión con su pedido. Procederemos a enviarle la bandeja de ensaladas correcta a la brevedad. Por favor, asegúrese de estar disponible para recibirla. Gracias por su comprensión.",
-   "accion": "sin_decision",
-   "importe": null
+   "importe": 14.45
   },
   "ZP-021": {
-   "respuesta": "En este caso, el cliente tiene un historial de 44 pedidos y solo 2 reclamaciones en los últimos 90 días, lo que indica un ratio bastante bueno y no sugiere un fraude. La incidencia reportada es la falta de un producto (pan de ajo), lo que me lleva a considerar las opciones de reembolso del producto o envío del mismo.\n\nDado que el pan de ajo tiene un coste de 4,50 €, que es inferior a 15 €, y el GPS confirma que la entrega se realizó, podrías optar por reembolsar este importe directamente. Sin embargo, el mensaje del cliente sugiere que está insatisfecho y plantea una amenaza de darse de baja, lo que debe tenerse en cuenta.\n\nTe recomiendo ofrecer el reembolso del pan de ajo, ya que es una cantidad pequeña y resuelve la insatisfacción del cliente sin complicaciones adicionales. \n\nPara el mensaje al cliente, puedes usar el siguiente texto:\n\n**\"Lamentamos la falta del pan de ajo en su pedido. Procederemos a reembolsarle 4,50 € por este inconveniente. Si tiene alguna otra consulta o necesita más asistencia, no dude en contactarnos. Gracias por su comprensión. Su reembolso será procesado en breve.\"**\n\nEsta respuesta es clara y ayuda a mantener al cliente satisfecho.",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 4,50 €.\n\nMotivo: El cliente tiene un 4,5% de reclamaciones y se aplica el criterio de falta de producto.\n\n**Hola, sentimos que faltara el pan de ajo en tu pedido. Vamos a tramitar un cupón de 4,50 € para tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 4.5
   },
   "ZP-025": {
-   "respuesta": "En este caso, la incidencia reportada es que el pedido no ha llegado, pero el GPS confirma la entrega. Dado que el importe total del pedido es de 26,90 €, y considerando que el cliente tiene un buen historial con 33 pedidos y 0 reclamaciones en los últimos 90 días, no parece haber indicios de fraude.\n\nSin embargo, dado que el pedido ha sido confirmado como entregado por el GPS, deberíamos proceder a rechazar la reclamación. Es importante comunicar al cliente que, aunque su pedido fue confirmado como entregado, estamos aquí para ayudarle en caso de que necesite más asistencia.\n\n**Mensaje para el cliente:**\n\n\"Estimado cliente, hemos revisado su caso y, según nuestros registros, su pedido ha sido entregado correctamente. Si necesita más ayuda o tiene alguna otra pregunta, no dude en contactarnos. ¡Gracias por elegir Zepelín!\"\n\nRecomiendo que el agente pase a rechazar la reclamación y envíe el mensaje al cliente.",
+   "respuesta": "Rechazo la reclamación. \n\nMotivo: El cliente tiene un 0% de reclamaciones, el GPS confirma la entrega y el retraso es de solo 4 minutos. \n\n**Hola, lamentamos que no hayas recibido tu pedido, pero el sistema confirma que fue entregado. Si necesitas ayuda adicional, por favor háznoslo saber.**",
    "accion": "rechazar",
    "importe": null
   },
-  "ZP-024": {
-   "respuesta": "En este caso, el cliente tiene un buen historial con 28 pedidos y solo una reclamación en los últimos 90 días, lo que indica que no es un perfil sospechoso. La incidencia es por mal estado de los productos, y aunque el pedido llegó dentro de un tiempo razonable (7 minutos de retraso) y el GPS confirma la entrega, la queja sobre el estado de los alimentos es válida.\n\nDado que el importe de la incidencia se relaciona con los productos que llegaron en mal estado, te recomiendo ofrecer un reembolso parcial que cubra el costo del refresco y las croquetas, ya que esto es más justo considerando la situación. \n\n**Por favor, confirma si estás de acuerdo con esta decisión de reembolso.**\n\nAquí tienes el mensaje para enviar al cliente:\n\n**Estimado cliente, lamentamos lo ocurrido con su pedido. Para resolver esta situación, hemos procesado un reembolso parcial que incluye el costo del refresco y las croquetas. El reembolso se verá reflejado en su cuenta en breve. Agradecemos su comprensión y esperamos que en su próximo pedido la experiencia sea completamente satisfactoria.**",
+  "ZP-023": {
+   "respuesta": "Reembolsar 28,00 €. Motivo: El cliente tiene un 0% de reclamaciones y la incidencia es por producto equivocado. **Hola, vamos a tramitar un reembolso de 28,00 € por la bandeja de ensaladas que no recibiste. Gracias por tu comprensión y disculpa las molestias.**",
    "accion": "reembolso",
-   "importe": 15.4
+   "importe": 28.0
+  },
+  "ZP-024": {
+   "respuesta": "Reembolso de 9,20 €. Motivo: Cliente con un 3,57% de reclamaciones y la incidencia es por mal estado de una parte. **Hola, vamos a tramitar un reembolso de 9,20 € por el refresco y las croquetas que llegaron en mal estado.**",
+   "accion": "reembolso",
+   "importe": 9.2
+  },
+  "ZP-026": {
+   "respuesta": "1. Decisión: Cupón de 16,70 €.\n2. Motivo: Cliente con un 3.85% de reclamaciones, criterio de tarde o frío aplicado.\n3. **Hola, te pedimos disculpas por el retraso y la calidad de tu pedido. Vamos a tramitar un cupón del 50% del total del pedido para que lo utilices en tu próxima compra.**",
+   "accion": "cupon",
+   "importe": 16.7
   },
   "ZP-027": {
-   "respuesta": "En este caso, el cliente ha reportado la falta de un producto (el bowl de salmón), lo que encaja con la opción de reembolso del producto equivocado o el envío de nuevo del producto. Sin embargo, dado que el GPS confirma la entrega y el cliente tiene un historial de 4 pedidos con 2 reclamaciones en los últimos 90 días, debemos ser cautelosos con un reembolso completo.\n\nRecomiendo ofrecerle al cliente la opción de un reembolso del bowl de salmón (13,90 €) o, si prefiere, el envío del producto faltante. Esto es más adecuado considerando su historial de reclamaciones y el hecho de que el pedido fue entregado según el GPS.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, lamentamos que falte el bowl de salmón en tu pedido. Para resolverlo, te ofrecemos dos opciones: \n\n1. Un reembolso de 13,90 € por el bowl de salmón.\n2. Enviar nuevamente el bowl de salmón a tu dirección.\n\nPor favor, indícanos qué opción prefieres. ¡Gracias!",
+   "respuesta": "Reembolso de 13,90 €.  \nEl cliente tiene un 50% de reclamaciones (2 de 4 pedidos), por lo que no es un buen cliente y se aplica el criterio de falta de producto para una compensación.  \n**Hola, vamos a tramitar un reembolso de 13,90 € por el bowl de salmón que faltaba en tu pedido. Agradecemos tu paciencia.**",
    "accion": "reembolso",
    "importe": 13.9
   },
   "ZP-029": {
-   "respuesta": "El cliente tiene un buen historial con 36 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no parece ser un perfil sospechoso. La incidencia es por un \"producto equivocado\", lo que me permite ofrecer dos opciones: un reembolso del producto equivocado (en este caso, el falafel) o el envío de nuevo del producto equivocado.\n\nDado que el total del pedido es de 22,00 €, y el importe del producto equivocado (falafel) es de 5,50 €, recomendaría optar por el reembolso de 5,50 € y confirmar con el cliente antes de proceder. \n\nAquí tienes el mensaje para el cliente:\n\n---\n\n**Estimado cliente, lamentamos la confusión con su pedido. Para resolverlo, le ofrecemos las siguientes opciones:**\n\n1. Reembolso del falafel (5,50 €).\n2. Reenvío del producto equivocado.\n\nPor favor, indíquenos cuál opción prefiere.\n\n---\n\nAsegúrate de confirmar con el cliente antes de proceder con el reembolso.",
+   "respuesta": "Reembolso de 5,50 €. Motivo: 2,78% de reclamaciones del cliente y criterio aplicado por producto equivocado.  \n**Hola, hemos recibido tu mensaje y vamos a tramitar la compensación de 5,50 € por el producto equivocado que recibiste.**",
    "accion": "reembolso",
    "importe": 5.5
-  },
-  "ZP-026": {
-   "respuesta": "El cliente tiene un buen historial con 26 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un perfil sospechoso. La incidencia reportada es \"tarde o frío\", lo que se alinea con el retraso de 41 minutos en la entrega y la confirmación del GPS.\n\nDado que el importe total del pedido es de 33,40 € y la queja principal se relaciona con la calidad de la comida debido al retraso, es apropiado ofrecer un reembolso parcial. Podríamos considerar un reembolso de la pizza o las alitas, ya que son los productos afectados por la temperatura. \n\nSin embargo, como la recomendación implica un reembolso y el perfil del cliente no es sospechoso, se debe pedir confirmación al agente para proceder con el reembolso.\n\nDecisión recomendada: Proponer reembolso parcial de 19,90 € (pizza) o 7,50 € (alitas). Solicitar confirmación del agente antes de proceder.\n\n**Mensaje al cliente:**\nEstimado cliente, lamentamos mucho la experiencia que tuvo con su pedido. Para compensarle, le ofrecemos un reembolso parcial por la pizza o las alitas. Por favor, indíquenos cuál prefiere. Agradecemos su comprensión y esperamos mejorar en su próximo pedido.",
-   "accion": "pedir_info",
-   "importe": null
   },
   "ZP-028": {
-   "respuesta": "En este caso, el cliente tiene un historial razonable con 10 pedidos y solo 1 reclamación en los últimos 90 días, lo que sugiere que no es un cliente problemático. La incidencia reportada es de \"tarde o frío\", y aunque las patatas no estaban como el cliente esperaba, esto no justifica un reembolso total, dado que el GPS confirma la entrega y el retraso fue de solo 12 minutos.\n\nAdemás, el restaurante tiene quejas medias este mes, lo que podría indicar un problema en la calidad de la comida, pero no es suficiente para proceder con un reembolso.\n\nTe recomiendo ofrecer un cupón para el siguiente pedido como compensación por la insatisfacción con las patatas. \n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, sentimos que las patatas no cumplieran con tus expectativas. Para compensarte, hemos decidido ofrecerte un cupón que podrás utilizar en tu próximo pedido. Los pasos a seguir son los siguientes: revisa tu bandeja de entrada para encontrar el código del cupón y úsalo en tu próxima compra. ¡Gracias por tu comprensión y esperamos que disfrutes tu próximo pedido!\"",
+   "respuesta": "1. Decisión: Cupón de 10,45 €.\n2. Motivo: Cliente con un 10% de reclamaciones; se aplica el criterio de \"tarde o frío\". \n3. **Hola, gracias por tu mensaje. Vamos a tramitar un cupón de 10,45 € para tu próximo pedido. ¡Esperamos que tu próxima experiencia sea mejor!**",
    "accion": "cupon",
-   "importe": null
+   "importe": 10.45
   },
   "ZP-030": {
-   "respuesta": "En base a la información del ticket, el cliente tiene un buen historial con 19 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no parece ser un cliente fraudulento. El pedido llegó con un retraso mínimo de 6 minutos y el GPS confirma la entrega. Sin embargo, el restaurante tiene un alto número de quejas este mes, lo que podría indicar una tendencia negativa.\n\nLa incidencia reportada es \"falta producto\", específicamente las samosas. En este caso, te recomiendo ofrecer al cliente una de las siguientes opciones:\n\n1. Reembolso del importe de las samosas (5,50 €).\n2. Reenviar las samosas.\n\nDado que el importe de las samosas es superior a 15 €, debes pedir confirmación para proceder con el reembolso. Si decides optar por el reembolso, asegúrate de que el cliente esté de acuerdo con esta opción.\n\nAquí tienes el mensaje para el cliente:\n\n**Estimado cliente, lamentamos la falta de las samosas en su pedido. Para resolver este inconveniente, le ofrecemos dos opciones: 1) un reembolso del importe de las samosas (5,50 €) o 2) el envío de las samosas que faltan. Por favor, indíquenos cuál opción prefiere y procederemos a solucionarlo.**",
-   "accion": "pedir_info",
-   "importe": null
-  },
-  "ZP-031": {
-   "respuesta": "La incidencia reportada por el cliente es de \"mal estado\", lo cual es una queja seria. Sin embargo, el cliente tiene un buen historial con solo una reclamación en 29 pedidos, lo que sugiere que no es un caso de fraude. Aunque el restaurante tiene quejas altas este mes, el GPS confirma la entrega y el retraso es mínimo (9 minutos).\n\nDado que el costo del producto en mal estado (pollo agridulce) es de 10,90 €, y por normativa no se puede reembolsar automáticamente sin una confirmación humana en casos sospechosos, lo mejor sería ofrecer un cupón para el siguiente pedido como compensación.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, sentimos mucho que tu pedido no haya estado en las condiciones adecuadas. Queremos ofrecerte un cupón de descuento para tu próximo pedido como compensación. Por favor, sigue estos pasos: \n1. Inicia sesión en tu cuenta de Zepelín.\n2. Ve a la sección 'Mis cupones'.\n3. Aplica tu nuevo cupón en tu próximo pedido. \nGracias por tu comprensión y esperamos mejorar tu experiencia en el futuro.\" \n\nRecomiendo proceder con el cupón para el próximo pedido.",
+   "respuesta": "Decisión: Cupón de 5,50 €.\n\nMotivo: El cliente tiene un 5,26% de reclamaciones (1 de 19 pedidos), se aplica el criterio de falta de producto.\n\n**Hola! Lamentamos que no hayas recibido las samosas en tu pedido. Vamos a tramitar un cupón de 5,50 € para tu próximo pedido.**",
    "accion": "cupon",
-   "importe": null
-  },
-  "ZP-033": {
-   "respuesta": "La incidencia corresponde a un \"producto equivocado\" y, dado que el cliente tiene un buen historial con 24 pedidos y solo 1 reclamación reciente, no parece ser un caso sospechoso. Además, el retraso fue mínimo (6 minutos) y el GPS confirma la entrega.\n\nTe propongo las siguientes opciones para resolver el problema:\n\n1. Ofrecer un reembolso del producto equivocado (durum de ternera) por 8,50 €.\n2. Ofrecer el envío de nuevo del producto equivocado (durum de ternera).\n\nDado que la cantidad es superior a 15€ y se trata de un cliente con un buen historial, es mejor optar por pedir confirmación humana para el reembolso. \n\n**Mensaje para el CLIENTE DE LA APP:**\nHola, lamentamos la confusión con tu pedido. Por favor, indícanos si prefieres que te reembolsemos el durum de ternera o si te gustaría recibirlo de nuevo. Agradecemos tu comprensión y esperamos tu respuesta.",
-   "accion": "pedir_info",
-   "importe": null
-  },
-  "ZP-035": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 27 pedidos y ninguna reclamación reciente, y considerando que el GPS confirma la entrega, la incidencia de \"mal estado\" podría ser atendida de la siguiente manera:\n\n1. Proponer un reembolso parcial por el guacamole, ya que el total de la reclamación supera los 15€ y el mal estado del pedido parece ser más específico que un fraude.\n2. También puedes considerar ofrecer un cupón para el próximo pedido si lo ves conveniente.\n\nTe recomiendo que optes por el reembolso parcial del guacamole, que es el producto que puede haber estado en mal estado, y confirmes con el cliente la decisión.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos que tu pedido haya llegado en mal estado. Para compensarte, procederemos a realizar un reembolso parcial de 5,50 € por el guacamole. Si tienes alguna otra pregunta o inquietud, no dudes en contactarnos. ¡Gracias por tu comprensión!\" \n\nAsegúrate de pedir confirmación antes de proceder con el reembolso.",
-   "accion": "reembolso",
    "importe": 5.5
   },
-  "ZP-032": {
-   "respuesta": "La incidencia reportada por el cliente es un retraso y que la comida llegó fría. El cliente tiene un historial de 13 pedidos con solo 1 reclamación en los últimos 90 días, lo que indica un comportamiento leal y no sospechoso. \n\nEl retraso fue de 45 minutos y el GPS confirma que la entrega se realizó correctamente. Dado que el cliente menciona que el pedido llegó caliente, aunque el tiempo de entrega fue largo, no podemos darle un reembolso completo por el retraso, ya que la entrega fue confirmada y el cliente no menciona un problema específico con el contenido del pedido.\n\nPodemos ofrecer un cupón para su próximo pedido en compensación por la insatisfacción con el servicio. Esto puede ayudar a mantener una buena relación con el cliente y minimizar el impacto de su mensaje en redes sociales.\n\n**Mensaje para el cliente:**\n\n\"Hola, lamentamos que tu pedido haya llegado más tarde de lo esperado y que no haya estado a la temperatura adecuada. Para compensarte, te ofrecemos un cupón de descuento para tu próximo pedido. Por favor, sigue estos pasos para usarlo: \n1. Inicia sesión en tu cuenta de Zepelín.\n2. Elige los productos que deseas pedir.\n3. En la pantalla de pago, introduce el código del cupón.\n¡Gracias por tu comprensión y esperamos mejorar tu experiencia en el futuro!\" \n\nRecomiendo proceder con la oferta del cupón y enviar el mensaje al cliente.",
-   "accion": "cupon",
-   "importe": null
-  },
-  "ZP-034": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 11 pedidos y ninguna reclamación en los últimos 90 días, y considerando que la incidencia es de \"producto equivocado\", puedes ofrecer las siguientes opciones:\n\n1. Reembolso del producto equivocado (menú clásico).\n2. Envío de nuevo del producto equivocado (menú vegano).\n\nSin embargo, dado que el cliente ha tenido un historial limpio y la incidencia se debe a un error en la entrega, te recomendaría que propongas el reembolso del menú vegano, ya que el importe del producto equivocado es inferior a 15€ y el GPS confirma la entrega.\n\n**Por favor, confirma el reembolso del menú vegano.**\n\nTexto para el cliente:\n\n**Hola, lamentamos la confusión con tu pedido. Te hemos reembolsado el costo del menú vegano que no recibiste. Si tienes alguna otra pregunta o necesitas más ayuda, no dudes en contactarnos. ¡Gracias por tu comprensión y esperamos verte pronto en tu próximo pedido!**",
+  "ZP-033": {
+   "respuesta": "Reembolso de 8,50 € por el producto equivocado.  \nEl cliente tiene un 4.17% de reclamaciones, lo que lo califica como buen cliente; se aplica el criterio de \"producto equivocado\".  \n**Hola, vamos a tramitar un reembolso de 8,50 € por el durum de ternera que recibiste.**",
    "accion": "reembolso",
-   "importe": 12.9
+   "importe": 8.5
   },
-  "ZP-036": {
-   "respuesta": "En este caso, la incidencia es que el pedido no llegó, pero el GPS confirma que la entrega se realizó. Sin embargo, el cliente tiene un historial de 2 pedidos y 1 reclamación, lo que no es un ratio excesivo de quejas, aunque es importante tener en cuenta que hay un riesgo de posible fraude. \n\nDado que el importe total del pedido es de 14,00 € y hay confirmación de entrega por parte del GPS, la política establece que se debe reembolsar directamente. Sin embargo, dado el perfil del cliente y la confirmación del GPS, es recomendable pedir confirmación humana antes de proceder con el reembolso.\n\nTe recomiendo que contactes al cliente para confirmar la situación y luego actúes en consecuencia. \n\n**Mensaje para el cliente de la app:**\n\"Hola, lamentamos que no hayas recibido tu pedido. Por favor, verifica si hay algún paquete en la entrada o en algún lugar cercano. Si no encuentras nada, háznoslo saber y procederemos a investigar más a fondo. Agradecemos tu comprensión. Pasos a seguir: 1. Revisa bien la zona de entrega. 2. Responde a este mensaje si no encuentras tu pedido.\"",
-   "accion": "pedir_info",
-   "importe": null
-  },
-  "ZP-038": {
-   "respuesta": "Dado que el cliente tiene un historial sólido de 22 pedidos sin reclamaciones previas y la incidencia es por falta de un producto, te recomiendo ofrecerle un reembolso parcial por el coste de los mochis, que es de 4,50 €. Esto es viable ya que el importe es inferior a 15 € y el GPS confirma que la entrega se realizó correctamente.\n\nAquí tienes un mensaje que puedes enviar al cliente:\n\n---\n\n**Estimado cliente,**\n\nLamentamos informarle que durante la entrega de su pedido, faltaron los mochis que había solicitado. Para compensarle, hemos procesado un reembolso de 4,50 € que se reflejará en su cuenta en breve. \n\nSi tiene alguna otra pregunta o necesita más asistencia, no dude en contactarnos.\n\n¡Gracias por su comprensión!\n\n--- \n\nConfirma que deseas proceder con el reembolso.",
-   "accion": "reembolso",
-   "importe": 4.5
-  },
-  "ZP-039": {
-   "respuesta": "Basándome en la información proporcionada, el cliente tiene un buen historial en Zepelín, con solo 1 reclamación en 30 pedidos, lo que indica que no parece ser un fraude. Sin embargo, la incidencia reportada es \"tarde o frío\" y hay un retraso significativo de 60 minutos.\n\nDado que el GPS confirma la entrega y el problema parece ser con la calidad del pedido en lugar de la entrega en sí, te recomiendo ofrecer un cupón para el siguiente pedido como compensación. Esto ayuda a mantener una buena relación con el cliente y no implica un reembolso directo, que podría ser más problemático.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, sentimos mucho que tu pedido haya llegado frío y con retraso. Para compensarte, te ofrecemos un cupón que puedes utilizar en tu próximo pedido. \n\nPasos a seguir:\n1. Confirma que deseas recibir el cupón.\n2. Una vez confirmado, te lo enviaremos a tu correo electrónico.\n\n¡Gracias por tu comprensión!",
-   "accion": "cupon",
-   "importe": null
-  },
-  "ZP-037": {
-   "respuesta": "La incidencia reportada es \"no llegó\" y el GPS confirma la entrega. Dado que este cliente ha realizado 6 pedidos y ha tenido 3 reclamaciones en los últimos 90 días, su ratio de incidencias es alto (50%). Además, el restaurante tiene pocas quejas este mes y el repartidor no ha tenido incidencias.\n\nDebido a que el importe total del pedido es de 41,00 € y la incidencia es confirmada por el GPS, no puedo reembolsar directamente sin evaluar el perfil del cliente más a fondo. Sugiero que se escale la reclamación para que un supervisor pueda investigar más a fondo, dado que el cliente tiene un historial de reclamaciones.\n\nAquí tienes el mensaje para el cliente:\n\n**Estimado cliente, lamentamos que no haya recibido su pedido. Para resolver esta situación, le pedimos que siga estos pasos: 1. Verifique el estado de su pedido en la app. 2. Si el problema persiste, contáctenos nuevamente. Agradecemos su comprensión y estamos aquí para ayudarle.**",
-   "accion": "supervisor",
-   "importe": null
-  },
-  "ZP-040": {
-   "respuesta": "La incidencia reportada por el cliente es la falta de un producto, en este caso, el cordero rogan josh. Dado que el cliente tiene un buen historial (33 meses en la app, 28 pedidos y solo 1 reclamación en los últimos 90 días), no parece ser un caso sospechoso.\n\nEl GPS confirma que la entrega fue realizada y el retraso fue mínimo (9 minutos), lo que no justifica un reembolso total ni un reembolso del envío. Sin embargo, dado que falta un producto, tienes dos opciones: \n\n1. Reembolsar el importe del cordero rogan josh (14,90 €).\n2. Ofrecer el envío de un nuevo cordero rogan josh.\n\nConsiderando que el importe es inferior a 15€ y la incidencia es de falta de producto, te recomiendo proceder con el reembolso del cordero rogan josh. \n\n**Por favor, confirma que quieres proceder con el reembolso.**\n\nMensaje para el cliente:\n\n**Estimado cliente, lamentamos informarle que el cordero rogan josh no estuvo incluido en su pedido. Para solucionar este inconveniente, procederemos a reembolsar el importe correspondiente. Este proceso puede tardar entre 3 a 5 días hábiles en reflejarse en su cuenta. Agradecemos su comprensión y le pedimos disculpas por cualquier inconveniente.**",
-   "accion": "reembolso",
-   "importe": 14.9
-  },
-  "ZP-041": {
-   "respuesta": "En base a la información del ticket, el cliente tiene un buen ratio de pedidos a incidencias, lo que sugiere que no es un perfil sospechoso. La incidencia reportada es de \"tarde o frío\", y aunque el pedido llegó con un retraso de 35 minutos, el GPS confirma la entrega, lo que indica que no hay un problema de no entrega.\n\nDado que la queja es por la temperatura de la comida y no hay un alto número de incidencias previas del restaurante, se puede ofrecer un reembolso parcial. Sin embargo, dado que el monto total es superior a 15€, sería más adecuado ofrecer un cupón para compensar la insatisfacción del cliente.\n\n**Recomendación: Ofrecer un cupón de 5€ para el próximo pedido.**\n\nTexto para el cliente:\n\"Hola, sentimos mucho que tu pedido haya llegado con retraso y que la comida no estuviera caliente. Como compensación, te ofrecemos un cupón de 5€ para tu próximo pedido. Esperamos que esto mejore tu experiencia con nosotros. ¡Gracias por tu comprensión!\"",
-   "accion": "cupon",
-   "importe": 5.0
-  },
-  "ZP-042": {
-   "respuesta": "La incidencia reportada es que el pedido no llegó, pero el GPS confirma la entrega. Dado que el importe total del pedido es de 24,60 €, no puedo reembolsar automáticamente porque supera los 15 € y el cliente tiene un ratio de 20 pedidos con 5 reclamaciones en los últimos 90 días, lo que indica un perfil de cliente que podría ser sospechoso.\n\nRecomiendo rechazar la reclamación basándome en la confirmación del GPS de la entrega.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Estimado cliente, hemos revisado su reclamación y, según nuestros registros, el pedido ha sido entregado correctamente en la dirección indicada. Si tiene alguna otra consulta o necesita asistencia adicional, no dude en contactarnos. ¡Gracias por usar Zepelín!\"",
+  "ZP-031": {
+   "respuesta": "Rechazo la reclamación. \n\nEl cliente tiene un 3.4% de reclamaciones, lo que lo clasifica como buen cliente. Sin embargo, el GPS confirma la entrega y la incidencia es sobre mal estado de un solo producto. \n\n**Hola, lamento lo ocurrido con tu pedido. No podemos proceder con la compensación ya que el GPS confirma la entrega. Si tienes más dudas, estamos aquí para ayudarte.**",
    "accion": "rechazar",
    "importe": null
   },
-  "ZP-043": {
-   "respuesta": "Dado que el cliente tiene un historial de 15 pedidos y solo 1 reclamación en los últimos 90 días, su perfil no parece sospechoso. La incidencia es por un producto equivocado y el GPS confirma que la entrega se realizó correctamente. \n\nTe recomiendo ofrecer al cliente dos opciones: 1) un reembolso por la cachapa (8,50 €) o 2) el envío de nuevo de la cachapa. Dado que la cachapa tiene un costo superior a 15€, es necesario pedir confirmación antes de proceder con un reembolso.\n\nAquí tienes el mensaje para el cliente:\n\n**Estimado cliente, lamento la confusión con su pedido. Para resolver esta situación, le ofrezco dos opciones: 1) un reembolso por la cachapa que no recibió (8,50 €) o 2) el envío de la cachapa correcta a su dirección. Por favor, indíquenos cuál opción prefiere. ¡Gracias por su comprensión!**",
-   "accion": "pedir_info",
+  "ZP-032": {
+   "respuesta": "Decisión: Cupón de 50% sobre el total del pedido: 13,95 €.\n\nMotivo: El cliente tiene un 7,69% de reclamaciones, lo que lo califica como buen cliente; se aplica el criterio por retraso.\n\n**Hola, gracias por tu mensaje. Lamentamos el retraso en tu pedido. Vamos a tramitar un cupón del 50% sobre el total de tu pedido, que podrás usar en tu próxima compra.**",
+   "accion": "cupon",
+   "importe": 13.95
+  },
+  "ZP-034": {
+   "respuesta": "1. Decisión e importe en euros: Cupón de 12,90 €.\n2. Motivo: El cliente es considerado buen cliente (0% de reclamaciones) y hay un problema con el producto equivocado.\n3. **Hola, sentimos el inconveniente con tu pedido. Vamos a tramitar un cupón de 12,90 € para que puedas utilizarlo en tu próxima compra.**",
+   "accion": "cupon",
+   "importe": 12.9
+  },
+  "ZP-035": {
+   "respuesta": "Reembolso de 13,50 €. Motivo: El cliente es buen cliente con 0 reclamaciones, y la incidencia es de mal estado. **Hola, vamos a tramitar un reembolso de 13,50 € por el mal estado de tu pedido. Gracias por tu comprensión y disculpa las molestias.**",
+   "accion": "reembolso",
+   "importe": 13.5
+  },
+  "ZP-036": {
+   "respuesta": "Decisión: Cupón de 14,00 €.\n\nMotivo: El cliente tiene un 50% de reclamaciones (1 de 2 pedidos) y el GPS confirma la entrega. \n\n**Hola, sentimos que no hayas recibido tu pedido. Vamos a tramitar un cupón de 14,00 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 14.0
+  },
+  "ZP-039": {
+   "respuesta": "Decisión: Cupón de 17,25 €.\n\nMotivo: Cliente con un 3,33% de reclamaciones (1 de 30 pedidos) y la incidencia es por \"tarde o frío\".\n\n**Hola, la compensación se va a tramitar en forma de un cupón del 50% del total de tu pedido. ¡Gracias por tu comprensión!**",
+   "accion": "cupon",
+   "importe": 17.25
+  },
+  "ZP-040": {
+   "respuesta": "Decisión: Cupón de 14,90 €.\n\nMotivo: El cliente tiene un 3,57% de reclamaciones (1 de 28 pedidos) y se aplica el criterio de falta de producto.\n\n**Hola, vamos a tramitar un cupón de 14,90 € para que lo uses en tu próximo pedido. Gracias por tu comprensión y disculpa la falta del producto.**",
+   "accion": "cupon",
+   "importe": 14.9
+  },
+  "ZP-038": {
+   "respuesta": "Decisión: Cupón de 4,50 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es por falta de producto. \n\n**Hola, gracias por tu mensaje. Vamos a tramitar un cupón de 4,50 € por la falta de los mochis en tu pedido.**",
+   "accion": "cupon",
+   "importe": 4.5
+  },
+  "ZP-037": {
+   "respuesta": "Rechazo la reclamación.  \nEl cliente tiene un 50% de reclamaciones sobre pedidos, lo que indica un posible fraude. Además, el GPS confirma la entrega.  \n**Hola, hemos revisado tu reclamación y, debido a que el GPS confirma que el pedido fue entregado, no podemos proceder con la compensación. Gracias por tu comprensión.**",
+   "accion": "rechazar",
    "importe": null
   },
-  "ZP-044": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 6 pedidos y ninguna reclamación en los últimos 90 días, y considerando que la incidencia reportada es sobre el estado del producto (es decir, no se trata de un producto equivocado), la mejor opción sería ofrecer un reembolso parcial o un cupón para el siguiente pedido. \n\nSin embargo, dado que el cliente no reportó un problema de entrega y el GPS confirma que todo fue entregado correctamente, no es necesario reembolsar el valor total del pedido. \n\nTe recomiendo ofrecer un cupón de 5€ para el siguiente pedido como compensación por el mal estado del bao de pato, lo que puede incentivar al cliente a seguir utilizando la app.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, lamentamos que el bao de pato no haya sido de su agrado. Para compensar su experiencia, le ofrecemos un cupón de 5€ para su próximo pedido. \n\nPasos a seguir:\n1. Use el código de cupón en su próxima compra.\n2. Si tiene más comentarios o sugerencias, no dude en hacérnoslo saber.\n\n¡Gracias por su comprensión y preferencia!",
-   "accion": "cupon",
-   "importe": 5.0
+  "ZP-042": {
+   "respuesta": "Decisión: Rechazar la reclamación.  \nMotivo: El cliente tiene un 25% de reclamaciones y el GPS confirma la entrega.  \n**Hola, hemos revisado tu solicitud y lamentablemente no podemos procesar el reembolso ya que el pedido fue entregado según el GPS. Si tienes alguna otra duda, estamos aquí para ayudarte.**",
+   "accion": "rechazar",
+   "importe": null
   },
-  "ZP-046": {
-   "respuesta": "Con base en la información del ticket, el cliente tiene un buen historial, con 21 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un perfil sospechoso. Sin embargo, el GPS no confirma la entrega y hay 3 incidencias del repartidor este mes, lo que puede ser un indicativo de problemas recurrentes.\n\nDado que el pedido no ha llegado y el GPS no confirma la entrega, y considerando que el importe es inferior a 15€, te recomiendo proceder con un reembolso directo. Este es un caso claro de que el pedido no ha sido entregado correctamente.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Estimado cliente, lamentamos mucho la inconveniencia. Por favor, siga estos pasos para resolver su incidencia: \n1. Verifique si recibió algún mensaje o llamada del repartidor.\n2. Si no es así, procederemos a reembolsar su pedido a la brevedad.\nAgradecemos su comprensión y paciencia.\" \n\nAsegúrate de que el cliente esté informado del reembolso que se procesará.",
-   "accion": "reembolso",
-   "importe": 25.1
+  "ZP-041": {
+   "respuesta": "Decisión: Cupón de 14,85 €.\n\nMotivo: El cliente tiene un 3,7% de reclamaciones (1 de 27 pedidos) y la incidencia es por retraso en la entrega.\n\n**Hola, estamos muy sorry por el retraso y que las arepas llegaran frías. Para compensarte, te vamos a tramitar un cupón de 14,85 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 14.85
+  },
+  "ZP-044": {
+   "respuesta": "Decisión: Cupón de 8,50 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es por mal estado. \n\n**Hola! Vamos a tramitar un cupón de 8,50 € para que puedas usar en tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 8.5
+  },
+  "ZP-043": {
+   "respuesta": "1. Decisión e importe en euros: Cupón de 8,50 €.\n2. Motivo: El cliente tiene un 6,67% de reclamaciones y la incidencia es por producto equivocado.\n3. **Hola, hemos visto que te han enviado un producto equivocado. Vamos a tramitar un cupón de 8,50 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 8.5
   },
   "ZP-045": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 46 pedidos y solo 2 reclamaciones en los últimos 90 días, y considerando que el retraso fue de 38 minutos y el GPS confirma la entrega, la situación no parece ser un fraude.\n\nLa incidencia es de \"tarde o frío\", lo que no encaja en las opciones de \"producto equivocado\". Sin embargo, el cliente se queja de la calidad del sushi. Dado que el restaurante tiene pocas quejas este mes y el cliente no ha tenido un mal historial, te recomendaría ofrecer un cupón para su próximo pedido como compensación. Esto puede ayudar a mantener la satisfacción del cliente sin un reembolso directo.\n\nAquí tienes el mensaje que puedes enviar al cliente:\n\n**Estimado cliente, lamentamos la experiencia que has tenido con tu pedido. Para compensar el inconveniente del retraso y la calidad del sushi, te ofrecemos un cupón para tu próximo pedido. Para canjearlo, solo debes ingresar el código en la sección de cupones al realizar tu pedido. Gracias por tu comprensión y esperamos que tu próxima experiencia sea mucho mejor.**",
+   "respuesta": "1. Decisión: Cupón de 17,25 €.\n2. Motivo: 4,35% de reclamaciones del cliente y criterio aplicado por retraso y entrega fría.\n3. **Hola, estamos tramitando un cupón de 17,25 € para compensarte por el retraso en tu pedido. ¡Gracias por tu comprensión!**",
    "accion": "cupon",
+   "importe": 17.25
+  },
+  "ZP-047": {
+   "respuesta": "Rechazo. \n\nMotivo: El cliente tiene un 37,5% de reclamaciones (3 de 8 pedidos), lo que no lo clasifica como buen cliente y el GPS confirma la entrega. \n\n**Hola, hemos recibido tu reclamación y, tras revisarla, lamentamos informarte que no podemos proceder con el reembolso. Si tienes alguna otra consulta, no dudes en contactarnos.**",
+   "accion": "rechazar",
+   "importe": null
+  },
+  "ZP-046": {
+   "respuesta": "Decisión: Rechazar la reclamación.\n\nMotivo: El cliente tiene un 4,76% de reclamaciones sobre pedidos (1 de 21), lo que indica un buen historial, pero el GPS confirma la entrega. \n\n**Hola, sentimos mucho que no hayas recibido tu pedido. Sin embargo, el GPS confirma que fue entregado. Te recomendamos revisar con tus vecinos o en el lugar de entrega. Si necesitas más ayuda, estamos aquí para ti.**",
+   "accion": "rechazar",
    "importe": null
   },
   "ZP-049": {
-   "respuesta": "Dado que la incidencia es por falta de un producto (la ensalada césar) y el cliente tiene un historial limpio con 9 pedidos y 0 reclamaciones en los últimos 90 días, se puede considerar que no hay indicios de fraude. El retraso en la entrega fue mínimo (3 minutos) y el GPS confirma la entrega.\n\nTe recomiendo ofrecer al cliente la opción de reembolsar el coste de la ensalada césar, que es de 8,90 €, ya que el importe está por debajo de 15€. \n\nAsegúrate de pedir confirmación antes de proceder con el reembolso.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, sentimos mucho que no haya recibido su ensalada césar en el pedido. Para solucionar esto, le ofrecemos un reembolso del coste de la ensalada. Por favor, confirme si desea proceder con el reembolso.",
+   "respuesta": "Reembolso de 8,90 € por la ensalada césar. El cliente es un buen cliente con un 0% de reclamaciones y la incidencia es por falta de producto. \n\n**Hola, te informamos que vamos a tramitar la compensación de 8,90 € por la falta de la ensalada césar en tu pedido.**",
    "accion": "reembolso",
    "importe": 8.9
   },
   "ZP-048": {
-   "respuesta": "Con base en la información del ticket, el cliente tiene un buen historial con 24 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un cliente problemático. La incidencia reportada es de \"mal estado\" y el retraso en la entrega fue solo de 5 minutos, lo cual es aceptable. Además, el GPS confirma que la entrega se realizó correctamente.\n\nDada la naturaleza de la incidencia (mal estado de un producto), sería apropiado ofrecer una de las siguientes opciones al cliente: \n\n1. Reembolso de la sopa del día (5,90 €).\n2. Envío de una nueva sopa del día.\n\nTe recomiendo optar por el reembolso, ya que el importe es inferior a 15€ y el cliente no tiene un perfil sospechoso.\n\n**Mensaje para el CLIENTE DE LA APP:**\nHola, lamentamos que la sopa del día haya llegado en mal estado. Para resolverlo, hemos decidido reembolsarte el importe de la sopa. El reembolso se procesará en breve. Gracias por tu comprensión.",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 5,90 €.\n\nMotivo: 4,17% de reclamaciones del cliente (1 de 24 pedidos) y la incidencia es por mal estado del producto.\n\n**Hola, gracias por tu mensaje. Lamentamos que la sopa haya llegado en mal estado. Vamos a tramitar un cupón de 5,90 € para tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 5.9
   },
-  "ZP-047": {
-   "respuesta": "En este caso, el cliente tiene un historial de 8 pedidos con 3 reclamaciones en los últimos 90 días, lo que indica un ratio de incidencias relativamente alto. La incidencia actual es de \"producto equivocado\". Dado que el importe del producto equivocado (Durum mixto) es de 8,50 €, no se puede reembolsar directamente debido a la política de reembolsos.\n\nTe recomiendo ofrecer al cliente las siguientes opciones:\n\n1. Reembolso del Durum mixto (producto equivocado).\n2. Envío de nuevo del Durum mixto.\n\nSin embargo, debido al perfil del cliente y su historial de reclamaciones, sería más prudente optar por el envío del producto equivocado en lugar de un reembolso.\n\n**Mensaje para el cliente:**\n\n\"Hola, lamentamos que hayas recibido un producto equivocado. Para solucionar esto, podemos enviarte de nuevo el Durum mixto que pediste. Por favor, confirma si estás de acuerdo con esta opción y procederemos con el envío. ¡Gracias por tu comprensión!\"",
-   "accion": "pedir_info",
-   "importe": null
-  },
   "ZP-050": {
-   "respuesta": "El cliente tiene un buen historial con 30 pedidos y solo una reclamación reciente, lo que sugiere que no es un perfil sospechoso. El pedido ha sido confirmado como entregado por el GPS, aunque el cliente indica que no recibió la comida. Debido a esto, y considerando que hay un retraso menor a 10 minutos, no se justifica un reembolso completo.\n\nLa mejor opción aquí sería escalar la reclamación para investigar más a fondo, dado que el repartidor ha tenido varias incidencias este mes y el restaurante también tiene quejas altas. Esto ayudará a determinar si hay un problema recurrente.\n\nAquí tienes el mensaje para el cliente:\n\n**Estimado cliente, hemos recibido su reclamación acerca de su pedido. Estamos investigando la situación con el repartidor y el restaurante para aclarar lo sucedido. Agradecemos su paciencia y nos aseguraremos de resolverlo lo antes posible.**",
-   "accion": "supervisor",
-   "importe": null
-  },
-  "ZP-052": {
-   "respuesta": "En este caso, el cliente tiene un buen historial en Zepelín con 35 pedidos y solo 2 reclamaciones en los últimos 90 días, lo que indica que no parece ser un cliente fraudulento. La incidencia reportada es por la falta de un producto (aros de cebolla), y dado que el GPS confirma la entrega, la opción más adecuada sería ofrecer un reembolso parcial solo por el producto que falta.\n\nDado que el importe total del pedido es de 31,70 € y el costo de los aros de cebolla es de 4,20 €, te recomiendo proceder a reembolsar esa cantidad.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, sentimos mucho que no hayas recibido los aros de cebolla en tu pedido. Para resolverlo, hemos procesado un reembolso de 4,20 € que verás reflejado en tu cuenta. Si tienes más preguntas, no dudes en contactarnos. ¡Gracias por tu comprensión!",
-   "accion": "reembolso",
-   "importe": 4.2
-  },
-  "ZP-051": {
-   "respuesta": "La incidencia reportada por el cliente es sobre la falta de cubiertos y servilletas, lo cual es un problema de servicio y no de producto equivocado. Dado que el cliente tiene un buen historial (12 pedidos y 0 reclamaciones en los últimos 90 días), y que la entrega se realizó correctamente según el GPS, no es necesario reembolsar.\n\nTe recomiendo ofrecer un cupón para su próximo pedido como compensación por el inconveniente. Esto ayuda a mantener la satisfacción del cliente sin afectar negativamente a la relación con el restaurante.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\nHola, gracias por contactarnos. Lamentamos que no hayas recibido cubiertos ni servilletas con tu pedido. Para compensarte, te ofrecemos un cupón para tu próximo pedido. A continuación, los pasos a seguir para usar tu cupón:\n\n1. Inicia sesión en tu cuenta de Zepelín.\n2. Selecciona tu próximo pedido y dirígete a la sección de pago.\n3. Ingresa el código del cupón para aplicarlo a tu total.\n\nSi tienes más preguntas o necesitas ayuda, no dudes en contactarnos. ¡Gracias por tu comprensión!",
-   "accion": "cupon",
-   "importe": null
-  },
-  "ZP-053": {
-   "respuesta": "En este caso, la incidencia reportada es \"tarde o frío\". El cliente tiene un buen historial con 18 pedidos y ninguna reclamación en los últimos 90 días, lo que sugiere que no es un cliente problemático. El retraso sobre la hora estimada de entrega fue de 22 minutos, lo que podría justificar la queja del cliente, pero el GPS confirma que la entrega se realizó correctamente.\n\nDado que la queja es sobre la calidad del pedido (frío), y considerando que el restaurante tiene bajas quejas este mes, te recomendaría ofrecer un cupón para el siguiente pedido como compensación. Esto no solo ayuda a mantener la satisfacción del cliente, sino que también evita cualquier posible sospecha de fraude.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos que tu pedido no haya llegado en las mejores condiciones. Para compensarte, te ofrecemos un cupón para tu próximo pedido. Por favor, sigue estos pasos para utilizar tu cupón: 1. Abre la aplicación y selecciona tus productos. 2. Ve a la sección de pago. 3. Ingresa el código del cupón en el campo correspondiente. ¡Gracias por tu comprensión!\"",
-   "accion": "cupon",
-   "importe": null
-  },
-  "ZP-056": {
-   "respuesta": "En este caso, el cliente tiene un buen ratio de pedidos a incidencias (5 pedidos y 1 reclamación), lo que indica que no parece ser un fraude. El retraso en la entrega fue de 15 minutos, lo cual es un tiempo de espera relativamente corto, y el GPS confirma que la entrega se realizó correctamente. Además, el restaurante presenta quejas medias, pero la incidencia del repartidor es 0.\n\nDado que la reclamación se debe a un retraso, y considerando que el retraso fue menor a 30 minutos, no es necesario ofrecer un reembolso ni un cupón, ya que no hay un incumplimiento significativo en el servicio.\n\nTe recomiendo rechazar la reclamación, explicando que el retraso fue dentro de los márgenes aceptables y que el pedido fue entregado correctamente.\n\n**Mensaje para el CLIENTE DE LA APP:**\nLamentamos que tu pedido haya llegado más tarde de lo esperado. Sin embargo, el retraso fue de solo 15 minutos y el pedido fue entregado correctamente. Agradecemos tu comprensión y esperamos que disfrutes de tu comida. Si tienes más preguntas, no dudes en contactarnos.",
+   "respuesta": "Rechazo la reclamación. \n\nMotivo: El cliente tiene un 3,33% de reclamaciones sobre pedidos, y el GPS confirma la entrega. \n\n**Hola, vamos a proceder a rechazar la reclamación ya que el pedido se confirma como entregado por el GPS. Si necesitas ayuda con algo más, no dudes en decírmelo.**",
    "accion": "rechazar",
    "importe": null
   },
+  "ZP-051": {
+   "respuesta": "1. Decisión e importe en euros: Cupón de 6,50 €.\n2. Motivo: Cliente con 0% de reclamaciones y se aplica criterio por falta de producto.\n3. **Hola, vamos a tramitar un cupón de 6,50 € por la falta de cubiertos y servilletas. ¡Gracias por tu comprensión!**",
+   "accion": "cupon",
+   "importe": 6.5
+  },
+  "ZP-053": {
+   "respuesta": "Decisión: Cupón de 9,25 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es por retraso, aplicando el criterio de cupón del 50% del total del pedido.\n\n**Hola, la compensación se va a tramitar y recibirás un cupón de 9,25 € para tu próximo pedido. ¡Gracias por tu paciencia!**",
+   "accion": "cupon",
+   "importe": 9.25
+  },
+  "ZP-052": {
+   "respuesta": "Reembolsar 4,20 €.\n\nEl cliente tiene un 5,7% de reclamaciones, así que es considerado un buen cliente. La incidencia es por falta de producto, lo que justifica el reembolso por el importe del producto afectado.\n\n**Hola, vamos a tramitar el reembolso de 4,20 € por los aros de cebolla que faltaron en tu pedido. Gracias por tu comprensión y paciencia.**",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
+  "ZP-054": {
+   "respuesta": "Decisión: Cupón de 4,50 €.\n\nMotivo: El cliente tiene un 4% de reclamaciones (1 de 25 pedidos), lo que lo clasifica como buen cliente. Se aplica el criterio de falta de producto.\n\n**Hola! Lamentamos que el batido no haya llegado. Vamos a tramitar un cupón de 4,50 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 4.5
+  },
   "ZP-055": {
-   "respuesta": "La incidencia reportada por el cliente es que ha recibido un producto equivocado, específicamente que le enviaron nigiris de atún en lugar de nigiris de salmón. Dado que el cliente tiene un buen historial en Zepelín (31 pedidos y 0 reclamaciones en los últimos 90 días), no parece ser un perfil sospechoso.\n\nComo el importe del producto equivocado es de 10,50 € (que es mayor de 15 € en total), las opciones a considerar son:\n\n1. Ofrecer un reembolso del producto equivocado (nigiri de atún).\n2. Reenviar el producto correcto (nigiri de salmón).\n\nTe recomiendo optar por el reembolso del producto equivocado. Sin embargo, como es un reembolso, asegúrate de pedir confirmación al cliente.\n\nResumen de la decisión: reembolso del nigiri de atún, ya que se trata de un producto equivocado y el cliente tiene un historial sólido. \n\n**Mensaje para el CLIENTE DE LA APP:**\n\nEstimado cliente, \n\nLamentamos la confusión con su pedido. Hemos verificado su incidencia y procederemos a reembolsarle el nigiri de atún que recibió por error. \n\nLos pasos a seguir son:\n1. El reembolso se procesará automáticamente en su método de pago original.\n2. Recibirá una notificación una vez que el reembolso haya sido completado.\n\nAgradecemos su comprensión y quedamos a su disposición para cualquier otra consulta.",
+   "respuesta": "Reembolso de 10,50 € por el producto equivocado.  \nEl cliente tiene un 0% de reclamaciones, es considerado buen cliente y se aplica el criterio de incidencia de producto equivocado.  \n**Hola, vamos a tramitar un reembolso de 10,50 € por el nigiri de atún que recibiste en lugar del de salmón.**",
    "accion": "reembolso",
    "importe": 10.5
   },
-  "ZP-057": {
-   "respuesta": "Basándome en los datos del ticket, el cliente tiene un buen historial con 26 pedidos y solo 1 reclamación en los últimos 90 días, lo que indica que no es un cliente fraudulento. Sin embargo, el restaurante tiene un alto número de quejas este mes, lo que puede influir en la decisión.\n\nLa incidencia reportada es \"mal estado\" y el cliente se queja de que la hamburguesa llegó aplastada y en mal estado. Dado que se trata de un producto equivocado, te propongo ofrecer al cliente dos opciones: 1) reembolso del producto afectado (hamburguesa doble) o 2) envío de una nueva hamburguesa doble.\n\n**Toma la decisión de ofrecer al cliente una de estas dos opciones y asegúrate de confirmar la elección del cliente antes de proceder.**\n\nTexto para el CLIENTE DE LA APP:\n\"Hola, lamentamos que tu hamburguesa doble haya llegado en mal estado. Queremos ofrecerte dos opciones para solucionar este inconveniente: 1) un reembolso del importe de la hamburguesa o 2) el envío de una nueva hamburguesa doble. Por favor, indícanos qué opción prefieres y procederemos a solucionarlo de inmediato. Gracias por tu comprensión.\"",
-   "accion": "reembolso",
-   "importe": 13.9
+  "ZP-056": {
+   "respuesta": "Decisión: Cupón de 7,20 €.\n\nMotivo: El cliente tiene un 20% de reclamaciones y la incidencia es por retraso. \n\n**Hola, hemos recibido tu mensaje. Vamos a tramitar un cupón de 7,20 € para tu próximo pedido como compensación por el retraso.**",
+   "accion": "cupon",
+   "importe": 7.2
   },
   "ZP-058": {
-   "respuesta": "La situación indica que el pedido no ha llegado y el GPS no confirma la entrega. Dado que el cliente tiene un historial sólido con 40 pedidos y solo 1 reclamación en los últimos 90 días, no parece ser un caso de fraude. Sin embargo, la falta de confirmación del GPS y el retraso en la entrega son preocupantes.\n\nLa opción más adecuada aquí sería reembolsar el pedido completo, dado que el importe es inferior a 15€ y el pedido no ha llegado. Sin embargo, como tú no debes decidir el reembolso directamente, es importante pedir confirmación humana antes de proceder.\n\nPor lo tanto, la recomendación es que contactes al cliente para confirmar el reembolso. \n\n**Mensaje para el CLIENTE DE LA APP:**\nHola, gracias por contactarnos. Lamentamos que tu pedido no haya llegado. Estamos verificando la situación y, para proceder con una solución, por favor confirma si deseas que realicemos el reembolso completo de tu pedido. Estaremos esperando tu respuesta. ¡Gracias!",
-   "accion": "pedir_info",
+   "respuesta": "Decisión: Rechazar la reclamación.  \nMotivo: El cliente tiene un 2,5% de reclamaciones y el GPS confirma la entrega.  \n**Hola, hemos revisado tu reclamación y, según nuestros registros, el pedido fue entregado. Por lo tanto, no podemos proceder con el reembolso. Si necesitas más ayuda, no dudes en contactarnos.**",
+   "accion": "rechazar",
    "importe": null
   },
-  "ZP-054": {
-   "respuesta": "Dado que el cliente tiene un historial de 25 pedidos con solo 1 reclamación en los últimos 90 días, su perfil no es sospechoso. La incidencia reportada es la falta de un producto (el batido de chocolate), y el GPS confirma que la entrega fue realizada correctamente. \n\nEl importe del batido es inferior a 15€, por lo que debemos reembolsar este importe directamente. \n\nMensaje para el CLIENTE DE LA APP:\n**Estimado cliente, sentimos mucho la falta de su batido de chocolate. Procederemos a reembolsarle el importe correspondiente a este producto. Gracias por su comprensión y esperamos que disfrute de sus próximas órdenes.** \n\nRecomiendo reembolsar el batido de chocolate (4,50 €) directamente.",
-   "accion": "reembolso",
-   "importe": 4.5
+  "ZP-057": {
+   "respuesta": "1. Decisión e importe en euros: Cupón de 13,90 €.\n2. Motivo: El cliente tiene un 3,85% de reclamaciones y la incidencia es por mal estado del producto afectado.\n3. **Hola, vamos a tramitar un cupón de 13,90 € para tu próximo pedido. Esperamos que tu próxima experiencia sea mucho mejor.**",
+   "accion": "cupon",
+   "importe": 13.9
   },
   "ZP-059": {
-   "respuesta": "Dado que la incidencia es por falta de producto y el cliente tiene un historial de 25 pedidos sin reclamaciones en los últimos 90 días, su perfil es confiable. El retraso fue de solo 3 minutos y el GPS confirma que se realizó la entrega.\n\nTe sugiero ofrecer dos opciones al cliente:\n1. Reembolso del producto que falta.\n2. Envío de nuevo del producto que falta.\n\nElige la opción que consideres más adecuada y asegúrate de pedir confirmación del cliente si decides proceder con el reembolso. \n\n**Mensaje para el CLIENTE DE LA APP:**\nHola, sentimos mucho que falten productos en tu pedido. Para poder solucionar este inconveniente, por favor indícanos si prefieres un reembolso de la parte faltante o si deseas que te enviemos de nuevo el producto que falta. Agradecemos tu comprensión y quedamos atentos a tu respuesta.",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 4,50 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es por falta de producto. \n\n**Hola, sentimos que faltara algo en tu pedido. Vamos a tramitar un cupón de 4,50 € para que lo uses en tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 4.5
   },
   "ZP-060": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 14 pedidos y 0 reclamaciones recientes, y la incidencia es por un producto faltante, puedes optar por un reembolso del producto que falta, que en este caso es el siu mai (7,90 €). \n\nEl GPS confirma que la entrega se realizó correctamente y el retraso fue mínimo (4 minutos), lo que refuerza la decisión de no escalar la reclamación. Además, el restaurante no ha tenido quejas este mes, lo que indica que no hay un problema recurrente.\n\nTe recomiendo que pidas confirmación humana para proceder con el reembolso.\n\n**Mensaje para el CLIENTE DE LA APP:**\nLamentamos la falta del siu mai en tu pedido. Hemos procesado un reembolso de 7,90 € que se reflejará en tu cuenta en breve. Si tienes alguna otra consulta, no dudes en contactarnos. ¡Gracias por tu comprensión!",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón de 7,90 €.\n\nMotivo: El cliente tiene un 0% de reclamaciones y la incidencia es por falta de producto. \n\n**Hola, vamos a tramitar un cupón de 7,90 € para compensarte por la falta del siu mai. Puedes usarlo en tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 7.9
   }
  },
  "repeticiones": {
   "ZP-009": {
-   "respuesta": "Dado que el cliente tiene un buen historial en Zepelín con 25 pedidos y solo 2 reclamaciones en los últimos 90 días, y considerando que el retraso en la entrega fue mínimo (solo 3 minutos), la incidencia parece ser aislada. Además, el GPS confirma que la entrega se realizó correctamente y no hay quejas recientes del restaurante.\n\nLa incidencia reportada es por \"producto faltante\", por lo que te propongo dos opciones:\n\n1. Reembolso de las gyozas (6,50 €).\n2. Envío nuevamente de las gyozas.\n\nTe recomiendo optar por el reembolso, ya que el importe es inferior a 15€ y la entrega fue confirmada. Sin embargo, dado que hay una reclamación previa del cliente con el mismo restaurante, es importante solicitar confirmación del cliente antes de proceder.\n\nAquí tienes el mensaje que puedes enviar al cliente:\n\n**Hola, gracias por ponerte en contacto con nosotros. Lamentamos que no hayas recibido las gyozas en tu pedido. Para resolver esto, tenemos dos opciones: podemos reembolsarte el importe de las gyozas (6,50 €) o, si lo prefieres, enviar un nuevo pedido con las gyozas que faltan. Por favor, indícanos cuál opción prefieres. ¡Gracias!**",
-   "accion": "pedir_info",
-   "importe": null
-  },
-  "ZP-017": {
-   "respuesta": "En este caso, el cliente tiene un buen ratio de pedidos a incidencias (15 pedidos y 2 reclamaciones en los últimos 90 días), lo que indica que no es un cliente sospechoso. Además, el GPS confirma la entrega y no hay retraso en la entrega. La incidencia reportada es sobre la temperatura de las pizzas, que aunque es una queja válida, no se considera como una incidencia que justifique un reembolso completo, ya que no hay evidencia de un retraso en la entrega.\n\nTe recomiendo ofrecer un cupón para el siguiente pedido como compensación por el malestar causado. Esto mantiene la satisfacción del cliente sin comprometer la política de reembolsos.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, sentimos mucho que sus pizzas hayan llegado en malas condiciones. Para compensar el inconveniente, le ofrecemos un cupón para su próximo pedido. Para utilizarlo, siga estos pasos:\n1. Haga su próximo pedido normalmente.\n2. Al momento de pagar, ingrese el código del cupón que le enviaremos por correo.\n3. Disfrute de su comida.\n\nGracias por su comprensión y preferencia.",
-   "accion": "cupon",
-   "importe": null
-  },
-  "ZP-016": {
-   "respuesta": "Basándome en los datos del ticket, el cliente tiene un solo pedido y ha presentado una reclamación, lo que no indica un patrón de fraude. El retraso en la entrega fue de 33 minutos, lo cual es considerable, y la incidencia reportada es de \"tarde o frío\". El GPS confirma la entrega y el restaurante tiene pocas quejas este mes, lo que sugiere que la incidencia podría estar relacionada con el repartidor.\n\nDado que el cliente reporta que el zumo llegó caliente, esto puede considerarse una incidencia de calidad del producto. Sin embargo, no se menciona un producto equivocado. La opción más adecuada aquí es ofrecer un reembolso del zumo natural, ya que el importe es inferior a 15€, y el cliente está decepcionado con la calidad del producto.\n\nTe recomiendo proceder con el reembolso del zumo natural de 4,20 €.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, lamentamos la tardanza en la entrega de su pedido y la calidad del zumo natural. Para compensarlo, hemos procesado un reembolso de 4,20 € por el zumo. Los pasos a seguir son: \n1. Verifique su saldo en la aplicación.\n2. El reembolso debería reflejarse en su cuenta en 3-5 días hábiles.\nAgradecemos su comprensión y esperamos que su próxima experiencia con nosotros sea mucho mejor.",
-   "accion": "reembolso",
-   "importe": 4.2
-  },
-  "ZP-025": {
-   "respuesta": "Dado que el cliente tiene un buen historial con 33 pedidos y 0 reclamaciones en los últimos 90 días, y considerando que el GPS confirma la entrega, lo más adecuado es rechazar la reclamación. El retraso de 4 minutos es aceptable y no se presentan incidencias significativas en el historial del repartidor o del restaurante.\n\nAquí tienes el mensaje para el cliente:\n\n**Hola, gracias por contactarnos. Hemos revisado tu pedido y el GPS confirma que fue entregado en la puerta. Si tienes alguna duda o necesitas más asistencia, no dudes en avisarnos. ¡Gracias por utilizar Zepelín!**",
+   "respuesta": "Rechazo la reclamación. \n\nEl cliente tiene un 8% de reclamaciones, lo que lo clasifica como un buen cliente. Sin embargo, como la falta de producto está confirmada y hay un historial reciente de incidencias con el mismo restaurante, se aplica el criterio de que el restaurante tiene que mejorar su desempeño.\n\n**Hola, sentimos que faltaran las gyozas en tu pedido. Vamos a tramitar la compensación por este inconveniente.**",
    "accion": "rechazar",
    "importe": null
   },
+  "ZP-017": {
+   "respuesta": "Decisión: Cupón de 13,65 €.\n\nMotivo: Cliente con un 13,33% de reclamaciones (2 de 15). Se aplica el criterio de tarde o frío.\n\n**Hola, vamos a tramitar un cupón de 13,65 € para tu próximo pedido como compensación por las pizzas frías. ¡Gracias por tu comprensión!**",
+   "accion": "cupon",
+   "importe": 13.65
+  },
+  "ZP-025": {
+   "respuesta": "Rechazo la reclamación. \n\nMotivo: El cliente tiene un 0% de reclamaciones y el GPS confirma la entrega. \n\n**Hola, hemos revisado tu caso y, según nuestra información, el pedido fue entregado correctamente. Si necesitas ayuda adicional, no dudes en contactarnos.**",
+   "accion": "rechazar",
+   "importe": null
+  },
+  "ZP-016": {
+   "respuesta": "Decisión: Cupón de 9,10 €.\n\nMotivo: El cliente es nuevo (1 pedido) y la incidencia es por retraso y frío, lo que justifica un cupón del 50% del total del pedido.\n\n**Hola, gracias por tu primer pedido. Lamentamos que haya llegado tarde y que el zumo estuviera caliente. Vamos a tramitar un cupón de 9,10 € para tu próxima compra.**",
+   "accion": "cupon",
+   "importe": 9.1
+  },
   "ZP-021": {
-   "respuesta": "En este caso, el cliente tiene un historial de 44 pedidos y solo 2 reclamaciones en los últimos 90 días, lo que indica que no es un perfil sospechoso. El retraso en la entrega fue de solo 4 minutos y el GPS confirma que la entrega se realizó correctamente.\n\nDado que la incidencia es por falta de un producto y no por el envío de un producto equivocado, puedes ofrecer al cliente dos opciones: un reembolso del pan de ajo (4,50 €) o el envío de un nuevo pan de ajo. Dado que el cliente menciona que no es la primera vez que tiene problemas, es importante manejar la situación con cuidado para evitar perderlo como cliente.\n\nTe recomiendo que contactes con el cliente para ofrecerle estas opciones y así resolver la incidencia de manera efectiva.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos la falta del pan de ajo en tu pedido. Para solucionar esto, te ofrecemos dos opciones: puedes optar por un reembolso de 4,50 € o el envío de un nuevo pan de ajo. Por favor, indícanos cuál prefieres y procederemos a gestionarlo. Gracias por tu comprensión.\"",
-   "accion": "reembolso",
+   "respuesta": "Decisión: Cupón por 4,50 €.\n\nMotivo: El cliente tiene un 4,5% de reclamaciones, lo que lo clasifica como buen cliente. Se aplica el criterio de falta de producto.\n\n**Hola, vamos a tramitar un cupón de 4,50 € por el pan de ajo que faltó en tu pedido. Pronto recibirás un correo con los pasos para utilizarlo en tu próximo pedido.**",
+   "accion": "cupon",
    "importe": 4.5
   },
   "ZP-036": {
-   "respuesta": "Dado que el cliente tiene un bajo ratio de pedidos y reclamaciones (2 pedidos y 1 reclamación), no parece ser un caso de fraude. Sin embargo, el GPS no confirma la entrega, lo que sugiere que puede haber un problema real. \n\nDado que el importe del pedido es de 14,00 €, no se puede reembolsar directamente sin confirmación humana. Además, el hecho de que el repartidor tenga 2 incidencias en el mes y que las quejas del restaurante sean medias también aumentan la posibilidad de un problema.\n\nTe recomiendo escalar la reclamación para investigar más a fondo. Contacta con el repartidor para verificar la situación de la entrega.\n\n**Mensaje para el CLIENTE DE LA APP:**\nEstimado cliente, hemos recibido su reclamación y estamos investigando la situación de su pedido. Por favor, esté atento a nuestras actualizaciones. Si tiene alguna pregunta adicional, no dude en contactarnos. Gracias por su paciencia.",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "Decisión: Cupón de 14,00 €.\n\nMotivo: Cliente nuevo con 50% de reclamaciones y el GPS no confirma la entrega.\n\n**Hola, hemos revisado tu caso y estamos tramitando un cupón de 14,00 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 14.0
+  },
+  "ZP-047": {
+   "respuesta": "Decisión: Cupón de 7,50 €.\n\nMotivo: El cliente tiene un 37,5% de reclamaciones (3 de 8 pedidos), y la incidencia es de producto equivocado. \n\n**Hola, gracias por tu mensaje. Vamos a tramitar un cupón de 7,50 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 7.5
   },
   "ZP-029": {
-   "respuesta": "La ficha del ticket indica que el cliente ha tenido un buen historial con 36 pedidos y solo 1 reclamación en los últimos 90 días, lo que sugiere que no es un cliente fraudulento. La incidencia reportada es \"producto equivocado\", por lo que debemos ofrecer dos opciones al cliente: un reembolso del producto equivocado o el envío de nuevo del producto equivocado.\n\nDado que el importe del producto equivocado es inferior a 15€, y el GPS confirma la entrega, puedo optar por el reembolso del producto equivocado sin requerir supervisión. Sin embargo, siempre es mejor pedir confirmación humana para este tipo de decisiones.\n\nTe recomiendo que contactes al cliente y ofrezcas las opciones. Aquí tienes el mensaje redactado para que lo copies y pegues:\n\n---\n\n**Hola [Nombre del Cliente],**\n\nLamentamos la confusión con tu pedido. Para resolver esto, te ofrecemos dos opciones:\n\n1. Reembolso del producto equivocado.\n2. Envío de nuevo del producto equivocado.\n\nPor favor, indícanos cuál opción prefieres para poder ayudarte. \n\nGracias por tu comprensión.\n\n--- \n\nRecuerda confirmar el reembolso del producto equivocado con un supervisor tras la elección del cliente.",
-   "accion": "pedir_info",
-   "importe": null
+   "respuesta": "1. Decisión: Cupón de 5,50 €.\n2. Motivo: Cliente con 2,78% de reclamaciones y se aplica el criterio de producto equivocado.\n3. **Hola! Lamentamos el error con tu pedido. Te vamos a tramitar un cupón de 5,50 € para tu próximo pedido.**",
+   "accion": "cupon",
+   "importe": 5.5
   },
   "ZP-042": {
-   "respuesta": "El cliente tiene un historial de 20 pedidos con 5 reclamaciones en los últimos 90 días, lo que sugiere un ratio de reclamaciones del 25%, que es relativamente alto. Sin embargo, el GPS confirma que la entrega se realizó correctamente y el retraso fue mínimo (3 minutos).\n\nDado que el motivo de la incidencia es que el pedido no llegó, pero el GPS indica que fue entregado, no procede el reembolso en este caso. Te recomiendo rechazar la reclamación.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, gracias por contactar con nosotros. Revisamos tu pedido y el sistema confirma que fue entregado en la puerta. Si tienes más dudas o necesitas ayuda, no dudes en contactarnos. ¡Que tengas un buen día!\"",
+   "respuesta": "Decisión: Rechazar.  \nMotivo: El cliente tiene un 25% de reclamaciones en los últimos 90 días y el GPS confirma la entrega.  \n**Hola, sentimos la situación, pero según nuestros registros, el pedido fue entregado correctamente. No podemos ofrecer reembolso en este caso. Si necesitas ayuda adicional, no dudes en contactarnos.**",
    "accion": "rechazar",
    "importe": null
   },
   "ZP-050": {
-   "respuesta": "Dado que el GPS confirma la entrega y el cliente tiene un historial de 30 pedidos con solo 1 reclamación en los últimos 90 días, parece que esta podría ser una situación de fraude. Además, el retraso en la entrega es mínimo (5 minutos) y el repartidor ha tenido 4 incidencias este mes, lo que no es ideal, pero no suficiente para escalar.\n\nComo la incidencia es que el pedido no ha llegado y el GPS confirma la entrega, te recomiendo que rechaces la reclamación basándote en estos datos objetivos. \n\nAquí tienes el mensaje que puedes enviar al cliente:\n\n**Hola, gracias por contactarnos. Según nuestros registros, el pedido ha sido entregado correctamente en la puerta de tu domicilio. Te recomendamos revisar nuevamente tu entorno, ya que puede haber sido recibido por un vecino o dejado en un lugar alternativo. Si necesitas más ayuda, no dudes en volver a escribirnos.**",
+   "respuesta": "Rechazo.\n\nMotivo: El cliente tiene un 3.33% de reclamaciones (1 de 30 pedidos) y el GPS confirma la entrega.\n\n**Hola, lamentamos que no hayas recibido tu pedido. Según nuestro sistema, ha sido entregado. No podemos ofrecerte un reembolso en esta ocasión. Si tienes alguna otra duda, no dudes en contactarnos.**",
    "accion": "rechazar",
    "importe": null
-  },
-  "ZP-047": {
-   "respuesta": "Dado que el cliente ha realizado 8 pedidos y tiene 3 reclamaciones, su ratio de incidencias es del 37,5%, lo cual es elevado y podría indicar un posible fraude. Sin embargo, la incidencia se trata de un \"producto equivocado\", por lo que debemos ofrecerle las dos opciones disponibles.\n\nEl GPS confirma la entrega y el retraso fue mínimo (5 minutos), además, no hay incidencias del repartidor y las quejas del restaurante son medias, lo que no afectaría mucho la decisión.\n\nTe recomiendo ofrecer las dos opciones al cliente:\n1. Reembolso del producto equivocado (Durum mixto, 8,50 €).\n2. Envío de nuevo del producto equivocado.\n\nSin embargo, dado el perfil del cliente, es más seguro optar por el reembolso solo si el cliente acepta y no hay sospechas de fraude. Si decides reembolsar, te sugiero pedir confirmación antes de proceder.\n\n**Mensaje para el CLIENTE DE LA APP:**\n\"Hola, lamentamos el inconveniente con tu pedido. Para resolverlo, te ofrecemos dos opciones: \n1. Reembolsarte el coste del producto equivocado (Durum mixto) de 8,50 €.\n2. Enviarte nuevamente el producto equivocado.\n\nPor favor, indícanos qué opción prefieres y procederemos a solucionarlo lo antes posible. ¡Gracias por tu comprensión!\"",
-   "accion": "reembolso",
-   "importe": 8.5
   }
  },
  "errores": 0
