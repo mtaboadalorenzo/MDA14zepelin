@@ -3,359 +3,359 @@
  "etiqueta": "Equipo 3 · Riesgo y fraude",
  "nivel": "eq",
  "modelo": "gpt-4o-mini",
- "fecha": "2026-11-17T15:45",
+ "fecha": "2026-11-17T19:41",
  "tickets": {
   "ZP-004": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el retraso de 8 minutos no es suficiente para proceder con una compensación, y la entrega fue confirmada por GPS.  \nRESPUESTA AL CLIENTE: \"Lamentamos que la entrega no haya sido tan rápida como esperabas. Sin embargo, el retraso de 8 minutos no nos permite ofrecerte una compensación.\"",
-   "accion": "rechazar",
-   "importe": null
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 8 minutos, que no supera los 20 minutos para una compensación.  \nRESPUESTA AL CLIENTE: Lamentamos el retraso en la entrega de tu pedido. Por favor, utiliza este cupón del 50% en tu próximo pedido como compensación.",
+   "accion": "cupon",
+   "importe": 0.0
   },
   "ZP-002": {
-   "respuesta": "DECISIÓN: Cupón  \nIMPORTE: 14,85 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: Retraso confirmado de 35 min y queja sobre la temperatura de las arepas, pero entrega acreditada.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu pedido haya llegado con retraso y que las arepas estuvieran frías. Te ofrecemos un cupón del 50 % para tu próximo pedido como compensación.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: retraso real de 35 minutos.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega de tu pedido y que las arepas llegaran frías. Te ofrecemos un cupón del 50 % para tu próximo pedido como compensación.\"",
    "accion": "cupon",
-   "importe": 14.85
+   "importe": 0.0
   },
   "ZP-001": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 5,50 € (rollitos de primavera)  \nRIESGO: bajo  \nMOTIVO: falta de un producto acreditada en la entrega, el cliente tiene un buen historial y no hay señales de abuso.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de los rollitos de primavera en su pedido. Hemos procesado un reembolso parcial de 5,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 5,50 € = Rollitos de primavera  \nRIESGO: bajo  \nMOTIVO: falta del producto (rollitos de primavera) en la entrega.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que no hayas recibido los rollitos de primavera en tu pedido. Procederemos a reembolsarte el importe correspondiente a dicho producto.\"",
    "accion": "reembolso",
    "importe": 5.5
   },
-  "ZP-003": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: El pedido fue entregado según el GPS y no hay evidencia de fallo en la entrega. El retraso de 2 minutos está dentro de un rango aceptable y no se justifica el reembolso total.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que no hayas recibido tu pedido, pero el GPS confirma que fue entregado correctamente. No podemos proceder con el reembolso total en este caso.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
   "ZP-005": {
-   "respuesta": "DECISIÓN: reembolso total.  \nIMPORTE: 26,90 € (total del pedido).  \nRIESGO: medio; señales por la no entrega confirmada y quejas del restaurante.  \nMOTIVO: la entrega no se ha acreditado y el cliente no ha recibido su pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos la inconveniencia. Procederemos a reembolsar el total de su pedido, ya que no se ha registrado la entrega.\"",
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 26,90 € = Combo 16 piezas (19,90 €) + Edamame (4,50 €) + Envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: GPS no confirma la entrega y no hay constancia de entrega  \nRESPUESTA AL CLIENTE: Lamentamos que tu pedido no haya llegado. Procederemos a reembolsarte el importe total de tu pedido.",
    "accion": "reembolso",
    "importe": 26.9
   },
-  "ZP-007": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,20 € (aros de cebolla)  \nRIESGO: bajo  \nMOTIVO: falta de producto acreditada en la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de los aros de cebolla en tu pedido. Te hemos reembolsado 4,20 € por este inconveniente.\"",
+  "ZP-003": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 26,90 € = 2 × Durum mixto (8,50 € c/u) + Patatas (3,00 €) + 2 × Refresco (2,20 € c/u) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: El pedido no llegó y el GPS confirma que no se entregó, además el cliente tiene 4 reclamaciones en los últimos 90 días.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a reembolsar el 100% de su pedido.",
    "accion": "reembolso",
-   "importe": 4.2
+   "importe": 26.9
   },
   "ZP-006": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 12,90 € (pizza diavola)  \nRIESGO: bajo  \nMOTIVO: El cliente reporta que la pizza diavola llegó en mal estado, lo que justifica un reembolso parcial por el producto afectado. El retraso de 6 minutos no es suficiente para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos que la pizza diavola llegara en mal estado. Hemos procesado un reembolso parcial de 12,90 € correspondiente a esa pizza.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 12,90 € = pizza diavola  \nRIESGO: bajo  \nMOTIVO: mal estado de la pizza diavola.  \nRESPUESTA AL CLIENTE: Lamentamos que la pizza diavola haya llegado en mal estado. Procederemos a reembolsarle el importe de este producto.",
    "accion": "reembolso",
    "importe": 12.9
   },
+  "ZP-007": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,20 € = Aros de cebolla  \nRIESGO: bajo  \nMOTIVO: falta de producto en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que faltaran los aros de cebolla en su pedido. Procederemos a reembolsarle el importe correspondiente.",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
   "ZP-008": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 13,50 € (precio del poke de salmón)  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto equivocado; se confirma la entrega correcta de otros productos y no hay retraso.  \nRESPUESTA AL CLIENTE: \"Lamentamos el error en su pedido y hemos procesado un reembolso de 13,50 € por el poke de salmón que no recibió. Agradecemos su comprensión y esperamos que disfrute de su próxima experiencia con nosotros.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 13,50 € = Poke de salmón  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto equivocado, por lo que se reembolsa el precio completo del Poke de salmón.  \nRESPUESTA AL CLIENTE: Lamentamos que haya recibido un poke incorrecto. Hemos procesado un reembolso de 13,50 € por el Poke de salmón que no recibió.",
    "accion": "reembolso",
    "importe": 13.5
   },
   "ZP-009": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 6,50 € (precio de las gyozas)  \nRIESGO: bajo  \nMOTIVO: El cliente reporta la falta de un producto en su pedido, lo cual está confirmado por su mensaje. A pesar de que el retraso fue mínimo y no hay incidencias del repartidor, se debe compensar la falta del producto.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de las gyozas en su pedido. Hemos procesado un reembolso de 6,50 € por el producto faltante.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 6,50 € = Gyozas  \nRIESGO: bajo  \nMOTIVO: falta de producto en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos la falta de las gyozas en su pedido. Procederemos a reembolsarle el importe correspondiente.",
    "accion": "reembolso",
    "importe": 6.5
   },
   "ZP-010": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 14,20 € (50% del total del pedido, por ser un retraso confirmado ≥30 min y problemas de calidad)  \nRIESGO: medio (quejas altas del restaurante)  \nMOTIVO: Retraso significativo en la entrega (52 min) y la comida llegó fría, afectando la calidad del pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega y que la comida no haya estado a la temperatura adecuada. Hemos procesado un reembolso parcial de 14,20 € como compensación por los inconvenientes.\"",
-   "accion": "reembolso",
-   "importe": 14.2
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 52 min. GPS confirma la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos mucho el retraso en la entrega de su pedido. Le ofreceremos un cupón del 50% para su próximo pedido como compensación.",
+   "accion": "cupon",
+   "importe": 0.0
   },
   "ZP-012": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 6,00 € (precio de las gyozas)  \nRIESGO: medio (quejas altas del restaurante)  \nMOTIVO: falta de producto en la entrega, corroborado por el cliente; el retraso no es suficiente para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido las gyozas en su pedido. Hemos procesado un reembolso parcial de 6,00 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 6,00 € = gyozas  \nRIESGO: alto  \nMOTIVO: falta de producto en el pedido y cliente con 3 reclamaciones en 90 días.  \nRESPUESTA AL CLIENTE: Lamentamos que falten las gyozas en su pedido. Procederemos a reembolsar el importe correspondiente a este producto.",
    "accion": "reembolso",
    "importe": 6.0
   },
   "ZP-011": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Alto.  \nMOTIVO: La entrega no está acreditada por el GPS y hay contradicciones en la entrega. Además, el historial del cliente es bueno, pero la alta tasa de quejas del restaurante y las incidencias del repartidor generan dudas.  \nRESPUESTA AL CLIENTE: \"Lamentamos mucho que su pedido no haya llegado. Estamos investigando la situación y nos pondremos en contacto con usted lo antes posible para ofrecerle una solución.\"",
-   "accion": "supervisor",
-   "importe": null
-  },
-  "ZP-013": {
-   "respuesta": "DECISIÓN: rechazar.  \nIMPORTE: 0 €; no procede compensar.  \nRIESGO: bajo.  \nMOTIVO: el cliente eligió un plato muy picante (pollo vindaloo) y no hay indicios de que se haya entregado un producto diferente al solicitado. El retraso es mínimo y no se registraron incidencias en el reparto.  \nRESPUESTA AL CLIENTE: \"Lamentamos que el plato no haya sido de su agrado. Sin embargo, se le entregó el curry que solicitó, el cual era muy picante según su elección.\"",
-   "accion": "rechazar",
-   "importe": 0.0
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 72,50 € = 54,00 € (Menú familiar) + 7,00 € (Naan de ajo) + 9,00 € (Lassi de mango) + 2,50 € (Envío)  \nRIESGO: alto  \nMOTIVO: El GPS no confirma la entrega y hay 3 incidencias del repartidor este mes, lo que indica que hay un problema con la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos mucho que su pedido no haya llegado. Procederemos a reembolsarle el total de su pedido.",
+   "accion": "reembolso",
+   "importe": 72.5
   },
   "ZP-014": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 9,50 € (precio de una hamburguesa)  \nRIESGO: bajo  \nMOTIVO: Se confirma que falta uno de los productos solicitados (una hamburguesa) en la entrega, aunque el retraso es mínimo y la entrega fue correcta según el GPS.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de una hamburguesa en su pedido. Hemos procesado un reembolso parcial de 9,50 € por el producto faltante.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 9,50 € = 1 × Smash burger  \nRIESGO: bajo  \nMOTIVO: falta de producto (una hamburguesa no entregada)  \n\nRESPUESTA AL CLIENTE: Lamentamos la falta de una hamburguesa en tu pedido. Procederemos a reembolsarte 9,50 € por el producto faltante.",
    "accion": "reembolso",
    "importe": 9.5
   },
+  "ZP-013": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 13,50 € = Pollo vindaloo  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto equivocado (pollo vindaloo en lugar del curry solicitado).  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un producto equivocado. Procederemos a reembolsarte el importe del pollo vindaloo.",
+   "accion": "reembolso",
+   "importe": 13.5
+  },
   "ZP-015": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 21,90 € (pizza familiar barbacoa)  \nRIESGO: bajo  \nMOTIVO: el cliente reporta que una de las pizzas llegó en mal estado, lo que justifica el reembolso parcial por el producto afectado. El retraso no es significativo y no hay otras incidencias que afecten la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos que una de las pizzas llegara en mal estado. Hemos procesado un reembolso de 21,90 € por la pizza afectada.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 21,90 € = 1 × Pizza familiar barbacoa  \nRIESGO: bajo  \nMOTIVO: mal estado de uno de los productos afectados.  \nRESPUESTA AL CLIENTE: Lamentamos que una de las pizzas familiares de barbacoa haya llegado en mal estado. Procesaremos un reembolso de 21,90 € por este inconveniente.",
    "accion": "reembolso",
    "importe": 21.9
   },
   "ZP-016": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 9,10 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: retraso confirmado de 33 minutos, aunque la entrega fue correcta y el bowl estaba en condiciones. El zumo caliente indica un fallo en el servicio, pero no hay suficientes evidencias para un reembolso total.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu pedido haya llegado con retraso y que el zumo no estuviera en la mejor condición. Te ofrecemos un cupón del 50 % para tu próximo pedido como compensación.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 33 min en la entrega. El zumo caliente no se reembolsa ya que el bowl estaba bien y el cliente no reportó quejas verificables sobre el zumo.  \n\nRESPUESTA AL CLIENTE: Lamentamos el retraso en la entrega de su pedido. Le ofrecemos un cupón del 50 % para su próximo pedido como compensación.",
    "accion": "cupon",
-   "importe": 9.1
-  },
-  "ZP-017": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: No hay evidencias de retraso en la entrega, el GPS confirma que la entrega se realizó en mano y no hay incidencias del repartidor; el cliente menciona que las pizzas estaban frías, pero esto no se puede atribuir a un fallo en el servicio.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que las pizzas no hayan llegado a la temperatura esperada. Sin embargo, según nuestros registros, la entrega se realizó correctamente y no podemos proceder con el reembolso.\"",
-   "accion": "rechazar",
    "importe": 0.0
   },
+  "ZP-017": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 24,80 € = pizzas 12,90 € + 11,90 €  \nRIESGO: bajo  \nMOTIVO: el cliente reporta que las pizzas llegaron frías, lo que justifica el reembolso completo de los productos afectados.  \nRESPUESTA AL CLIENTE: \"Lamentamos que las pizzas hayan llegado frías. Procederemos a reembolsar el importe de las pizzas.\"",
+   "accion": "reembolso",
+   "importe": 24.8
+  },
   "ZP-018": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 8,50 € por el durum de ternera  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto equivocado y no corresponde al pedido original.  \nRESPUESTA AL CLIENTE: \"Lamentamos mucho el error con tu pedido. Te hemos reembolsado el importe del durum de ternera que recibiste por equivocación.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Durum de falafel  \nRIESGO: bajo  \nMOTIVO: producto equivocado, el cliente recibió un pedido incorrecto.  \nRESPUESTA AL CLIENTE: \"Lamentamos que haya recibido un producto equivocado en su pedido. Procederemos a reembolsarle el importe del durum de falafel.\"",
    "accion": "reembolso",
    "importe": 8.5
   },
   "ZP-019": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Medio.  \nMOTIVO: La entrega no consta en el GPS y el cliente indica que no recibió el pedido, combinado con tres incidencias del repartidor este mes. Es necesario investigar más a fondo.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu pedido no haya llegado. Estamos revisando la situación y te informaremos lo antes posible.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 25,10 € = productos  \nRIESGO: alto  \nMOTIVO: El GPS no confirma la entrega y el cliente indica que el pedido no ha llegado. Además, el repartidor tiene 3 incidencias este mes.  \nRESPUESTA AL CLIENTE: Lamentamos que tu pedido no haya llegado. Procederemos a reembolsarte el importe total de tu pedido.",
+   "accion": "reembolso",
+   "importe": 25.1
   },
   "ZP-020": {
-   "respuesta": "DECISIÓN: Rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: La entrega está acreditada por GPS y no hay evidencia de que el pedido no llegara; el cliente no reporta retraso ni entrega fallida.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido su pedido, sin embargo, nuestra verificación muestra que fue entregado correctamente. Si necesita más asistencia, por favor contáctenos.\"",
-   "accion": "rechazar",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 29,40 € = 2 × Burrito (9,50 € c/u) + Quesadilla (7,90 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: GPS confirma que no llegó, y el cliente tiene 3 reclamaciones en los últimos 90 días.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Hemos procesado un reembolso completo de 29,40 €.",
+   "accion": "reembolso",
+   "importe": 29.4
   },
   "ZP-021": {
-   "respuesta": "DECISIÓN: Reembolso parcial.  \nIMPORTE: 4,50 € (pan de ajo).  \nRIESGO: bajo.  \nMOTIVO: Falta de producto acreditada en la entrega. El retraso confirmado de 4 minutos no justifica una compensación adicional.  \nRESPUESTA AL CLIENTE: \"Lamentamos que faltara el pan de ajo en su pedido. Hemos procesado un reembolso de 4,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,50 € = Pan de ajo  \nRIESGO: bajo  \nMOTIVO: falta del pan de ajo en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos la falta del pan de ajo en su pedido. Hemos procesado un reembolso de 4,50 € por este producto.",
    "accion": "reembolso",
    "importe": 4.5
   },
-  "ZP-022": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 14,45 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: retraso confirmado de 28 minutos en la entrega, aunque el cliente no menciona un problema de salud o una preferencia de alergia.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega de su pedido. Como compensación, le ofrecemos un cupón del 50 % para su próximo pedido.\"",
-   "accion": "cupon",
-   "importe": 14.45
-  },
-  "ZP-024": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 7,20 € (croquetas)  \nRIESGO: bajo  \nMOTIVO: el refresco se abrió y afectó a las croquetas, confirmando un fallo en el estado del pedido. El retraso no es motivo para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos el inconveniente con el refresco y las croquetas. Hemos procesado un reembolso parcial de 7,20 € por las croquetas afectadas.\"",
-   "accion": "reembolso",
-   "importe": 7.2
-  },
-  "ZP-025": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el GPS confirma la entrega y el retraso de 4 minutos no justifica compensación.  \nRESPUESTA AL CLIENTE: \"Hemos verificado que el pedido fue entregado correctamente en la puerta. Lamentamos el inconveniente, pero no podemos proceder con la compensación en este caso.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
   "ZP-023": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 28,00 € (bandeja de ensaladas)  \nRIESGO: bajo  \nMOTIVO: el cliente recibió un producto equivocado, lo cual justifica el reembolso parcial del producto afectado.  \nRESPUESTA AL CLIENTE: \"Lamentamos que haya recibido la bandeja de fruta en lugar de la ensalada. Procederemos a reembolsar el importe de la bandeja de ensaladas a su cuenta.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 28,00 € = bandeja de ensaladas  \nRIESGO: bajo  \nMOTIVO: producto equivocado en la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un producto equivocado en tu pedido. Procederemos a reembolsar el importe de la bandeja de ensaladas.",
    "accion": "reembolso",
    "importe": 28.0
   },
+  "ZP-022": {
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 28 minutos en la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos la tardanza en la entrega de su pedido. Le ofrecemos un cupón del 50 % para su próximo pedido como compensación.",
+   "accion": "cupon",
+   "importe": 0.0
+  },
+  "ZP-024": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 9,40 € = refresco (2,20 €) + croquetas (7,20 €)  \nRIESGO: bajo  \nMOTIVO: el refresco se abrió y las croquetas llegaron en mal estado, afectando a estos productos.  \nRESPUESTA AL CLIENTE: Lamentamos que el refresco se abriera y que las croquetas llegaran en mal estado. Procederemos a reembolsar el importe de ambos productos.",
+   "accion": "reembolso",
+   "importe": 9.4
+  },
+  "ZP-025": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 26,90 € = surtido dim sum (16,90 €) + bao de cerdo (7,50 €) + envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: GPS confirma la entrega, pero el cliente indica que no ha llegado. No hay reclamaciones previas en los últimos 90 días.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a reembolsarle el importe total de su pedido.",
+   "accion": "reembolso",
+   "importe": 26.9
+  },
   "ZP-026": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 16,70 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: retraso confirmado de 41 minutos; se compensa con un cupón del 50 % del total del pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega de su pedido y que su comida no haya llegado en las mejores condiciones. Como compensación, le ofrecemos un cupón del 50 % para su próximo pedido.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 41 minutos, lo que justifica un cupón del 50% del pedido.  \nRESPUESTA AL CLIENTE: Lamentamos el retraso en su pedido y los inconvenientes causados. Le ofrecemos un cupón del 50% para su próximo pedido.",
    "accion": "cupon",
    "importe": 16.7
   },
   "ZP-027": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 13,90 € (bowl de salmón)  \nRIESGO: bajo  \nMOTIVO: La entrega se realizó correctamente y el GPS confirma que el pedido fue recibido, pero el cliente reporta la falta de un producto específico. Se compensa solo el precio del producto que falta.  \nRESPUESTA AL CLIENTE: \"Lamentamos que faltara el bowl de salmón en su pedido. Procederemos a reembolsarle 13,90 € por el producto no entregado.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 13,90 € = Bowl de salmón  \nRIESGO: bajo  \nMOTIVO: falta de producto, el cliente reporta que faltó el bowl de salmón.  \nRESPUESTA AL CLIENTE: Lamentamos que haya faltado el bowl de salmón en su pedido. Procesaremos un reembolso de 13,90 € por este inconveniente.",
    "accion": "reembolso",
    "importe": 13.9
   },
   "ZP-028": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el cliente se queja de la calidad de las patatas, pero no hay un fallo en la entrega ni en el servicio, y el retraso no supera los 30 minutos. La insatisfacción con la calidad del producto no justifica una compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que las patatas no hayan cumplido con sus expectativas. Sin embargo, no podemos ofrecer una compensación en este caso, ya que no se han reportado fallos en la entrega.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
-  "ZP-029": {
-   "respuesta": "DECISIÓN: Rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: El cliente recibió la entrega confirmada por GPS y el retraso fue mínimo (3 min). Además, no hay evidencia suficiente de que el pedido entregado no sea el correcto, ya que no se reportan incidencias del repartidor y el cliente no especifica el error en el producto.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido el producto que esperaba. Sin embargo, hemos confirmado que su pedido fue entregado correctamente según nuestros registros.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
-  "ZP-030": {
-   "respuesta": "DECISIÓN: Rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: La entrega se realizó correctamente según el GPS y no hay evidencia de un fallo en el servicio, ya que el cliente no reporta un problema con el resto de productos. La falta de las samosas no justifica una compensación cuando el resto del pedido fue entregado.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido las samosas en su pedido. Sin embargo, hemos verificado que la entrega se realizó correctamente y no podemos proceder con una compensación en este caso.\"",
+   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: no hay fallo de Zepelín; la queja es por gusto personal sobre las patatas.  \nRESPUESTA AL CLIENTE: Lamentamos que las patatas no hayan estado a su gusto. Agradecemos su comentario y lo tendremos en cuenta para futuras mejoras.",
    "accion": "rechazar",
    "importe": 0.0
   },
+  "ZP-029": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 11,50 € = Plato mixto  \nRIESGO: bajo  \nMOTIVO: Producto equivocado, se reembolsa el precio completo del plato afectado.  \nRESPUESTA AL CLIENTE: Lamentamos que haya recibido un producto equivocado en su pedido. Procederemos a reembolsar el importe del plato afectado.",
+   "accion": "reembolso",
+   "importe": 11.5
+  },
+  "ZP-030": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 5,50 € = Samosas (3)  \nRIESGO: bajo  \nMOTIVO: falta de producto (samosas) en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos la falta de las samosas en su pedido. Hemos procesado un reembolso de 5,50 € por este inconveniente.",
+   "accion": "reembolso",
+   "importe": 5.5
+  },
   "ZP-031": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Alto y señales.  \nMOTIVO: El cliente reporta un posible riesgo de salud debido al mal estado del pollo agridulce, lo que requiere contactar al restaurante para investigar la queja sobre el estado del producto.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos mucho que el pollo agridulce no estuviera en buen estado. Hemos escalado tu reclamación para investigar este incidente y asegurarnos de que no vuelva a ocurrir.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 10,90 € = Pollo agridulce  \nRIESGO: bajo  \nMOTIVO: Mal estado del pollo agridulce, reembolsamos el precio completo del producto afectado.  \nRESPUESTA AL CLIENTE: Lamentamos que el pollo agridulce no estuviera en buen estado. Procederemos a reembolsarte el importe de este producto.",
+   "accion": "reembolso",
+   "importe": 10.9
   },
   "ZP-032": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 13,50 € (50 % del pedido)  \nRIESGO: medio (mensaje del cliente sobre seguidores)  \nMOTIVO: se confirma un retraso de 45 minutos y el pedido debía entregarse frío; se compensa con un cupón del 50 % del valor del pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega de su pedido. Para compensar la inconveniencia, le ofrecemos un cupón del 50 % para su próximo pedido.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 13,95 € (50 % del total del pedido)  \nRIESGO: bajo  \nMOTIVO: Retraso real de 45 minutos en la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos el retraso en la entrega de su pedido. Para compensar, le ofrecemos un cupón del 50 % para su próxima compra.",
    "accion": "cupon",
-   "importe": 13.5
+   "importe": 13.95
   },
   "ZP-033": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 8,50 € (durum de ternera)  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto incorrecto que no se ajusta a sus preferencias alimentarias, lo que justifica un reembolso parcial.  \nRESPUESTA AL CLIENTE: \"Lamentamos mucho la confusión con tu pedido y el error en el producto enviado. Hemos procesado un reembolso de 8,50 € por el durum de ternera que recibiste en lugar del de falafel.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Durum de ternera  \nRIESGO: bajo  \nMOTIVO: producto equivocado, el cliente recibió un Durum de ternera en lugar de uno vegetariano.  \nRESPUESTA AL CLIENTE: Lamentamos que haya recibido un producto equivocado en su pedido. Procederemos a reembolsarle el importe del Durum de ternera.",
    "accion": "reembolso",
    "importe": 8.5
   },
   "ZP-034": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 12,90 € (menú vegano)  \nRIESGO: bajo  \nMOTIVO: Se confirma que hubo un producto equivocado en la entrega, ya que el cliente recibió un menú clásico en lugar del vegano solicitado.  \nRESPUESTA AL CLIENTE: Lamentamos el error en su pedido y hemos procesado un reembolso parcial por el menú vegano que no recibió. Agradecemos su comprensión y estamos trabajando para mejorar.",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 12,90 € = Menú vegano  \nRIESGO: bajo  \nMOTIVO: el cliente recibió un producto equivocado, por lo que se reembolsa el precio completo del menú vegano.  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un menú incorrecto. Procederemos a reembolsar el importe del menú vegano.",
    "accion": "reembolso",
    "importe": 12.9
   },
   "ZP-035": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 13 € (fajitas de pollo y guacamole)  \nRIESGO: bajo  \nMOTIVO: El cliente reporta mal estado del pedido, lo que justifica reembolso parcial por el daño en el producto, aunque el retraso no supera los 30 minutos y hay confirmación de entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos que su pedido no llegara en buen estado. Hemos procesado un reembolso parcial de 13 € por los productos afectados.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 19 € = Fajitas de pollo (13,50 €) + Guacamole (5,50 €)  \nRIESGO: bajo  \nMOTIVO: el cliente reporta mal estado del pedido y se reembolsa el precio completo de los productos afectados.  \nRESPUESTA AL CLIENTE: Lamentamos que tu pedido no haya llegado en buen estado. Hemos procesado un reembolso de 19 € por los productos afectados.",
    "accion": "reembolso",
-   "importe": 13.0
+   "importe": 19.0
   },
   "ZP-036": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Medio.  \nMOTIVO: GPS confirma la entrega, pero el cliente asegura que no recibió el pedido, lo que crea contradicciones. Además, la incidencia del repartidor y las quejas del restaurante sugieren un posible problema con la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos la confusión con su pedido. Estamos investigando la situación y nos pondremos en contacto con usted tan pronto como tengamos más información.\"",
-   "accion": "supervisor",
-   "importe": null
-  },
-  "ZP-037": {
-   "respuesta": "DECISIÓN: rechazar.  \nIMPORTE: 0 €.  \nRIESGO: bajo.  \nMOTIVO: la entrega está confirmada por GPS y no hay incidencias del repartidor; el cliente no tiene derecho a compensación por un pedido no acreditado.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido su pedido, pero la entrega está confirmada según nuestro sistema. Si necesita más ayuda, no dude en contactarnos.\"",
-   "accion": "rechazar",
-   "importe": 0.0
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 14,00 € = Durum mixto (8,50 €) + Patatas (3,00 €) + Envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: GPS no confirma la entrega y el cliente indica que no ha recibido el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que su pedido no haya llegado. Procederemos a reembolsar el importe total de su pedido.",
+   "accion": "reembolso",
+   "importe": 14.0
   },
   "ZP-038": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,50 € (mochis)  \nRIESGO: bajo  \nMOTIVO: el cliente reporta la falta de un producto específico, y el pedido fue entregado correctamente, pero faltó un artículo que se le había cobrado.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de los mochis en su pedido. Procederemos a reembolsarle 4,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,50 € = Mochis (2)  \nRIESGO: bajo  \nMOTIVO: falta de producto en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que faltaran los mochis de su pedido. Procederemos a reembolsarle el importe correspondiente.",
    "accion": "reembolso",
    "importe": 4.5
   },
-  "ZP-039": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 17,25 € (50 % del total del pedido)  \nRIESGO: bajo  \nMOTIVO: Retraso confirmado de ≥30 min y el producto llegó frío, lo que afecta la calidad de la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en la entrega de su pedido y que los dim sum llegaran fríos. Hemos procesado un reembolso parcial del 50 % de su pedido como compensación.\"",
+  "ZP-037": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 41,00 € = Combo 24 piezas (32,00 €) + Gyozas (6,50 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: GPS confirma que no llegó el pedido y el cliente tiene 3 reclamaciones en 90 días.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a reembolsarle el importe total de 41,00 €.",
    "accion": "reembolso",
-   "importe": 17.25
+   "importe": 41.0
+  },
+  "ZP-039": {
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 60 min, el cliente se queja de que los dim sum llegaron fríos, pero no hay un número alto de reclamaciones en su historial.  \nRESPUESTA AL CLIENTE: Lamentamos la demora en la entrega de su pedido. Como compensación, le ofrecemos un cupón del 50% para su próximo pedido.",
+   "accion": "cupon",
+   "importe": 0.0
   },
   "ZP-040": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 14,90 € (Cordero rogan josh)  \nRIESGO: bajo  \nMOTIVO: Se confirma la falta de un producto en el pedido, lo que justifica el reembolso parcial. El retraso de 9 minutos no es suficiente para una compensación adicional.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta del cordero rogan josh en su pedido. Hemos procesado un reembolso parcial de 14,90 € por el producto faltante.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 14,90 € = Cordero rogan josh  \nRIESGO: bajo  \nMOTIVO: falta de producto en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que haya faltado el cordero rogan josh en su pedido. Procederemos a reembolsarle 14,90 € por este inconveniente.",
    "accion": "reembolso",
    "importe": 14.9
   },
-  "ZP-043": {
-   "respuesta": "DECISIÓN: Rechazar.  \nIMPORTE: 0 €; no procede compensar.  \nRIESGO: Bajo; sin señales de abuso.  \nMOTIVO: El cliente recibió la entrega correcta según el GPS y solo reporta un error en el producto, que no es suficiente para compensar, ya que no hay un fallo en la entrega acreditado.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que hayas recibido un producto equivocado. Sin embargo, la entrega fue realizada correctamente y no podemos ofrecer una compensación en este caso.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
-  "ZP-042": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: la entrega está confirmada por el GPS y el retraso fue solo de 3 minutos, lo cual no justifica compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que haya tenido esta experiencia, pero según nuestros registros, su pedido fue entregado correctamente. Si tiene alguna otra duda, no dude en contactarnos.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
-  "ZP-044": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el cliente no reporta un fallo en la entrega o en el estado del pedido; la queja se basa en gustos personales, lo cual no constituye una razón válida para la compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que el bao de pato no haya sido de su agrado. Sin embargo, no podemos ofrecer compensación ya que su insatisfacción se basa en preferencias personales.\"",
-   "accion": "rechazar",
+  "ZP-041": {
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: retraso real de 35 minutos, pero GPS confirma la entrega y no hay quejas sobre el estado del pedido (tarde o frío, pero no se reembolsa por esto).  \nRESPUESTA AL CLIENTE: Lamentamos el retraso en la entrega de su pedido. Le ofrecemos un cupón del 50% para su próximo pedido como compensación.",
+   "accion": "cupon",
    "importe": 0.0
   },
-  "ZP-045": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 17,25 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: retraso confirmado de ≥30 min, pero no se reporta fallo en la entrega o en el producto que justifique un reembolso total.  \nRESPUESTA AL CLIENTE: \"Lamentamos el retraso en su pedido y que no haya recibido el sushi a la temperatura adecuada. Como compensación, le ofrecemos un cupón del 50 % para su próximo pedido.\"",
-   "accion": "cupon",
-   "importe": 17.25
+  "ZP-042": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 24,60 € = Pollo asado entero (14,90 €) + Croquetas (7,20 €) + Envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: El GPS no confirma la entrega, por lo que se considera que no llegó el pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos el inconveniente. Procederemos a hacer el reembolso total de su pedido.\"",
+   "accion": "reembolso",
+   "importe": 24.6
   },
-  "ZP-041": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 14,85 € (50% del total del pedido)  \nRIESGO: bajo  \nMOTIVO: el retraso de 35 minutos está confirmado, aunque el GPS indica que la entrega fue realizada correctamente. Se compensa con un cupón del 50% por el retraso.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu pedido haya llegado con un retraso y en mal estado. Como compensación, te ofrecemos un cupón del 50% para tu próximo pedido.\"",
+  "ZP-043": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Cachapa con queso  \nRIESGO: bajo  \nMOTIVO: el cliente recibió un producto equivocado, reembolsamos el precio completo de la cachapa.  \n\nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un producto equivocado en tu pedido. Procederemos a reembolsarte el importe de la cachapa.",
+   "accion": "reembolso",
+   "importe": 8.5
+  },
+  "ZP-044": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Bao de pato  \nRIESGO: bajo  \nMOTIVO: el cliente reporta mal estado del bao de pato, que es un producto afectado.  \n\nRESPUESTA AL CLIENTE: Lamentamos que el bao de pato no estuviera en buen estado. Procederemos a reembolsarte el importe de este producto.",
+   "accion": "reembolso",
+   "importe": 8.5
+  },
+  "ZP-045": {
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 38 minutos en la entrega, se aplica compensación según las políticas de Zepelín.  \n\nRESPUESTA AL CLIENTE: Lamentamos el retraso en tu pedido y que el sushi no llegó en las condiciones adecuadas. Para compensarte, te ofrecemos un cupón del 50% para tu próximo pedido.",
    "accion": "cupon",
-   "importe": 14.85
+   "importe": 0.0
   },
   "ZP-046": {
-   "respuesta": "DECISIÓN: escalar.  \nIMPORTE: pendiente de revisión.  \nRIESGO: medio y señales.  \nMOTIVO: la entrega no consta en el GPS y el cliente afirma que no ha llegado nada; existen contradicciones debido a las incidencias del repartidor y la falta de confirmación de entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos mucho la situación que ha experimentado. Estamos escalando su caso para investigar lo sucedido y le daremos una respuesta lo antes posible.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 25,10 € = Pollo asado entero (14,90 €) + Patatas (3,50 €) + Ensalada (4,20 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: El GPS no confirma la entrega y hay 3 incidencias del repartidor este mes, lo que indica un riesgo alto.  \nRESPUESTA AL CLIENTE: Lamentamos sinceramente la inconveniencia causada por la falta de entrega. Procederemos a reembolsar el total de su pedido.",
+   "accion": "reembolso",
+   "importe": 25.1
   },
   "ZP-047": {
-   "respuesta": "DECISIÓN: Reembolso parcial.  \nIMPORTE: 8,50 € (Durum mixto).  \nRIESGO: bajo.  \nMOTIVO: Se confirma que el cliente recibió un producto equivocado, y aunque el retraso fue mínimo, el error de entrega justifica una compensación parcial.  \nRESPUESTA AL CLIENTE: \"Lamentamos que hayas recibido un producto equivocado en tu pedido. Hemos procesado un reembolso de 8,50 € por el Durum mixto que no recibiste.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Durum mixto  \nRIESGO: bajo  \nMOTIVO: producto equivocado  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un producto equivocado en tu pedido. Procederemos a reembolsarte el importe del Durum mixto de 8,50 €.",
    "accion": "reembolso",
    "importe": 8.5
   },
   "ZP-048": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 5,90 € (sopa del día)  \nRIESGO: bajo  \nMOTIVO: el cliente reporta que la sopa se ha derramado, lo que afecta el estado del pedido, aunque el retraso fue mínimo y la entrega está confirmada.  \nRESPUESTA AL CLIENTE: \"Lamentamos que la sopa haya llegado en mal estado. Te hemos reembolsado el importe de la sopa como compensación.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 5,90 € = Sopa del día  \nRIESGO: bajo  \nMOTIVO: La sopa del día llegó en mal estado, lo que justifica el reembolso completo de ese producto. El retraso fue menor a 20 minutos y no hay otras incidencias que afecten el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que la sopa haya llegado en mal estado. Hemos procesado un reembolso de 5,90 € por ese producto.",
    "accion": "reembolso",
    "importe": 5.9
   },
-  "ZP-050": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Alto.  \nMOTIVO: La entrega se confirma por GPS, pero el cliente indica que no recibió el pedido. Hay un historial de quejas altas del restaurante y 4 incidencias del repartidor, lo que sugiere un posible problema en la entrega.  \nRESPUESTA AL CLIENTE: \"Hemos recibido su mensaje y estamos investigando la situación con el repartidor y el restaurante. Nos pondremos en contacto con usted lo antes posible.\"",
-   "accion": "supervisor",
-   "importe": null
-  },
   "ZP-049": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 8,90 € (ensalada césar)  \nRIESGO: Bajo  \nMOTIVO: El cliente reporta la falta de un producto (ensalada césar), lo que justifica un reembolso parcial por el importe del artículo no entregado. El retraso de 3 minutos no es suficiente para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido la ensalada césar en su pedido. Procederemos a realizar un reembolso parcial de 8,90 € por el producto faltante.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,90 € = ensalada césar  \nRIESGO: bajo  \nMOTIVO: falta de producto en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya llegado la ensalada césar en su pedido. Procederemos a reembolsarle el importe correspondiente.",
    "accion": "reembolso",
    "importe": 8.9
   },
-  "ZP-051": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: no procede compensar ya que la falta de cubiertos y servilletas no afecta la entrega del producto principal, y el retraso fue mínimo (2 minutos).  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de cubiertos y servilletas en su pedido. Sin embargo, no podemos ofrecer compensación ya que la entrega fue correcta y en el tiempo establecido.\"",
-   "accion": "rechazar",
-   "importe": 0.0
-  },
-  "ZP-052": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 4,20 € (aros de cebolla)  \nRIESGO: bajo  \nMOTIVO: Falta de producto en la entrega, confirmada por el cliente. El retraso no afecta la compensación, ya que fue de solo 4 minutos y el resto del pedido fue entregado correctamente.  \nRESPUESTA AL CLIENTE: \"Lamentamos que faltaran los aros de cebolla en su pedido. Procesaremos un reembolso de 4,20 € por este inconveniente.\"",
-   "accion": "reembolso",
-   "importe": 4.2
-  },
   "ZP-053": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 9,25 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: el retraso confirmado de 22 minutos, aunque no llega a 30, justifica un cupón del 50 % del pedido. El cliente tiene un buen historial sin reclamaciones previas.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu pedido no haya llegado en las mejores condiciones. Te ofrecemos un cupón del 50 % para tu próximo pedido como compensación.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 9,25 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 22 minutos.  \nRESPUESTA AL CLIENTE: Lamentamos que tu pedido no haya llegado en las mejores condiciones. Te ofreceremos un cupón del 50% para tu próximo pedido.",
    "accion": "cupon",
    "importe": 9.25
   },
-  "ZP-056": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el retraso confirmado es de 15 minutos, que no es suficiente para compensar. No hay fallos acreditados del reparto o del restaurante que justifiquen una compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que su pedido haya llegado con retraso. Sin embargo, el retraso de 15 minutos no es suficiente para ofrecer una compensación.\"",
+  "ZP-050": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 25,90 € = Pad thai (11,90 €) + Pollo al curry (11,50 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: GPS confirma la entrega, pero el cliente no recibió el pedido y hay un riesgo alto debido a las 4 incidencias del repartidor este mes.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a reembolsarle el importe total de su compra.",
+   "accion": "reembolso",
+   "importe": 25.9
+  },
+  "ZP-051": {
+   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: no hay fallo de Zepelín, el cliente no recibió cubiertos ni servilletas, lo cual no es parte del pedido.  \n\nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido cubiertos ni servilletas con su pedido. Sin embargo, esta incidencia no es motivo de reembolso.",
    "accion": "rechazar",
    "importe": null
   },
-  "ZP-055": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 10,50 € (nigiri de salmón)  \nRIESGO: bajo  \nMOTIVO: Se ha entregado un producto equivocado, confirmando que no se ha recibido lo solicitado.  \nRESPUESTA AL CLIENTE: Lamentamos que haya recibido el producto equivocado en su pedido. Procederemos a reembolsarle el importe del nigiri de salmón no entregado.",
-   "accion": "reembolso",
-   "importe": 10.5
-  },
-  "ZP-059": {
-   "respuesta": "DECISIÓN: Rechazar.  \nIMPORTE: 0 €.  \nRIESGO: Bajo.  \nMOTIVO: El retraso fue mínimo (3 minutos) y la entrega fue confirmada por GPS. No hay evidencia de que se haya entregado un pedido incompleto, ya que no hay incidencias del repartidor y el cliente no especifica qué faltaba.  \nRESPUESTA AL CLIENTE: \"Lamentamos que haya tenido una mala experiencia con su pedido. Sin embargo, la entrega fue confirmada y no se encontraron incidencias en el reparto.\"",
-   "accion": "rechazar",
-   "importe": 0.0
-  },
   "ZP-054": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 4,50 € (batido de chocolate)  \nRIESGO: bajo  \nMOTIVO: Falta de un producto acreditada en el pedido.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido el batido de chocolate en su pedido. Hemos procesado un reembolso de 4,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,50 € = Batido de chocolate  \nRIESGO: bajo  \nMOTIVO: falta de producto.  \n\nRESPUESTA AL CLIENTE: Lamentamos que el batido de chocolate no haya llegado en su pedido. Procesaremos un reembolso de 4,50 € por este inconveniente.",
    "accion": "reembolso",
    "importe": 4.5
   },
+  "ZP-052": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,20 € = Aros de cebolla  \nRIESGO: bajo  \nMOTIVO: falta del producto (aros de cebolla) en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que falten los aros de cebolla en su pedido. Procederemos a reembolsarle el importe correspondiente.",
+   "accion": "reembolso",
+   "importe": 4.2
+  },
+  "ZP-055": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 10,50 € = Nigiri de salmón  \nRIESGO: bajo  \nMOTIVO: el cliente recibió un producto equivocado (nigiris de atún en lugar de nigiris de salmón).  \n\nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido el producto equivocado. Procederemos a reembolsarte el importe del nigiri de salmón.",
+   "accion": "reembolso",
+   "importe": 10.5
+  },
+  "ZP-056": {
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 15 minutos, que no cumple con el umbral de 20 minutos para una compensación.  \nRESPUESTA AL CLIENTE: Lamentamos que su pedido haya llegado tarde. Como compensación, le ofreceremos un cupón del 50 % para su próximo pedido.",
+   "accion": "cupon",
+   "importe": 0.0
+  },
+  "ZP-057": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 13,90 € = Menú doble  \nRIESGO: bajo  \nMOTIVO: el cliente reporta que el Menú doble llegó en mal estado.  \nRESPUESTA AL CLIENTE: Lamentamos que su Menú doble haya llegado en mal estado. Procesaremos un reembolso de 13,90 € por este inconveniente.",
+   "accion": "reembolso",
+   "importe": 13.9
+  },
   "ZP-058": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Medio; señales de posible abuso por contradicción entre la no entrega y el GPS.  \nMOTIVO: La entrega no consta en el GPS y el cliente afirma que no recibió nada. La situación requiere revisión para verificar la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos la situación con su pedido. Estamos revisando el caso y nos pondremos en contacto con usted lo antes posible.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 28,10 € = pedido completo  \nRIESGO: bajo  \nMOTIVO: GPS no confirma la entrega y el pedido no llegó.  \nRESPUESTA AL CLIENTE: Lamentamos que tu pedido no haya llegado. Procederemos a realizar el reembolso de tu total de 28,10 €.",
+   "accion": "reembolso",
+   "importe": 28.1
   },
   "ZP-060": {
-   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 7,90 € (Siu mai)  \nRIESGO: bajo  \nMOTIVO: falta de un producto en la entrega confirmada por GPS.  \nRESPUESTA AL CLIENTE: \"Lamentamos que falte el siu mai en su pedido. Procederemos a reembolsarle el importe correspondiente a ese plato.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 7,90 € = Siu mai  \nRIESGO: bajo  \nMOTIVO: falta del producto solicitado (siu mai)  \nRESPUESTA AL CLIENTE: Lamentamos la falta del siu mai en tu pedido. Procederemos a reembolsarte el importe correspondiente de 7,90 €.",
    "accion": "reembolso",
    "importe": 7.9
   },
-  "ZP-057": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 6,90 € (Menú doble 13,90 € - 50% por mal estado)  \nRIESGO: medio y señales.  \nMOTIVO: El cliente reporta que la hamburguesa llegó en mal estado, lo que justifica una compensación parcial. El retraso en la entrega es mínimo y no afecta la compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu hamburguesa doble haya llegado en mal estado. Hemos procesado un reembolso parcial de 6,90 € por el inconveniente.\"",
-   "accion": "reembolso",
-   "importe": 6.9
+  "ZP-059": {
+   "respuesta": "DECISIÓN: pedir información  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: el cliente menciona que faltan cosas, pero no especifica qué productos están afectados ni su valor.  \nRESPUESTA AL CLIENTE: \"Lamentamos que falten productos en tu pedido. Para poder ayudarte mejor, ¿podrías indicarnos qué productos faltan y su importe?\"",
+   "accion": "pedir_info",
+   "importe": null
   }
  },
  "repeticiones": {
   "ZP-009": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 6,50 € (precio de las gyozas)  \nRIESGO: bajo  \nMOTIVO: El cliente reporta la falta de un producto en su pedido, lo que justifica el reembolso parcial. El retraso de 3 minutos no es significativo para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos la falta de las gyozas en tu pedido. Hemos procesado un reembolso de 6,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 6,50 € = Gyozas  \nRIESGO: bajo  \nMOTIVO: Falta de producto en el pedido.  \n\nRESPUESTA AL CLIENTE: Lamentamos que faltaran las gyozas en su pedido. Procederemos a reembolsarle el importe correspondiente.",
    "accion": "reembolso",
    "importe": 6.5
   },
-  "ZP-017": {
-   "respuesta": "DECISIÓN: rechazar.  \nIMPORTE: 0 €.  \nRIESGO: bajo.  \nMOTIVO: no se ha acreditado el retraso en la entrega ni se ha confirmado que las pizzas estuvieran frías al momento de la entrega; el GPS confirma que se entregaron en mano en la hora prometida.  \nRESPUESTA AL CLIENTE: \"Lamentamos que su pedido no haya cumplido con sus expectativas. Sin embargo, no podemos procesar un reembolso ya que el pedido fue entregado a tiempo y sin incidencias.\"",
-   "accion": "rechazar",
-   "importe": null
-  },
   "ZP-016": {
-   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 9,10 € (50 % del pedido)  \nRIESGO: bajo  \nMOTIVO: retraso confirmado de 33 min, aunque el bowl estaba bien, el zumo llegó caliente, lo que justifica la compensación.  \nRESPUESTA AL CLIENTE: \"Lamentamos que tu primer pedido haya llegado tarde y que el zumo no estuviera en las condiciones adecuadas. Te ofrecemos un cupón del 50 % para tu próximo pedido como compensación.\"",
+   "respuesta": "DECISIÓN: cupón  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: Retraso real de 33 minutos en la entrega. El cliente menciona que el bowl estaba bien, pero el zumo estaba caliente; no se reembolsa el zumo porque no hay riesgo para la salud ni se menciona que esté en mal estado.  \n\nRESPUESTA AL CLIENTE: Lamentamos el retraso en la entrega de su pedido. Para compensar la espera, le ofrecemos un cupón del 50% para su próximo pedido.",
    "accion": "cupon",
-   "importe": 9.1
+   "importe": 0.0
+  },
+  "ZP-017": {
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 12,90 € + 11,90 € = 24,80 €  \nRIESGO: bajo  \nMOTIVO: las pizzas llegaron frías, lo que justifica el reembolso completo de ambos productos.  \nRESPUESTA AL CLIENTE: Lamentamos que las pizzas hayan llegado frías. Procederemos a reembolsarte el importe total de las pizzas afectadas.",
+   "accion": "reembolso",
+   "importe": 24.8
   },
   "ZP-021": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 4,50 € (pan de ajo)  \nRIESGO: bajo  \nMOTIVO: Se confirma la falta del pan de ajo, que es un fallo acreditado del reparto. El retraso de 4 min no justifica compensación adicional.  \nRESPUESTA AL CLIENTE: \"Lamentamos que faltara el pan de ajo en su pedido. Le reembolsaremos 4,50 € por este inconveniente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 4,50 € = Pan de ajo  \nRIESGO: bajo  \nMOTIVO: falta del producto (pan de ajo) en el pedido.  \nRESPUESTA AL CLIENTE: Lamentamos que faltara el pan de ajo en tu pedido. Te reembolsaremos el importe correspondiente a este producto.",
    "accion": "reembolso",
    "importe": 4.5
   },
-  "ZP-042": {
-   "respuesta": "DECISIÓN: rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: El GPS confirma la entrega y no hay contradicciones. El retraso fue de solo 3 minutos, lo cual no justifica una compensación.  \nRESPUESTA AL CLIENTE: \"Hola, hemos verificado que su pedido fue entregado correctamente. Lamentablemente, no podemos procesar un reembolso en este caso.\"",
-   "accion": "rechazar",
-   "importe": null
+  "ZP-025": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 26,90 € = Surtido dim sum (16,90 €) + Bao de cerdo (7,50 €) + Envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: GPS confirma la entrega, pero el cliente indica que no ha llegado.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a realizar un reembolso total de su compra.",
+   "accion": "reembolso",
+   "importe": 26.9
   },
   "ZP-029": {
-   "respuesta": "DECISIÓN: Rechazar  \nIMPORTE: 0 €  \nRIESGO: bajo  \nMOTIVO: El cliente recibió la entrega correcta según el GPS y no hay fallos acreditados en el servicio. La discrepancia se debe a una elección de producto y no a un error en la entrega.  \nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido el pedido esperado. Sin embargo, según nuestros registros, se entregó el producto solicitado.\"",
-   "accion": "rechazar",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 11,50 € = Plato mixto  \nRIESGO: bajo  \nMOTIVO: producto equivocado, reembolso del precio completo del plato afectado.  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido el producto equivocado. Te hemos reembolsado el precio del plato afectado.",
+   "accion": "reembolso",
+   "importe": 11.5
   },
   "ZP-036": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Alto.  \nMOTIVO: No hay confirmación clara de entrega (GPS no la acredita) y el cliente ha reportado que no recibió el pedido; además, hay incidencias del repartidor y quejas del restaurante.  \nRESPUESTA AL CLIENTE: \"Hemos recibido su reclamación y estamos revisando su caso. Le informaremos lo antes posible sobre la resolución.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 14,00 € = Durum mixto (8,50 €) + Patatas (3,00 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: GPS no confirma la entrega y hay historial de incidencias del repartidor.  \nRESPUESTA AL CLIENTE: Lamentamos que no hayas recibido tu pedido. Procederemos a reembolsarte el importe total de tu pedido.",
+   "accion": "reembolso",
+   "importe": 14.0
   },
-  "ZP-025": {
-   "respuesta": "DECISIÓN: rechazar.  \nIMPORTE: 0 €; no procede compensar.  \nRIESGO: bajo; sin señales.  \nMOTIVO: la entrega está confirmada por GPS y el retraso fue solo de 4 minutos, lo que no justifica compensación.  \nRESPUESTA AL CLIENTE: \"Hemos revisado su pedido y confirmamos que fue entregado según lo registrado. Lamentamos cualquier inconveniente, pero no es posible reembolsar en este caso.\"",
-   "accion": "rechazar",
-   "importe": null
+  "ZP-042": {
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 24,60 € = Pollo asado entero (14,90 €) + Croquetas (7,20 €) + Envío (2,50 €)  \nRIESGO: bajo  \nMOTIVO: El GPS no confirma la entrega.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procesaremos un reembolso total de 24,60 € a su cuenta.",
+   "accion": "reembolso",
+   "importe": 24.6
   },
   "ZP-047": {
-   "respuesta": "DECISIÓN: Reembolso parcial  \nIMPORTE: 7,50 € (Lahmacun)  \nRIESGO: bajo  \nMOTIVO: El cliente recibió un producto equivocado, lo que justifica un reembolso parcial por el plato afectado. El retraso de 5 minutos no es suficiente para compensar.  \nRESPUESTA AL CLIENTE: \"Lamentamos que haya recibido el producto equivocado. Hemos procesado un reembolso parcial de 7,50 € por el Lahmacun que no fue entregado correctamente.\"",
+   "respuesta": "DECISIÓN: reembolso parcial  \nIMPORTE: 8,50 € = Durum mixto  \nRIESGO: bajo  \nMOTIVO: el cliente recibió un producto equivocado.  \nRESPUESTA AL CLIENTE: Lamentamos que hayas recibido un producto equivocado en tu pedido. Procederemos a reembolsarte el importe del Durum mixto por 8,50 €.",
    "accion": "reembolso",
-   "importe": 7.5
+   "importe": 8.5
   },
   "ZP-050": {
-   "respuesta": "DECISIÓN: Escalar.  \nIMPORTE: Pendiente de revisión.  \nRIESGO: Medio.  \nMOTIVO: Aunque el GPS confirma la entrega, el cliente no recibió el pedido y ha reportado que no hay rastro del mismo. Además, el restaurante tiene quejas altas este mes, lo que sugiere posible problema con las entregas.  \n\nRESPUESTA AL CLIENTE: \"Lamentamos que no haya recibido su pedido. Estamos escalando el incidente para que se investigue y podamos ofrecerle una solución.\"",
-   "accion": "supervisor",
-   "importe": null
+   "respuesta": "DECISIÓN: reembolso total  \nIMPORTE: 25,90 € = Pad thai (11,90 €) + Pollo al curry (11,50 €) + Envío (2,50 €)  \nRIESGO: alto  \nMOTIVO: GPS confirma la entrega, pero el cliente afirma que no ha recibido el pedido y hay un riesgo alto debido a las 4 incidencias del repartidor este mes.  \nRESPUESTA AL CLIENTE: Lamentamos que no haya recibido su pedido. Procederemos a reembolsar el total de su compra.",
+   "accion": "reembolso",
+   "importe": 25.9
   }
  },
  "errores": 0
