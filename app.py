@@ -242,7 +242,7 @@ with tab_probar:
                              "la recomendación. ¿Arregla el fallo? ¿Rompe otra cosa? Solo vale para probar: no cambia el informe.")
         if novedades:
             st.info("🆕 **Novedades.** Usadlas en las reclamaciones donde vuestro copiloto falla.\n\n- " + "\n- ".join(novedades))
-        if PROMPT_EQUIPO and (VERSION != "referencia" or ss.admin):
+        if PROMPT_EQUIPO and VERSION != "referencia":
             with st.expander("Las instrucciones de vuestro copiloto (vuestras respuestas 2 a 6 del formulario)"):
                 for k, titulo in prompts.PREGUNTAS:
                     st.markdown(f"**{titulo}**")
@@ -424,10 +424,14 @@ def mostrar_ranking():
 
 
 with tab_informe:
-    if VERSION == "referencia" and ss.admin:
-        mostrar_ranking()
     cols = columnas_informe()
-    if not SH["publicado"] and not ss.admin:
+    if VERSION == "referencia":
+        # En la referencia solo interesa el ranking, y solo lo ve Miguel
+        if ss.admin:
+            mostrar_ranking()
+        else:
+            st.info("Todavía no hay informe.")
+    elif not SH["publicado"] and not ss.admin:
         st.info("Todavía no hay informe. Lo publicaremos en clase: cuando Miguel avise, pulsad «Actualizar» (arriba a la derecha).")
     elif not cols:
         st.info("Aún no se ha lanzado la simulación.")
@@ -516,5 +520,5 @@ with tab_informe:
                     with st.container(border=True):
                         st.markdown(d["respuesta"])
 
-        with st.expander("Cómo se calcula"):
-            st.markdown(costes.COMO_SE_CALCULA)
+    with st.expander("Cómo se calcula"):
+        st.markdown(costes.COMO_SE_CALCULA)
